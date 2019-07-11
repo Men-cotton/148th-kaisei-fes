@@ -4,7 +4,7 @@
       <p>企画一覧</p>
     </div>
     <div class="grid-container">
-      <div class="thumbnail"><img src="index.vue" height="55px"></img></div>
+      <div class="thumbnail"><img src="over.vue" height="55px"></img></div>
       <div class="place">B会場１階</div>
       <div class="name">ラ・スール・リマーレ</div>
       <div class="description">パンの販売をしています</div>
