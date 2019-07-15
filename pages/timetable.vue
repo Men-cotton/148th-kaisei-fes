@@ -1,16 +1,27 @@
 <template>
   <div class="container">
     <div class="title">
-      <p>企画一覧</p>
+      <p>タイムテーブル</p>
+    </div>
+    <div>
+      <p>開成祭のタイムテーブル一覧です。
+        縦軸が時間、横軸が開催場所になっています。
+        横をタップすることで場所の切り替えができます。
+      </p>
+      <p>場所一覧
+        小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド
+      </p>
     </div>
     <div class="grid-container">
-      <div class="thumbnail"><img src="over.vue" height="55px"></img></div>
-      <div class="place">B会場１階</div>
-      <div class="name">ラ・スール・リマーレ</div>
-      <div class="description">パンの販売をしています</div>
-      <div class="waitingtime">10分</div>
-      <div class="map">マップを見る</div>
-      <div class="details">メニューを見る</div>
+      <div>９</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div></div>
     </div>
   </div>
 </template>
@@ -26,9 +37,6 @@ export default {
 </script>
 
 <style>
-  .img{
-    border-radius: 27.5px;
-  }
   .container{
     padding: 0px 15px;
     background-color: #3F0E47;
@@ -40,15 +48,11 @@ export default {
     padding: 80px 0px;
   }
   .grid-container{
-    border: solid 1px #828282 ;
-    border-radius: 10px;
-    background-color: #F8F9FA;
-    padding: 10px;
     width: 100%;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 55px auto auto 55px;
-    grid-template-rows: 11px 20px 12px 40px;
+    grid-template-columns: 50px auto auto auto;
+    grid-template-rows: 50px 20px 12px 0px;
   }
   .thumbnail{
     grid-column: 1;
