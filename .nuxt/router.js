@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _613b5168 = () => interopDefault(import('../pages/over.vue' /* webpackChunkName: "pages/over" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
+const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -80,13 +80,13 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/over",
-      component: _613b5168,
-      name: "over"
-    }, {
       path: "/timetable",
       component: _22e01559,
       name: "timetable"
+    }, {
+      path: "/",
+      component: _1d216c8a,
+      name: "index"
     }],
 
     fallback: false
