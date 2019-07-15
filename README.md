@@ -1,6 +1,6 @@
-# my-portfolio-site
+# 148th-kaisei-fes
 
-> kaisei-fes
+> kaisei-fes official web site
 
 ## Build Setup
 
