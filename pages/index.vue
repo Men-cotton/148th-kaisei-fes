@@ -12,6 +12,8 @@
       <div class="map">マップを見る</div>
       <div class="details">メニューを見る</div>
     </div>
+
+    <nuxt-link to="comingsoon" no-prefetch>このサイトについて！</nuxt-link>
   </div>
 </template>
 
