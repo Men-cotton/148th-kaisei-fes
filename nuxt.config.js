@@ -5,10 +5,15 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    titletemplate: (deta) => deta ? `${deta} - 148周年開成祭` : '148周年開成祭' ,
+
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        content: '148th開成祭'
+      },
+
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [

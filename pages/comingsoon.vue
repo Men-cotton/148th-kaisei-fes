@@ -1,18 +1,23 @@
 <template>
   <div class="container">
     <div class="title">
-      <p>148th</p>
-      <p>開成祭</p>
+      <p class="sorit">創立148周年記念</p>
+      <p class="kaiseisai">開成祭</p>
     </div>
     <div class="whendes">
       <p class="when">開催予定</p>
       <p class="date">2019.09.21(土)  9:00-17:00
         <br>2019.09.22(日)  9:00-17:00</p>
     </div>
-    <div>
-      公式サイトは８月下旬に公開予定です。<br>
-      開成祭に向けた準備の様子をまとめた記事(Pick Up! 文化祭)を公開しています。ご覧ください。
+    <div class="plzwait">
+      公式サイトは８月下旬の公開に向け鋭意準備中です。<br>
+      公開までの間は開成祭公式ツイッターをご覧ください。<br>
+      <a href="https://twitter.com/kaiseisai"><div class="buttons"><p>Twitterをみる</p></div></a>
+      <nuxt-link to="timetable" no-prefetch>タイムテーブル</nuxt-link>
+      <nuxt-link to="index" no-prefetch>企画一覧</nuxt-link>
+
     </div>
+    <!---
     <article>
       <h2>“Pick Up 文化祭” とは？</h2>
       <div>・文化祭を統括する文化祭準備委員会(文準)や、中１や高１がクラスで行う団体(HR参団)などの文化祭準備の様子を不定期に紹介
@@ -21,6 +26,7 @@
       <p>とりあえず見ましょう.</p>
       <div class="buttons">Pick Up! 文化祭をみる！→</div>
     </article>
+    --->
   </div>
 </template>
 
@@ -35,17 +41,38 @@ export default {
 </script>
 
 <style>
-  .container{
-    padding: 0px 15px;
-    background-color: #3F0E47;
-    color: white;
-
+  a{
+    color: #ccbd14
   }
+
+  .container{
+    padding: 0px 15px 30px;
+    background-color: #411445;
+    color: white;
+  }
+  .sorit{
+        font-size: 24px;
+        font-weight: bold;
+
+
+      }
+      .kaiseisai{
+        font-size: 48px;
+        font-weight: bold;
+
+      }
   .title{
-    font-size: 32px;
     padding: 80px 0px;
-    height: 80vh;
-    vertical-align: center;
+    margin: 0px 40px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sorit{
+  }
+  .kaiseisai{
   }
   .whendes{
     height: 18vh;
@@ -59,15 +86,21 @@ export default {
     font-weight: bold;
     text-align: center;
   }
+  .plzwait{
+    text-align: center;
+  }
   .buttons{
+    margin: 10px 20px;
     height: 40px;
     width: 80%;
     border-radius: 5px;
-    background-color: #1B6882;
+    background-color: #912A55;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     }
 
 

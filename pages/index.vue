@@ -14,6 +14,8 @@
     </div>
 
     <nuxt-link to="comingsoon" no-prefetch>このサイトについて！</nuxt-link>
+    <nuxt-link to="timetable" no-prefetch>あっmdmさmdさmさmdmささmさ</nuxt-link>
+
   </div>
 </template>
 
@@ -40,6 +42,7 @@ export default {
     color: white;
     font-size: 32px;
     padding: 80px 0px;
+    
   }
   .grid-container{
     border: solid 1px #828282 ;
@@ -57,8 +60,8 @@ export default {
     grid-row: 1 / 4;
    }
   .place{
-    font-size: 11px;
-    color: #5A5A5A;
+    font-size: 13px;
+    color: #495057;
     grid-column: 2 / 4;
     grid-row: 1;
     }
@@ -69,8 +72,8 @@ export default {
     grid-row: 2;
     }
   .description{
-    font-size: 12px;
-    color: #5A5A5A;
+    font-size: 13px;
+    color: #912A55;
     grid-column: 2 / 4;
     grid-row: 3;
     }
@@ -81,7 +84,7 @@ export default {
     }
   .map{
     border-radius: 5px;
-    background-color: #1B6882;
+    background-color: #912A55;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -91,7 +94,7 @@ export default {
     }
   .details{
     border-radius: 5px;
-    background-color: #1B6882;
+    background-color: #912A55;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
