@@ -1,27 +1,47 @@
 <template>
   <div class="container">
-    <div class="title">
-      <p>タイムテーブル</p>
-    </div>
-    <div>
-      <p>開成祭のタイムテーブル一覧です。
-        縦軸が時間、横軸が開催場所になっています。
-        横をタップすることで場所の切り替えができます。
-      </p>
-      <p>場所一覧
-        小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド
-      </p>
-    </div>
-    <div class="grid-container">
-      <div>９</div>
-      <div>10</div>
-      <div>11</div>
-      <div>12</div>
-      <div>13</div>
-      <div>14</div>
-      <div>15</div>
-      <div>16</div>
-      <div></div>
+      <div class="title">
+        <p>タイムテーブル</p>
+      </div>
+      <div>
+        <p>開成祭のタイムテーブル一覧です。時間限定で行う企画はすべてここに載っています。
+          使い方・見方
+          ・縦軸が時間です。
+          ・１日目、２日目をタップすると日にち毎のタイムテーブルを切り替えられます。
+          今表示されているのは小講堂ですが、この列を横にスクロールすると別の場所が出てきます。
+          小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド
+        </p>
+        <p>場所一覧
+          小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド
+        </p>
+      </div>
+      <div class="timetable-container">
+        <div class="day-select">
+          <div class="day day1 selected"><p>1日目</p></div>
+          <div class="day day2"><p>2日目</p></div>
+        </div>
+        <div class="place">
+            <div class="place-p selected">小講堂</div>
+            <div class="place-p">本館ホール</div>
+            <div class="place-p">中学視聴覚室</div>
+            <div class="place-p">柔道場</div>
+            <div class="place-p">第２グラウンド</div>
+        </div>
+        <div class="grid-container">
+          <div class="time nine">９</div>
+          <div class="time ten">10</div>
+          <div class="time eleven">11</div>
+          <div class="time twelve">12</div>
+          <div class="time thirteen">13</div>
+          <div class="time fourteen">14</div>
+          <div class="time fifteen">15</div>
+          <div class="time sixteen">16</div>
+
+            <div class="group1">開成管弦楽団 文化祭演奏会</div>
+            <div class="group1-start">9:00</div>
+            <div class="name"></div>
+            <div class="endingtime"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -40,6 +60,8 @@ export default {
   .container{
     padding: 0px 15px;
     background-color: #3F0E47;
+    color: white;
+
 
   }
   .title{
@@ -47,60 +69,89 @@ export default {
     font-size: 32px;
     padding: 80px 0px;
   }
+  .timetable-container{
+      
+
+  }
+  .selected{
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-bottom:3px solid #912A55;
+      color: #411445;
+  }
+  .day-select{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+  }
+  .day1{
+    border-radius: 10px 0px 0px 0px;
+  }
+  .day2{
+      border-radius: 0px 10px 0px 0px;
+  }
+  .day{
+    width: 50%;
+    height: 40px;
+    color: #7f7d7d;
+    background: #EAEFF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .place{
+    height: 40px;
+    display: grid;
+    overflow-x: scroll;
+    grid-template-columns: 160px 160px 160px 160px 160px;
+  }
+  .place-p{
+    color: #411445;
+    background: #EAEFF2;
+    border-top: 0.5px solid #000000;
+    border-left: 0.5px solid #000000;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .grid-container{
+    background: rgba(221, 226, 229, 0.6);;
     width: 100%;
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 50px auto auto auto;
-    grid-template-rows: 50px 20px 12px 0px;
+    grid-gap: 0px;
+    grid-template-columns: 40px 15px 50px auto 15px;
+    grid-template-rows: repeat(32, 32.5px);
+    grid-auto-flow: column;
   }
-  .thumbnail{
-    grid-column: 1;
-    grid-row: 1 / 4;
-   }
-  .place{
-    font-size: 11px;
-    color: #5A5A5A;
-    grid-column: 2 / 4;
-    grid-row: 1;
-    }
-  .name{
-    font-size: 20px;
-    font-weight: bold;
-    grid-column: 2 / 4;
-    grid-row: 2;
-    }
-  .description{
-    font-size: 12px;
-    color: #5A5A5A;
-    grid-column: 2 / 4;
-    grid-row: 3;
-    }
-  .waitingtime{
-    font-size: 25px;
-    grid-column: 4;
-    grid-row: 1 / 4;
-    }
-  .map{
-    border-radius: 5px;
-    background-color: #1B6882;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    grid-column: 1 / 3;
-    grid-row: 4;
-    }
-  .details{
-    border-radius: 5px;
-    background-color: #1B6882;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
+  .time{
+      background: #912A55;
+      border-bottom: 0.5px solid #ffffff;
+      grid-row:span 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  /*1日目小講堂*/
+  .group1{
+      font-size: 20px;
+      color: #000000;
+      padding: 5px;
       grid-column: 3/5;
-      grid-row: 4;
-    }
+      grid-row: 2/9;
+      background: #F8F9FA;
+      border: 1px solid #CCBD14;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .group1-start{
+      color: black;
+      grid-column: 3/4;
+      grid-row: 2/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
+  }
 
 </style>

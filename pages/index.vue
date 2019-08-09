@@ -4,18 +4,14 @@
       <p>企画一覧</p>
     </div>
     <div class="grid-container">
-      <div class="thumbnail"><img src="over.vue" height="55px"></img></div>
+      <div class="thumbnail"><img src=""" height="55px"></img></div>
       <div class="place">B会場１階</div>
-      <div class="name">ラ・スール・リマーレ</div>
+      <div class="name">Let's talk Kaisei 2019</div>
       <div class="description">パンの販売をしています</div>
-      <div class="waitingtime">10分</div>
-      <div class="map">マップを見る</div>
-      <div class="details">メニューを見る</div>
+      <div class="waitingtime">1分</div>
+      <div class="map"><p>マップを見る</p></div>
+      <div class="details"><p>詳しく</p></div>
     </div>
-
-    <nuxt-link to="comingsoon" no-prefetch>このサイトについて！</nuxt-link>
-    <nuxt-link to="timetable" no-prefetch>あっmdmさmdさmさmdmささmさ</nuxt-link>
-
   </div>
 </template>
 
@@ -42,18 +38,17 @@ export default {
     color: white;
     font-size: 32px;
     padding: 80px 0px;
-    
+
   }
   .grid-container{
-    border: solid 1px #828282 ;
+    border: solid 0.5px #828282 ;
     border-radius: 10px;
     background-color: #F8F9FA;
-    padding: 10px;
-    width: 100%;
+    padding: 10px 10px;
+    align-items: center;
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 55px auto auto 55px;
-    grid-template-rows: 11px 20px 12px 40px;
+    grid-template-columns: 17.7% 32.2% 37% 12.9%;
+    grid-template-rows: 17px 25px 25px 40px;
   }
   .thumbnail{
     grid-column: 1;
@@ -83,22 +78,32 @@ export default {
     grid-row: 1 / 4;
     }
   .map{
+    height: 40px;
     border-radius: 5px;
     background-color: #912A55;
+    margin-right: 5px;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     grid-column: 1 / 3;
     grid-row: 4;
     }
   .details{
+    height: 40px;
     border-radius: 5px;
     background-color: #912A55;
+    margin-left: 5px;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
       grid-column: 3/5;
       grid-row: 4;
     }

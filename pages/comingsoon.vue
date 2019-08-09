@@ -10,11 +10,9 @@
         <br>2019.09.22(日)  9:00-17:00</p>
     </div>
     <div class="plzwait">
-      公式サイトは８月下旬の公開に向け鋭意準備中です。<br>
+      148th開成祭公式サイトは８月下旬の公開に向け鋭意準備中です。<br>
       公開までの間は開成祭公式ツイッターをご覧ください。<br>
       <a href="https://twitter.com/kaiseisai"><div class="buttons"><p>Twitterをみる</p></div></a>
-      <nuxt-link to="timetable" no-prefetch>タイムテーブル</nuxt-link>
-      <nuxt-link to="index" no-prefetch>企画一覧</nuxt-link>
 
     </div>
     <!---
@@ -38,6 +36,7 @@ export default {
     Logo
   }
 }
+
 </script>
 
 <style>
@@ -90,11 +89,12 @@ export default {
     text-align: center;
   }
   .buttons{
-    margin: 10px 20px;
+    margin: 20px auto;
     height: 40px;
     width: 80%;
     border-radius: 5px;
     background-color: #912A55;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     color: #fff;
     font-size: 14px;
     font-weight: bold;
