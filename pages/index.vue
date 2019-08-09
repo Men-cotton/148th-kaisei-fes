@@ -52,8 +52,6 @@ export default {
   .sorit{
         font-size: 24px;
         font-weight: bold;
-
-
       }
       .kaiseisai{
         font-size: 48px;
@@ -68,10 +66,6 @@ export default {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-  }
-  .sorit{
-  }
-  .kaiseisai{
   }
   .whendes{
     height: 18vh;
@@ -102,6 +96,4 @@ export default {
     justify-content: center;
     flex-direction: column;
     }
-
-
 </style>

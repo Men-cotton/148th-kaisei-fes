@@ -5,7 +5,6 @@ export default {
   ** Headers of the page
   */
   head: {
-    titletemplate: (deta) => deta ? `${deta} - 148周年開成祭` : '148周年開成祭' ,
 
     meta: [
       { charset: 'utf-8' },
@@ -23,10 +22,9 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#411445' },
   /*
-  ** Global CSS
-  */
+  ** Global CSS*/
   css: [
   ],
   /*
