@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _7d0b65f4 = () => interopDefault(import('../pages/comingsoon.vue' /* webpackChunkName: "pages/comingsoon" */))
+const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -81,9 +81,9 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/comingsoon",
-      component: _7d0b65f4,
-      name: "comingsoon"
+      path: "/sandan",
+      component: _407c27a9,
+      name: "sandan"
     }, {
       path: "/timetable",
       component: _22e01559,

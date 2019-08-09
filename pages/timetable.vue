@@ -40,7 +40,7 @@
             <div class="group1">開成管弦楽団 文化祭演奏会</div>
             <div class="group1-start">9:00</div>
             <div class="name"></div>
-            <div class="endingtime"></div>
+            <div class="endingtime">11:00</div>
       </div>
     </div>
   </div>

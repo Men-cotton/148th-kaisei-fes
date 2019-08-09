@@ -1,17 +1,30 @@
 <template>
   <div class="container">
     <div class="title">
-      <p>企画一覧</p>
+      <p class="sorit">創立148周年記念</p>
+      <p class="kaiseisai">開成祭</p>
     </div>
-    <div class="grid-container">
-      <div class="thumbnail"><img src=""" height="55px"></img></div>
-      <div class="place">B会場１階</div>
-      <div class="name">Let's talk Kaisei 2019</div>
-      <div class="description">パンの販売をしています</div>
-      <div class="waitingtime">1分</div>
-      <div class="map"><p>マップを見る</p></div>
-      <div class="details"><p>詳しく</p></div>
+    <div class="whendes">
+      <p class="when">開催予定</p>
+      <p class="date">2019.09.21(土)  9:00-17:00
+        <br>2019.09.22(日)  9:00-17:00</p>
     </div>
+    <div class="plzwait">
+      148th開成祭公式サイトは８月下旬の公開に向け鋭意準備中です。<br>
+      公開までの間は開成祭公式ツイッターをご覧ください。<br>
+      <a href="https://twitter.com/kaiseisai"><div class="buttons"><p>Twitterをみる</p></div></a>
+
+    </div>
+    <!---
+    <article>
+      <h2>“Pick Up 文化祭” とは？</h2>
+      <div>・文化祭を統括する文化祭準備委員会(文準)や、中１や高１がクラスで行う団体(HR参団)などの文化祭準備の様子を不定期に紹介
+        <br>・文化祭に参加する団体(参団)が書いた、その団体のテーマに関連した記事がいっぱい
+      </div>
+      <p>とりあえず見ましょう.</p>
+      <div class="buttons">Pick Up! 文化祭をみる！→</div>
+    </article>
+    --->
   </div>
 </template>
 
@@ -23,89 +36,71 @@ export default {
     Logo
   }
 }
+
 </script>
 
 <style>
-  .img{
-    border-radius: 27.5px;
+  a{
+    color: #ccbd14
   }
+
   .container{
-    padding: 0px 15px;
-    background-color: #3F0E47;
-
-  }
-  .title{
+    padding: 0px 15px 30px;
+    background-color: #411445;
     color: white;
-    font-size: 32px;
-    padding: 80px 0px;
+  }
+  .sorit{
+        font-size: 24px;
+        font-weight: bold;
 
+
+      }
+      .kaiseisai{
+        font-size: 48px;
+        font-weight: bold;
+
+      }
+  .title{
+    padding: 80px 0px;
+    margin: 0px 40px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
-  .grid-container{
-    border: solid 0.5px #828282 ;
-    border-radius: 10px;
-    background-color: #F8F9FA;
-    padding: 10px 10px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 17.7% 32.2% 37% 12.9%;
-    grid-template-rows: 17px 25px 25px 40px;
+  .sorit{
   }
-  .thumbnail{
-    grid-column: 1;
-    grid-row: 1 / 4;
-   }
-  .place{
-    font-size: 13px;
-    color: #495057;
-    grid-column: 2 / 4;
-    grid-row: 1;
-    }
-  .name{
+  .kaiseisai{
+  }
+  .whendes{
+    height: 18vh;
+  }
+  .when{
     font-size: 20px;
+    text-align: center;
+  }
+  .date{
+    font-size: 22px;
     font-weight: bold;
-    grid-column: 2 / 4;
-    grid-row: 2;
-    }
-  .description{
-    font-size: 13px;
-    color: #912A55;
-    grid-column: 2 / 4;
-    grid-row: 3;
-    }
-  .waitingtime{
-    font-size: 25px;
-    grid-column: 4;
-    grid-row: 1 / 4;
-    }
-  .map{
+    text-align: center;
+  }
+  .plzwait{
+    text-align: center;
+  }
+  .buttons{
+    margin: 20px auto;
     height: 40px;
+    width: 80%;
     border-radius: 5px;
     background-color: #912A55;
-    margin-right: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     color: #fff;
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    grid-column: 1 / 3;
-    grid-row: 4;
-    }
-  .details{
-    height: 40px;
-    border-radius: 5px;
-    background-color: #912A55;
-    margin-left: 5px;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-      grid-column: 3/5;
-      grid-row: 4;
     }
 
 
