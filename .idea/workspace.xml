@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="304d7ad1-ba15-4b41-a51f-706aa1ebcb4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/.data.blob" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/.data.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/.data.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/.data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/920aeae579638a65.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deepmerge/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deepmerge/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deepmerge/dist/umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deepmerge/dist/umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deepmerge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deepmerge/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deepmerge/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deepmerge/license.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deepmerge/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deepmerge/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deepmerge/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deepmerge/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deepmerge/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deepmerge/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-meta/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-meta/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-meta/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-meta/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-meta/lib/vue-meta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-meta/lib/vue-meta.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-meta/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-meta/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-meta/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-meta/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-meta/types/vue.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-meta/types/vue.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nuxt.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="210">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -28,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -60,15 +80,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/nuxt.config.js" />
         <option value="$PROJECT_DIR$/pages/comingsoon.vue" />
         <option value="$PROJECT_DIR$/pages/timetable.vue" />
         <option value="$PROJECT_DIR$/pages/index.vue" />
+        <option value="$PROJECT_DIR$/nuxt.config.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="146" />
+    <option name="y" value="145" />
     <option name="width" value="1080" />
     <option name="height" value="606" />
   </component>
@@ -146,15 +166,15 @@
       <workItem from="1564918554286" duration="9007000" />
       <workItem from="1565063293352" duration="799000" />
       <workItem from="1565236401781" duration="5190000" />
-      <workItem from="1565348655422" duration="267000" />
+      <workItem from="1565348655422" duration="2090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24657000" />
+    <option name="totallyTimeSpent" value="26480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="146" width="1080" height="606" extended-state="0" />
+    <frame x="0" y="145" width="1080" height="606" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24929178" />
@@ -232,14 +252,14 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nuxt.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="210">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>

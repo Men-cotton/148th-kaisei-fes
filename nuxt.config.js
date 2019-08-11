@@ -4,8 +4,21 @@ export default {
   /*
   ** Headers of the page
   */
+  /*
+  metaInfo: {
+    title: '148th開成祭',
+    titleTemplate: (data) => {
+      return data ? `${data} - 148th開成祭` : '148th開成祭';
+    }
+    meta: [
+
+    ]
+  }
   head: {
 
+
+  },
+*/
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,7 +31,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
-  },
+  ,
   /*
   ** Customize the progress-bar color
   */
