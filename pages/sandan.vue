@@ -3,46 +3,55 @@
     <div class="title">
       <p>企画一覧</p>
     </div>
-    <div class="grid-container">
+    <div v-on:click="tap=!tap" class="grid-container">
       <div class="thumbnail"><img src="" height="55px"></img></div>
       <div class="place">B会場１階</div>
       <div class="name">Let's talk Kaisei 2019</div>
       <div class="description">パンの販売をしています</div>
       <div class="waitingtime">1分</div>
-      <div v-if="tap">
-      <div class="map"><p>マップを見る</p></div>
-      <div class="details"><p>詳しく</p></div></div>
+
+      <div v-if=tap class="map"><p>マップを見る</p></div>
+      <div v-if=tap class="details"><p>詳しく</p></div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+    import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
-  }
-}
+    export default {
+        components: {
+            Logo,
+        },
+        data() {
+            return {
+                tap: false,
+            };
+        },
+    }
+
 </script>
 
 <style>
-  .img{
+  .img {
     border-radius: 27.5px;
   }
-  .container{
+
+  .container {
     padding: 0px 15px;
     background-color: #3F0E47;
 
   }
-  .title{
+
+  .title {
     color: white;
     font-size: 32px;
     padding: 80px 0px;
 
   }
-  .grid-container{
-    border: solid 0.5px #828282 ;
+
+  .grid-container {
+    border: solid 0.5px #828282;
     border-radius: 10px;
     background-color: #F8F9FA;
     padding: 10px 10px;
@@ -51,34 +60,40 @@ export default {
     grid-template-columns: 17.7% 32.2% 37% 12.9%;
     grid-template-rows: 17px 25px 25px 40px;
   }
-  .thumbnail{
+
+  .thumbnail {
     grid-column: 1;
     grid-row: 1 / 4;
-   }
-  .place{
+  }
+
+  .place {
     font-size: 13px;
     color: #495057;
     grid-column: 2 / 4;
     grid-row: 1;
-    }
-  .name{
+  }
+
+  .name {
     font-size: 20px;
     font-weight: bold;
     grid-column: 2 / 4;
     grid-row: 2;
-    }
-  .description{
+  }
+
+  .description {
     font-size: 13px;
     color: #912A55;
     grid-column: 2 / 4;
     grid-row: 3;
-    }
-  .waitingtime{
+  }
+
+  .waitingtime {
     font-size: 25px;
     grid-column: 4;
     grid-row: 1 / 4;
-    }
-  .map{
+  }
+
+  .map {
     height: 40px;
     border-radius: 5px;
     background-color: #912A55;
@@ -92,8 +107,9 @@ export default {
     flex-direction: column;
     grid-column: 1 / 3;
     grid-row: 4;
-    }
-  .details{
+  }
+
+  .details {
     height: 40px;
     border-radius: 5px;
     background-color: #912A55;
@@ -105,9 +121,9 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
-      grid-column: 3/5;
-      grid-row: 4;
-    }
+    grid-column: 3/5;
+    grid-row: 4;
+  }
 
 
 </style>
