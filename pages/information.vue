@@ -39,7 +39,7 @@
 </div>
 </template>
 <style>
-@media screen and (max-width:768px) {
+@media screen and (max-width:960px) {
   .container{
     background-color: #411445;
     color: #FFFFFF;
@@ -59,30 +59,33 @@
     margin: 0px 15px 5px 15px;
   }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:960px) {
   .container{
     background-color: #411445;
     color: #FFFFFF;
-    padding: 20px 20px 80px 20px;
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-rows: auto auto;
   }
   .containerH1{
+    padding: 10px 0px;
     grid-row: 1;
     grid-column: 1;
     background-color: #912A55;
   }
   .containerT1{
+    padding: 10px 0px;
     grid-row: 1;
     grid-column: 2;
   }
   .containerH2{
+    padding: 10px 0px;
     grid-row: 2;
     grid-column: 1;
     background-color: #912A55;
   }
   .containerT2{
+    padding: 10px 0px;
     grid-row: 2;
     grid-column: 2;
   }
