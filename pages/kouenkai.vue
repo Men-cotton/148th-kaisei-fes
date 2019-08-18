@@ -6,7 +6,10 @@
     <div class="description">
       <p>革新的ホンダジェットを成功させる技術力とリーダーシップ</p>
     </div>
+    <div class="containerA">
     <img src="../assets/mister_fujino.jpg" class="fujinosan"></img>
+    </div>
+    <div class="containerC">
     <div class="section">
       略歴
     </div>
@@ -16,6 +19,8 @@
       <p>革新的な航空機開発により、日本人として初めて米国航空宇宙学会より “Aircraft Design Award”、SAEインターナショナルより “ケリー・ジョンソン賞”を受賞。また 国際航空科学会議（ICAS）より”ジューコフスキー賞”も受賞。この３賞を同時に受賞した世界初の航空機設計者となった。米国での航空宇宙産業への貢献が認められ、イーロン・マスクやジェフ・ペゾスなどが受賞した”Living Legend of Aviation”を受賞し、殿堂入りも果たした。米国工学アカデミー会員にも選出される。</p>
       <p>日本においても日本産業技術大賞(内閣総理大臣賞)などを受賞するとともに、インダストリアル・デザイン分野においても高い評価を受け、グッドデザイン賞金賞、JIDAデザインミュージアムセレクションなどを受賞、現在は航空機のほか、腕時計など幅広い分野のデザインも手掛け、多方面で活躍している。</p>
     </div>
+    </div>
+    <div class="containerB">
     <div class="section">
       日時
     </div>
@@ -27,6 +32,8 @@
       <p>【会場】小講堂</p>
       <p>【集合】B会場2階テニスコート</p>
     </div>
+    </div>
+    <div class="containerD">
     <div class="section">
       諸注意
     </div>
@@ -36,7 +43,7 @@
       <p>集合場所では混雑が予想されますので、係の生徒の誘導に従ってお並びください。</p>
       <p>公演中の入退場はご遠慮ください。</p>
       <p>ご不明な点などございましたら、お気軽に係の生徒にお声をおかけください。</p>
-</p>
+      </div>
     </div>
   </div>
 </template>
