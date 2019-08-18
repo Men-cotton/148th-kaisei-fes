@@ -4,7 +4,7 @@
       <p>講演会企画</p>
     </div>
     <div class="description">
-      <p>革新的ホンダジェットを成功させる<br>技術力とリーダーシップ</p>
+      <p>革新的ホンダジェットを成功させる技術力とリーダーシップ</p>
     </div>
     <img src="../assets/mister_fujino.jpg" class="fujinosan"></img>
     <div class="section">
@@ -59,11 +59,11 @@
     padding: 10px 10px;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
     margin: 0px 0px 10px 0px;
-    font-size: 18pt;
+    font-size: 20pt;
 }
 img.fujinosan{
     width: 80%;
-    margin: 10px 15% 10px 5%;
+    border-right: solid 5px #000000; 
 }
 .section{
     background-color: #4277BF;
@@ -78,10 +78,15 @@ img.fujinosan{
     padding: 15px;
 }
 .important{
-    font-size: 36pt;
+    font-size: 28pt;
     color: #000000;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
     padding: 10px 30px;
 }
+}
+@media screen and (min-width:768px) {
+  .container{
+    display: grid;
+  }
 }
 </style>
