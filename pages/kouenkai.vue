@@ -6,10 +6,13 @@
     <div class="description">
       <p>革新的ホンダジェットを成功させる技術力とリーダーシップ</p>
     </div>
-    <div class="nane">
+    <img src="../assets/mister_fujino.jpg" class="fujinosan"></img>
+    <div class="info">
       <p>ホンダエアクラフトカンパニー社長兼CEO</p>
       <p>本田技研工業（株）常務執行役員</p>
-      <p>藤野道格氏</p>
+      <div class="name">
+        <p>藤野道格氏</p>
+      </div>
       <p>Michitaka Fujino</p>
     </div>
     <div class="section">
@@ -47,39 +50,57 @@
 </template>
 <style>
 .container{
-  background-color: #5C0073;
+  background-color: #EFEDE1;
 }
 .titlebar{
-    background-color: #F7FF9B;
+    background-color: #C32121;
+    color: #FFFFFF;
     padding: 10px 10px;
     margin: 0px 0px 10px 0px;
     font-size: 36pt;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
 }
 .description{
-    background-color: #F5CCF5;
+    background-color: #4277BF;
+    color: #FFFFFF;
     padding: 10px 10px;
+    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
     margin: 0px 0px 10px 0px;
     font-size: 18pt;
 }
+img.fujinosan{
+    width: 80%;
+    margin: 20px 20px 10px 10%;
+}
+.info{
+    position: absolute;
+    background-color: #666666;
+    border: 1px solid #000000;
+    text-align: right;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: -250px 15px 10% 40%;
+}
 .name{
-
+    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+    font-size: 36pt;
 }
 .section{
-    background-color: #F5CCF5;
-    padding: 10px 10px;
+    background-color: #4277BF;
+    padding: 10px 15px;
+    color: #FFFFFF;
     margin: 10px 50px 10px 0px;
     border-radius: 0px 10px 10px 0px;
     font-size: 18pt;
 }
 .text{
-    color: #FFFFFF;
-    padding: 10px;
+    color: #000000;
+    padding: 15px;
 }
 .important{
     font-size: 36pt;
     font-weight: 800;
-    color: #FFFFFF;
-    padding: 10px;
+    color: #000000;
+    padding: 30px;
 }
 </style>
