@@ -66,7 +66,7 @@
     padding: 20px 20px 80px 20px;
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: auto auto;
   }
   .containerH1{
     grid-row: 1;

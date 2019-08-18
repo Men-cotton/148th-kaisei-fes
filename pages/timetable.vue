@@ -37,11 +37,27 @@
           <div class="time fifteen">15</div>
           <div class="time sixteen">16</div>
 
-            <div class="group1">開成管弦楽団 文化祭演奏会</div>
-            <div class="group1-start">9:00</div>
+            <div class="group group1">開成管弦楽団 文化祭演奏会</div>
+            <div class="group-time G1-start">9:00</div>
             <div class="name"></div>
-            <div class="endingtime">11:00</div>
-      </div>
+            <div class="group-time G1-end">11:00</div>
+
+            <div class="group group2">大道芸、自由自在。</div>
+            <div class="group-time G2-start">11:10</div>
+            <div class="name"></div>
+            <div class="group-time G2-end">12:15</div>
+
+            <div class="group1">開成管弦楽団 文化祭演奏会</div>
+            <div class="group-time G3-start">9:00</div>
+            <div class="name"></div>
+            <div class="group-time G3-end">11:00</div>
+
+            <div class="group1">開成管弦楽団 文化祭演奏会</div>
+            <div class="group-time G4-start">9:00</div>
+            <div class="name"></div>
+            <div class="group-time G4-end">11:00</div>
+
+        </div>
     </div>
   </div>
 </template>
@@ -53,6 +69,7 @@ export default {
   components: {
     Logo
   }
+
 }
 </script>
 
@@ -132,26 +149,41 @@ export default {
       justify-content: center;
   }
   /*1日目小講堂*/
-  .group1{
+  .group{
       font-size: 20px;
       color: #000000;
       padding: 5px;
-      grid-column: 3/5;
-      grid-row: 2/9;
       background: #F8F9FA;
       border: 1px solid #CCBD14;
       display: flex;
       align-items: center;
       justify-content: center;
   }
-  .group1-start{
+  .group-time{
       color: black;
-      grid-column: 3/4;
-      grid-row: 2/3;
       display: flex;
       align-items: center;
       justify-content: center;
 
   }
+  .group1{
+      grid-column: 3/5;
+      grid-row: 2/9;
+  }
+  .G1-start{
+      grid-column: 3/4;
+      grid-row: 2/3;
+  }
+  .G1-end{
+      grid-column: 3/4;
+      grid-row: 8/9;
+  }
+  .group2{
+      grid-column: 3/5;
+      grid-row: 10/14;
+  }
+  .G2-start{
 
+
+  }
 </style>

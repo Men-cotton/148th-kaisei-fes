@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
+const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
+const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -81,6 +84,18 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/booth",
+      component: _54815524,
+      name: "booth"
+    }, {
+      path: "/information",
+      component: _75d2e3e4,
+      name: "information"
+    }, {
+      path: "/lecture",
+      component: _4e73d994,
+      name: "lecture"
+    }, {
       path: "/sandan",
       component: _407c27a9,
       name: "sandan"
