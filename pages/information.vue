@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <div class="containerH1">
-    <div class="header1">来場時のご案内</div>
+    <div class="header1">来場時ご案内</div>
   </div>
   <div class="containerT1">
     <div class="header2">アクセス</div>
@@ -39,12 +39,12 @@
 </div>
 </template>
 <style>
-.container{
-  background-color: #411445;
-  color: #FFFFFF;
-  padding: 15px;
-}
 @media screen and (max-width:768px) {
+  .container{
+    background-color: #411445;
+    color: #FFFFFF;
+    padding: 15px;
+  }
   .header1{
     font-size: 36pt;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
@@ -61,6 +61,9 @@
 }
 @media screen and (min-width:768px) {
   .container{
+    background-color: #411445;
+    color: #FFFFFF;
+    padding: 20px 20px 80px 20px;
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-rows: 30% 70%;
