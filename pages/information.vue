@@ -42,7 +42,7 @@
 .container{
   background-color: #411445;
   color: #FFFFFF;
-  padding: 30px;
+  padding: 15px;
 }
 @media screen and (max-width:768px) {
   .header1{
@@ -63,11 +63,12 @@
   .container{
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 30% auto;
+    grid-template-rows: 30% 70%;
   }
   .containerH1{
     grid-row: 1;
     grid-column: 1;
+    background-color: #912A55;
   }
   .containerT1{
     grid-row: 1;
@@ -76,6 +77,7 @@
   .containerH2{
     grid-row: 2;
     grid-column: 1;
+    background-color: #912A55;
   }
   .containerT2{
     grid-row: 2;
