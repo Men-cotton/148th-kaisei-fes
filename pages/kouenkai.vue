@@ -4,17 +4,9 @@
       <p>講演会企画</p>
     </div>
     <div class="description">
-      <p>革新的ホンダジェットを成功させる技術力とリーダーシップ</p>
+      <p>革新的ホンダジェットを成功させる<br>技術力とリーダーシップ</p>
     </div>
     <img src="../assets/mister_fujino.jpg" class="fujinosan"></img>
-    <div class="info">
-      <p>ホンダエアクラフトカンパニー社長兼CEO</p>
-      <p>本田技研工業（株）常務執行役員</p>
-      <div class="name">
-        <p>藤野道格氏</p>
-      </div>
-      <p>Michitaka Fujino</p>
-    </div>
     <div class="section">
       略歴
     </div>
@@ -52,6 +44,7 @@
 .container{
   background-color: #EFEDE1;
 }
+@media screen and (max-width:768px) {
 .titlebar{
     background-color: #C32121;
     color: #FFFFFF;
@@ -70,20 +63,7 @@
 }
 img.fujinosan{
     width: 80%;
-    margin: 20px 20px 10px 10%;
-}
-.info{
-    position: absolute;
-    background-color: #666666;
-    border: 1px solid #000000;
-    text-align: right;
-    color: #FFFFFF;
-    padding: 10px;
-    margin: -250px 15px 10% 40%;
-}
-.name{
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    font-size: 36pt;
+    margin: 10px 15% 10px 5%;
 }
 .section{
     background-color: #4277BF;
@@ -99,8 +79,9 @@ img.fujinosan{
 }
 .important{
     font-size: 36pt;
-    font-weight: 800;
     color: #000000;
-    padding: 30px;
+    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+    padding: 10px 30px;
+}
 }
 </style>
