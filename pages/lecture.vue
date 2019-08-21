@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <div clsss="containerX">
+    <div class="containerX">
       <div class="titlebar">
         <p>講演会企画</p>
       </div>
     </div>
-    <div clsss="containerY">
+    <div class="containerY">
       <div class="description">
         <p>革新的ホンダジェットを成功させる技術力とリーダーシップ</p>
       </div>
@@ -47,122 +47,126 @@
         <p>集合場所では混雑が予想されますので、係の生徒の誘導に従ってお並びください。</p>
         <p>公演中の入退場はご遠慮ください。</p>
         <p>ご不明な点などございましたら、お気軽に係の生徒にお声をおかけください。</p>
-        </div>
       </div>
+    </div>
   </div>
 </template>
 <style>
-.container{
-  background-color: #EFEDE1;
-}
 @media screen and (max-width:768px) {
-.titlebar{
-    background-color: #C32121;
-    color: #FFFFFF;
-    padding: 10px 10px;
-    margin: 0px 0px 10px 0px;
-    font-size: 36pt;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-}
-.description{
-    background-color: #4277BF;
-    color: #FFFFFF;
-    padding: 10px 10px;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    margin: 0px 0px 10px 0px;
-    font-size: 20pt;
-}
-img.fujinosan{
-    width: 80%;
-    border-right: solid 5px #000000; 
-}
-.section{
-    background-color: #4277BF;
-    padding: 10px 15px;
-    color: #FFFFFF;
-    margin: 10px 50px 10px 0px;
-    border-radius: 0px 10px 10px 0px;
-    font-size: 18pt;
-}
-.text{
-    color: #000000;
-    padding: 15px;
-}
-.important{
-    font-size: 28pt;
-    color: #000000;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    padding: 10px 30px;
-}
+  .container{
+    background-color: #EFEDE1;
+  }
+  .titlebar{
+      background-color: #C32121;
+      color: #FFFFFF;
+      padding: 10px 10px;
+      font-size: 36pt;
+      font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+  }
+  .description{
+      background-color: #4277BF;
+      color: #FFFFFF;
+      padding: 10px 10px;
+      font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+      font-size: 20pt;
+  }
+  img.fujinosan{
+      width: 60%;
+      border-right: solid 5px #000000; 
+  }
+  .section{
+      background-color: #4277BF;
+      padding: 10px 15px;
+      color: #FFFFFF;
+      margin: 10px 50px 10px 0px;
+      border-radius: 0px 10px 10px 0px;
+      font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+      font-size: 18pt;
+  }
+  .text{
+      color: #000000;
+      padding: 15px;
+  }
+  .important{
+      font-size: 28pt;
+      color: #000000;
+      font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+      padding: 10px 30px;
+  }
 }
 @media screen and (min-width:768px) {
-.container{
-  display: grid;
-  grid-template-columns: 40% 30% 30%;
-  grid-template-rows: 10% 30% 60%;
-}
-.containerX{
-  grid-row: 1;
-  grid-column: 1/2;
-}
-.containerY{
-  grid-row: 1;
-  grid-column: 2/4;
-}
-.containerA{
-  grid-row: 2/4;
-  grid-column: 1;
-}
-.containerB{
-  grid-row: 2;
-  grid-column: 2/4;
-}
-.containerC{
-  grid-row: 3;
-  grid-column: 2;
-}
-.containerD{
-  grid-row: 3;
-  grid-column: 3;
-}
-.titlebar{
+  .container{
+    display: grid;
+    grid-template-columns: 35% 40% 25%;
+    grid-template-rows: 130px auto auto;
+    background-color: #EFEDE1;
+  }
+  .containerX{
+    grid-row: 1;
+    grid-column: 1;
     background-color: #C32121;
-    color: #FFFFFF;
-    padding: 10px 10px;
-    margin: 0px 0px 10px 0px;
-    font-size: 36pt;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-}
-.description{
+    margin: 0 0 10px 0;
+  }
+  .containerY{
+    grid-row: 1;
+    grid-column: 2/4;
     background-color: #4277BF;
-    color: #FFFFFF;
-    padding: 10px 10px;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    margin: 0px 0px 10px 0px;
-    font-size: 20pt;
-}
-img.fujinosan{
-    width: 97%;
-    margin: 30px auto;
-    border-right: solid 5px #000000; 
-}
-.section{
-    background-color: #4277BF;
-    padding: 10px 15px;
-    color: #FFFFFF;
-    border-radius: 0px 10px 10px 0px;
-    margin: 10px;
-    font-size: 18pt;
-}
-.text{
-    color: #000000;
-    padding: 8pt;
-}
-.important{
-    font-size: 24pt;
-    color: #000000;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    padding: 10px 30px;
-}
+    margin: 0 0 10px 0;
+  }
+  .containerA{
+    grid-row: 2/4;
+    grid-column: 1;
+    border-right: solid 1px #000000;
+  }
+  .containerB{
+    grid-row: 2;
+    grid-column: 2/4;
+  }
+  .containerC{
+    grid-row: 3;
+    grid-column: 2;
+    border-right: solid 1px #000000;
+  }
+  .containerD{
+    grid-row: 3;
+    grid-column: 3;
+  }
+  .titlebar{
+      color: #FFFFFF;
+      padding: 10px 10px;
+      margin: 0px 0px 10px 0px;
+      font-size: 36pt;
+      font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+  }
+  .description{
+      color: #FFFFFF;
+      padding: 10px 10px;
+      font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+      margin: 0px 0px 10px 0px;
+      font-size: 20pt;
+  }
+  img.fujinosan{
+      width: 95%;
+      border-right: solid 5px #000000; 
+  }
+  .section{
+      background-color: #4277BF;
+      font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+      padding: 10px 15px;
+      color: #FFFFFF;
+      border-radius: 0px 10px 10px 0px;
+      margin: 0px 10px 10px 0;
+      font-size: 18pt;
+  }
+  .text{
+      color: #000000;
+      padding: 10pt;
+  }
+  .important{
+      font-size: 24pt;
+      color: #000000;
+      font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+      padding: 10px 30px;
+  }
 }
 </style>
