@@ -3,13 +3,13 @@
       <div class="title">
         <p>タイムテーブル</p>
       </div>
+    <ToggleSwitch></ToggleSwitch>
       <div>
         <p>開成祭のタイムテーブル一覧です。時間限定で行う企画はすべてここに載っています。
           使い方・見方
           ・縦軸が時間です。
           ・１日目、２日目をタップすると日にち毎のタイムテーブルを切り替えられます。
           今表示されているのは小講堂ですが、この列を横にスクロールすると別の場所が出てきます。
-          小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド
         </p>
         <p>場所一覧
           小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド
@@ -17,7 +17,7 @@
       </div>
       <div class="timetable-container">
         <div class="day-select">
-          <div class="day day1 selected"><p>1日目</p></div>
+          <div v-on:click="tap=!tap" class="day day1 selected"><p>1日目</p></div>
           <div class="day day2"><p>2日目</p></div>
         </div>
         <div class="place">
@@ -63,11 +63,17 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import {ToggleSwitch} from 'vuejs-toggle-switch'
 
 export default {
-  components: {
-    Logo
+
+  component:{
+    'ToggleSwitch': ToggleSwitch,
+
+  },
+  data() {
+
+
   }
 
 }

@@ -1,4 +1,10 @@
+module.exports = {
+  mode: 'universal',
 
+  head: {
+
+  }
+}
 export default {
   mode: 'universal',
   /*

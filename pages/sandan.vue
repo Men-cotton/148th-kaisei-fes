@@ -3,22 +3,23 @@
     <div class="title">
       <p>企画一覧</p>
     </div>
-    <div class="search">
-      <ais-instantsearch>
-      <ais-index index-name="148th_Kaisei-Fes"
-                 app-id="7HI77HDFZJ"
-                 api-key="ab6a78e7d69b029972769740214ceb56">
-        <ais-results inline-templete>
-          <templete slot-scope="{ result }">
+      <ais-instant-search
+                  index-name="148th_Kaisei-Fes"
+                  :search-client= searchClient >
+        <ais-search-box placeholder="Search for products..."
+
+        />
+        <ais-hits>
+          <div slot="item" slot-scope="{ item }">
             <div v-on:click="tap=!tap"
-                 v-for="result in results"
-                 :key="result.objectID"
+                 v-for="item in items"
+                 :key="item.objectID"
                  class="card">
               <div class="grid-container">
                 <div class="thumbnail"><img src="" height="55px"></img></div>
-                <div class="place">{{ result.Place }}</div>
-                <div class="name">{{ result.Name }}</div>
-                <div class="description">{{ result.Description }}</div>
+                <div class="place">{{ item.Place }}</div>
+                <div class="name">{{ item.Name }}</div>
+                <div class="description">{{ item.Description }}</div>
                 <div class="waitingtime">1分</div>
               </div>
               <div class="grid-container2">
@@ -26,20 +27,18 @@
                 <div v-if=tap class="buttons details"><p>詳しく</p></div>
               </div>
             </div>
-          </templete>
-        </ais-results>
-      </ais-index>
-      </ais-instantsearch>
-
-      <ais-results>
-          <div class="ais-results">
+          </div>
+        </ais-hits>
+      </ais-instant-search>
+<!--一応残したやつ-->
+          <div>
             <div v-on:click="tap=!tap"
                  class="card">
               <div class="grid-container">
                 <div class="thumbnail"><img src="" height="55px"></img></div>
                 <div class="place"></div>
-                <div class="name">あ</div>
-                <div class="description">あ</div>
+                <div class="name">鉄道研究部</div>
+                <div class="description">部誌の配布</div>
                 <div class="waitingtime">1分</div>
               </div>
               <div class="grid-container2">
@@ -48,34 +47,51 @@
               </div>
             </div>
           </div>
-        </ais-results>
     </div>
-  </div>
 </template>
 
 <script>
-  import algoliasearch from 'algoliasearch/lite';
+  import algoliasearch from 'algoliasearch';
+  import 'instantsearch.css/themes/algolia-min.css';
+
 
   export default {
-    data() {
+    /*使えない？わけわからん
+    components: {
+      'ais-InstantSearch': InstantSearch,
+      'ais-SearchBox': SearchBox,
+      'ais-Hits': MyCustomHits,
+    },
+    */
+
+    data(){
       return {
         searchClient: algoliasearch(
-                '7HI77HDFZJ',
-                '2e75af599564cd587c12d48a9f8abc1d'
-        ),
-      };
+                  '7HI77HDFZJ',
+                  'ab6a78e7d69b029972769740214ceb56'
+          ),
+          tap: false,
+        };
     },
-
-        data() {
-            return {
-                tap: false,
-            };
-        },
-    }
+  }
 
 </script>
 
 <style>
+.MyCustomInstantSearch{
+  height: 20px;
+  width: 80%;
+}
+.MySearchBox{
+  height:200px;
+  width: 80px;
+
+}
+.MyCustomHits{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+}
   .img {
     border-radius: 27.5px;
   }
