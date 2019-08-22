@@ -16,8 +16,8 @@
         </p>
       </div>
       <div class="timetable-container">
-        <div class="day-select">
-          <div v-on:click="tap=!tap" class="day day1 selected"><p>1日目</p></div>
+        <div  v-on:click="tap=!tap" class="day-select">
+          <div v-if="tap" class="day day1 selected"><p>1日目</p></div>
           <div class="day day2"><p>2日目</p></div>
         </div>
         <div class="place">
@@ -63,15 +63,16 @@
 </template>
 
 <script>
-import {ToggleSwitch} from 'vuejs-toggle-switch'
 
 export default {
 
-  component:{
-    'ToggleSwitch': ToggleSwitch,
+  component :{
 
   },
   data() {
+    return {
+      tap: false,
+    }
 
 
   }
