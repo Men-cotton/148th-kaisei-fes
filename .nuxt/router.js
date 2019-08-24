@@ -2,12 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
-const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
-const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
-const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
-const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
-const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _50ad5e38 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
+const _ab1ffa10 = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
+const _75c5ad2e = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
+const _50551180 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
+const _234f381f = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
+const _1aaeadba = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
+const _cfe11558 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -85,27 +86,31 @@ export function createRouter() {
 
     routes: [{
       path: "/booth",
-      component: _54815524,
+      component: _50ad5e38,
       name: "booth"
     }, {
+      path: "/feature",
+      component: _ab1ffa10,
+      name: "feature"
+    }, {
       path: "/information",
-      component: _75d2e3e4,
+      component: _75c5ad2e,
       name: "information"
     }, {
       path: "/lecture",
-      component: _4e73d994,
+      component: _50551180,
       name: "lecture"
     }, {
       path: "/sandan",
-      component: _407c27a9,
+      component: _234f381f,
       name: "sandan"
     }, {
       path: "/timetable",
-      component: _22e01559,
+      component: _1aaeadba,
       name: "timetable"
     }, {
       path: "/",
-      component: _1d216c8a,
+      component: _cfe11558,
       name: "index"
     }],
 
