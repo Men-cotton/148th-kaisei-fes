@@ -16,6 +16,43 @@
       </div>
 
     </div>
+    <div class="all-post">
+<!---以下が一つの投稿カードです--->
+    <div class="post-container">
+      <div class="thumbnail">
+        <img src="">
+      </div>
+      <div class="post-details">
+        <div class="post-date">2019/08/25</div>
+        <div class="post-title">睡魔との戦い-睡眠同好会</div>
+        <div class="post-type">プロフェッショナル編</div>
+      </div>
+    </div>
+
+    <div class="post-container">
+      <div class="thumbnail">
+        <img src="">
+      </div>
+      <div class="post-details">
+        <div class="post-date">2019/08/25</div>
+        <div class="post-title">睡魔との戦い-睡眠同好会</div>
+        <div class="post-type">プロフェッショナル編</div>
+      </div>
+    </div>
+
+      <!---３つ目--->
+      <div class="post-container">
+        <div class="thumbnail">
+          <img src="">
+        </div>
+        <div class="post-details">
+          <div class="post-date">2019/08/25</div>
+          <div class="post-title">睡魔との戦い-睡眠同好会</div>
+          <div class="post-type">プロフェッショナル編</div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </template>
 
@@ -114,6 +151,49 @@
 
   .right-button {
     grid-column: 3/4;
+  }
+
+  @media screen and (min-width:768px){
+    .post-container{
+      width: 100%;
+    }
+    .all-post{
+      display: grid;
+      grid-template-columns: 49% 49%;
+      grid-column-gap: 20px;
+    }
+  }
+  /* 投稿のあれ */
+  .post-container{
+    margin: 10px 0px;
+  }
+  .thumbnail{
+    height: 150px;
+    background: #7f828b;
+    border-radius: 10px 10px 0 0;
+
+  }
+  .post-details{
+    height: 70px;
+    padding: 5px 10px;
+    background: #F8F9FA;
+    color: black;
+    border-radius: 0px 0px 10px 10px;
+
+  }
+  .post-date{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .post-title{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .post-type{
+    color: #495057;
+    font-size: 12px;
   }
 
 </style>
