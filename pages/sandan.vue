@@ -3,6 +3,23 @@
     <div class="title">
       <p>企画一覧</p>
     </div>
+      <v-app>
+        <v-content>
+          <div v-for="(user) in users" v-bind:datasrc="user.picture">
+            <v-avatar>
+              {{user.name}}
+            </v-avatar>
+          </div>
+        </v-content>
+      </v-app>
+
+
+
+
+
+
+
+
       <ais-instant-search
                   index-name="148th_Kaisei-Fes"
                   :search-client= searchClient >
@@ -56,6 +73,22 @@
 
 
   export default {
+    name: 'user',
+    data: function() {
+      return {
+        users: [],
+        index: null,
+      };
+    },
+    created: function(){
+      var self = this;
+      var searchClient = algoliasearch(
+              '7HI77HDFZJ',
+              'ab6a78e7d69b029972769740214ceb56'
+      );
+      self.index = searchClient.initIndex('user');
+    },
+
     /*使えない？わけわからん
     components: {
       'ais-InstantSearch': InstantSearch,
@@ -73,6 +106,15 @@
           tap: false,
         };
     },
+    methods: {
+      searchuser: function () {
+        var self = this;
+        self.index.search("art", (err, {hits } = {}) => {
+          self.users = hits;
+        });
+
+      }
+    }
   }
 
 </script>
