@@ -120,15 +120,14 @@
   
 
   .selected {
+    color: #411445;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-bottom: 3px solid #912A55;
-    color: #411445;
   }
 
   .days {
     display: grid;
     grid-template-columns: auto auto;
-
   }
 
   .day1 {
@@ -141,12 +140,13 @@
 
   .day {
     height: 40px;
-    color: #7f7d7d;
     font-size: 18px;
     background: #EAEFF2;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #7f7d7d;
+
   }
 
   .place {
