@@ -7,7 +7,7 @@
     </div>
     <div class="containerY">
       <div class="description">
-        <p>革新的ホンダジェットを成功させる技術力とリーダーシップ</p>
+        <p>「革新的ホンダジェットを成功させる技術力とリーダーシップ」</p>
       </div>
     </div>
     <div class="containerA">

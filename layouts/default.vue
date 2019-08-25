@@ -28,7 +28,6 @@ html {
   height: 40px;
   border-radius: 5px;
   background-color: #912A55;
-  margin-right: 5px;
   color: #fff;
   font-size: 14px;
   font-weight: bold;

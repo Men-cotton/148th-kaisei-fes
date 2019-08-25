@@ -5,13 +5,16 @@
     </div>
 
     <div class="search">
-      <h2 class="search-text">絞り込み</h2>
-      <div class="search-button left-button">
-        <h2 class="button-text">文化祭準備編</h2>
+      <h2 class="search-text"><p>絞り込み</p></h2>
+      <div class="button-grid">
+        <div class="buttons left-button">
+          <p>文化祭準備編</p>
+        </div>
+        <div class="buttons right-button">
+          <p>プロフェッショナル編</p>
+        </div>
       </div>
-      <div class="search-button right-button">
-        <h2 class="button-text">プロフェッショナル編</h2>
-      </div>
+
     </div>
   </div>
 </template>
@@ -76,25 +79,27 @@
   }
 
   .search {
-    position: static;
-    width: 345px;
     height: 85px;
-    margin-top: 20px;
 
     /* ivory */
     background: #F8F9FA;
-    box-sizing: border-box;
     box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.25);
     border-radius: 5px;
   }
+  .button-grid{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 49.5% 1% 49.5%;
+  }
 
   .search-text {
-    display: inline-block;
     position: relative;
-    width: 345px;
+    width: 100%;
     height: 25px;
-    top: -1px;
-    padding-top: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     /* red */
     background: #912A55;
@@ -102,29 +107,13 @@
     text-align: center;
   }
 
-  .search-button {
-    display: inline-block;
-    position: relative;
-    width: 162.5px;
-    height: 40px;
-    top: 10px;
-
-    /* red */
-    background: #912A55;
-    border-radius: 5px;
-    text-align: center;
-  }
-
   .left-button {
-    left: 5px;
+    grid-column: 1/2;
+
   }
 
   .right-button {
-    left: 10px;
+    grid-column: 3/4;
   }
 
-  .button-text {
-    display: inline-block;
-    margin-top: 12px;
-  }
 </style>
