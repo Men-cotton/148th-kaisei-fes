@@ -29,23 +29,23 @@
       <div class="place">
         <div v-on:click="show_place='小講堂'">
           <div v-if="show_place=='小講堂'" class="place-p selected">小講堂</div>
-          <div class="place-p">小講堂</div>
+          <div v-else class="place-p">小講堂</div>
         </div>
         <div v-on:click="show_place='本館ホール'">
           <div v-if="show_place=='本館ホール'" class="place-p selected">本館ホール</div>
-          <div class="place-p">本館ホール</div>
+          <div v-else class="place-p">本館ホール</div>
         </div>
         <div v-on:click="show_place='中学視聴覚室'">
           <div v-if="show_place=='中学視聴覚室'" class="place-p selected">中学視聴覚室</div>
-          <div class="place-p">中学視聴覚室</div>
+          <div v-else class="place-p">中学視聴覚室</div>
         </div>
         <div v-on:click="show_place='柔道場'">
           <div v-if="show_place=='柔道場'" class="place-p selected">柔道場</div>
-          <div class="place-p">柔道場</div>
+          <div v-else class="place-p">柔道場</div>
         </div>
         <div v-on:click="show_place='第２グラウンド'">
           <div v-if="show_place=='第２グラウンド'" class="place-p selected">第２グラウンド</div>
-          <div class="place-p">第２グラウンド</div>
+          <div v-else class="place-p">第２グラウンド</div>
         </div>
       </div>
 
