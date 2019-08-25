@@ -3,7 +3,6 @@
     <div class="title">
       <p>タイムテーブル</p>
     </div>
-    <ToggleSwitch></ToggleSwitch>
     <div>
       <p>開成祭のタイムテーブル一覧です。時間限定で行う企画はすべてここに載っています。
         使い方・見方
@@ -18,11 +17,11 @@
     <div class="timetable-container">
       <div class="days">
         <div v-on:click="show_day1=true" class="day-select">
-          <div v-if="show_day1" class="day day1 selected"><p>1日目</p></div>
+          <div v-if="show_day1" class="selected day day1"><p>1日目</p></div>
           <div v-else class="day day1"><p>1日目</p></div>
         </div>
         <div v-on:click="show_day1=false" class="day-select">
-          <div v-if="!show_day1" class="day day2 selected"><p>2日目</p></div>
+          <div v-if="!show_day1" class="selected day day2"><p>2日目</p></div>
           <div v-else class="day day2"><p>2日目</p></div>
         </div>
       </div>
@@ -126,10 +125,10 @@
     color: #411445;
   }
 
-  .day-select {
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
+  .days {
+    display: grid;
+    grid-template-columns: auto auto;
+
   }
 
   .day1 {
@@ -141,9 +140,9 @@
   }
 
   .day {
-    width: 50%;
     height: 40px;
     color: #7f7d7d;
+    font-size: 18px;
     background: #EAEFF2;
     display: flex;
     align-items: center;
