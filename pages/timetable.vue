@@ -59,6 +59,13 @@
         <div class="time fifteen">15</div>
         <div class="time sixteen">16</div>
 
+        <div v-for="event in should_show_events" :key="event.id">
+          <div class="group group1">{{event.name}}</div>
+          <div class="group-time G1-start">{{event.start_time}}</div>
+          <div class="name"></div>
+          <div class="group-time G1-end">{{event.end_time}}</div>
+        </div>
+
         <div class="group group1">開成管弦楽団 文化祭演奏会</div>
         <div class="group-time G1-start">9:00</div>
         <div class="name"></div>
@@ -93,6 +100,38 @@
             return {
                 show_day: 1,
                 show_place: '小講堂',
+                events_list: [
+                    {
+                        name: '開成管弦楽団 文化祭演奏会',
+                        day: 1,
+                        place: '小講堂',
+                        start_time: '9:15',
+                        end_time: '10:55',
+                    },
+                    {
+                        name: 'うし',
+                        day: 1,
+                        place: '本館ホール',
+                        start_time: '9:15',
+                        end_time: '10:55',
+                    },
+                    {
+                        name: 'たぷ',
+                        day: 2,
+                        place: '小講堂',
+                        start_time: '9:15',
+                        end_time: '10:55',
+                    },
+                ],
+            }
+        },
+        computed: {
+            should_show_events: function () {
+                var show_day = this.show_day;
+                var show_place = this.show_place;
+                return this.events_list.filter(function (event) {
+                    return (event.day == show_day) && (event.place == show_place)
+                })
             }
         }
     }
