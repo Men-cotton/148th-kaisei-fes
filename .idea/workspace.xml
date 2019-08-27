@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="304d7ad1-ba15-4b41-a51f-706aa1ebcb4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/montyaxn.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/pages/booth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/booth.vue" afterDir="false" />
+=======
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/pages/sandan.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sandan.vue" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/router.js" afterDir="false" />
 >>>>>>> 9744de8a04eda4fb4d5181b7f80b8d86107d49e4
+>>>>>>> 40b3ac2b099216332aa5e7757afa4f8d6f4c07e0
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +20,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+=======
 <<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -79,11 +90,16 @@
       <list>
         <option value="Vue Single File Component" />
 >>>>>>> 9744de8a04eda4fb4d5181b7f80b8d86107d49e4
+>>>>>>> 40b3ac2b099216332aa5e7757afa4f8d6f4c07e0
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+  </component>
+  <component name="ProjectId" id="1PbMlVyUDIZQqPkWSOp4Otqv6tJ" />
+=======
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="445" />
@@ -128,13 +144,24 @@
   </component>
 =======
 >>>>>>> 9744de8a04eda4fb4d5181b7f80b8d86107d49e4
+>>>>>>> 40b3ac2b099216332aa5e7757afa4f8d6f4c07e0
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -156,6 +183,16 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="booth.vue" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/148th-kaisei-fes/pages/booth.vue" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.booth.vue" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -179,6 +216,29 @@
       <workItem from="1565063293352" duration="799000" />
       <workItem from="1565236401781" duration="5190000" />
       <workItem from="1565348655422" duration="2090000" />
+<<<<<<< HEAD
+      <workItem from="1566138497879" duration="6452000" />
+      <workItem from="1566164562289" duration="6067000" />
+      <workItem from="1566623763746" duration="7126000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+=======
       <workItem from="1565496948831" duration="573000" />
       <workItem from="1565953065309" duration="395000" />
       <workItem from="1566135654743" duration="12829000" />
@@ -317,6 +377,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 40b3ac2b099216332aa5e7757afa4f8d6f4c07e0
   </component>
 =======
 >>>>>>> 9744de8a04eda4fb4d5181b7f80b8d86107d49e4
