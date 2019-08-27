@@ -4,6 +4,8 @@ import { interopDefault } from './utils'
 
 const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
+const _59fafef6 = () => interopDefault(import('../pages/header.vue' /* webpackChunkName: "pages/header" */))
+const _14068b58 = () => interopDefault(import('../pages/hemenu.vue' /* webpackChunkName: "pages/hemenu" */))
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
@@ -92,6 +94,14 @@ export function createRouter() {
       path: "/feature",
       component: _32e104ae,
       name: "feature"
+    }, {
+      path: "/header",
+      component: _59fafef6,
+      name: "header"
+    }, {
+      path: "/hemenu",
+      component: _14068b58,
+      name: "hemenu"
     }, {
       path: "/information",
       component: _75d2e3e4,
