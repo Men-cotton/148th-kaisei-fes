@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="304d7ad1-ba15-4b41-a51f-706aa1ebcb4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/montyaxn.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/.data.blob" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/.data.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/.data.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/.data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@nuxt/cli/node_modules/.cache/esm/920aeae574e8089b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@nuxt/core/node_modules/.cache/esm/.data.blob" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@nuxt/core/node_modules/.cache/esm/.data.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@nuxt/core/node_modules/.cache/esm/.data.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@nuxt/core/node_modules/.cache/esm/.data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/booth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/booth.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
