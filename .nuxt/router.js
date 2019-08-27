@@ -3,6 +3,9 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _1fb457af = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
+const _58c30aa2 = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
+const _22191d36 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
+const _79838937 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
 const _35276d88 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _ebcfe1cc = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _67166ecb = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -85,6 +88,18 @@ export function createRouter() {
       path: "/booth",
       component: _1fb457af,
       name: "booth"
+    }, {
+      path: "/feature",
+      component: _58c30aa2,
+      name: "feature"
+    }, {
+      path: "/information",
+      component: _22191d36,
+      name: "information"
+    }, {
+      path: "/lecture",
+      component: _79838937,
+      name: "lecture"
     }, {
       path: "/sandan",
       component: _35276d88,

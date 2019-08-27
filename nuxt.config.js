@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+module.exports = {
+  mode: 'universal',
+
+  head: {
+
+  }
+}
+>>>>>>> 40b3ac2b099216332aa5e7757afa4f8d6f4c07e0
 export default {
     mode: 'universal',
     /*
