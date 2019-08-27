@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+<<<<<<< HEAD
 const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
 const _59fafef6 = () => interopDefault(import('../pages/header.vue' /* webpackChunkName: "pages/header" */))
@@ -11,6 +12,15 @@ const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackC
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+=======
+const _1fb457af = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
+const _58c30aa2 = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
+const _22191d36 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
+const _79838937 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
+const _35276d88 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
+const _ebcfe1cc = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
+const _67166ecb = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+>>>>>>> bea453ea04c51381dfbd47aadb4cc4be7d85a7a1
 
 Vue.use(Router)
 
@@ -88,11 +98,11 @@ export function createRouter() {
 
     routes: [{
       path: "/booth",
-      component: _54815524,
+      component: _1fb457af,
       name: "booth"
     }, {
       path: "/feature",
-      component: _32e104ae,
+      component: _58c30aa2,
       name: "feature"
     }, {
       path: "/header",
@@ -104,23 +114,23 @@ export function createRouter() {
       name: "hemenu"
     }, {
       path: "/information",
-      component: _75d2e3e4,
+      component: _22191d36,
       name: "information"
     }, {
       path: "/lecture",
-      component: _4e73d994,
+      component: _79838937,
       name: "lecture"
     }, {
       path: "/sandan",
-      component: _407c27a9,
+      component: _35276d88,
       name: "sandan"
     }, {
       path: "/timetable",
-      component: _22e01559,
+      component: _ebcfe1cc,
       name: "timetable"
     }, {
       path: "/",
-      component: _1d216c8a,
+      component: _67166ecb,
       name: "index"
     }],
 
