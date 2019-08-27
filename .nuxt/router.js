@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+<<<<<<<
 const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
 const _59fafef6 = () => interopDefault(import('../pages/header.vue' /* webpackChunkName: "pages/header" */))
@@ -11,6 +12,7 @@ const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackC
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+
 
 Vue.use(Router)
 
