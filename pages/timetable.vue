@@ -72,9 +72,9 @@
 
       <div v-for="event in should_show_events" :key="event.id" class="event-container">
         <div class="group group1">{{event.name}}</div>
-        <div class="group-time G1-start">{{event.start_time}}</div>
+        <div class="group-time" v-bind:class=event.start_row>{{event.start_time}}</div>
         <div class="name"></div>
-        <div class="group-time G1-end">{{event.end_time}}</div>
+        <div class="group-time" v-bind:class=event.end_row>{{event.end_time}}</div>
       </div>
     </div>
   </div>
@@ -94,21 +94,27 @@
                         day: 1,
                         place: '小講堂',
                         start_time: '9:15',
+                        start_row: 'grid-row-2',
                         end_time: '10:55',
+                        end_row: 'grid-row-8',
                     },
                     {
                         name: 'うし',
                         day: 1,
                         place: '本館ホール',
                         start_time: '9:15',
+                        start_row: 'grid-row-2',
                         end_time: '10:55',
+                        end_row: 'grid-row-8',
                     },
                     {
                         name: 'たぷ',
                         day: 2,
                         place: '小講堂',
                         start_time: '9:15',
+                        start_row: 'grid-row-2',
                         end_time: '10:55',
+                        end_row: 'grid-row-8',
                     },
                 ],
             }
@@ -246,7 +252,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    grid-column: 3/4;
   }
 
   .group1 {
@@ -254,13 +260,11 @@
     grid-row: 2/9;
   }
 
-  .G1-start {
-    grid-column: 3/4;
+  .grid-row-2 {
     grid-row: 2/3;
   }
 
-  .G1-end {
-    grid-column: 3/4;
+  .grid-row-8 {
     grid-row: 8/9;
   }
 
