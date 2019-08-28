@@ -51,7 +51,10 @@ export default {
     /*
     ** Nuxt.js modules
     */
-    modules: [],
+
+    modules: [
+        'nuxt-buefy',
+    ],
     /*
     ** Build configuration
     */

@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "algoliasearch": "^3.33.0",
+    "buefy": "^0.8.2",
     "instantsearch.css": "^7.3.1",
     "nuxt": "^2.0.0",
+    "nuxt-buefy": "^0.3.13",
     "vue-instantsearch": "^2.3.0",
     "vue-meta": "^2.2.1",
     "vuejs-toggle-switch": "latest"

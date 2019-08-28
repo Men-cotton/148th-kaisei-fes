@@ -2,27 +2,15 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-<<<<<<< Updated upstream
-<<<<<<<
 const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
 const _59fafef6 = () => interopDefault(import('../pages/header.vue' /* webpackChunkName: "pages/header" */))
-const _14068b58 = () => interopDefault(import('../pages/hemenu.vue' /* webpackChunkName: "pages/hemenu" */))
+const _1f67b706 = () => interopDefault(import('../pages/header23.vue' /* webpackChunkName: "pages/header23" */))
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-=======
-const _50ad5e38 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
-const _ab1ffa10 = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
-const _75c5ad2e = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
-const _50551180 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
-const _234f381f = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
-const _1aaeadba = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
-const _cfe11558 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
->>>>>>> Stashed changes
-
 
 Vue.use(Router)
 
@@ -100,67 +88,39 @@ export function createRouter() {
 
     routes: [{
       path: "/booth",
-<<<<<<< Updated upstream
-      component: _1fb457af,
+      component: _54815524,
       name: "booth"
     }, {
       path: "/feature",
-      component: _58c30aa2,
-=======
-      component: _50ad5e38,
-      name: "booth"
-    }, {
-      path: "/feature",
-      component: _ab1ffa10,
->>>>>>> Stashed changes
+      component: _32e104ae,
       name: "feature"
     }, {
       path: "/header",
       component: _59fafef6,
       name: "header"
     }, {
-      path: "/hemenu",
-      component: _14068b58,
-      name: "hemenu"
+      path: "/header23",
+      component: _1f67b706,
+      name: "header23"
     }, {
       path: "/information",
-<<<<<<< Updated upstream
-      component: _22191d36,
+      component: _75d2e3e4,
       name: "information"
     }, {
       path: "/lecture",
-      component: _79838937,
+      component: _4e73d994,
       name: "lecture"
     }, {
       path: "/sandan",
-      component: _35276d88,
+      component: _407c27a9,
       name: "sandan"
     }, {
       path: "/timetable",
-      component: _ebcfe1cc,
+      component: _22e01559,
       name: "timetable"
     }, {
       path: "/",
-      component: _67166ecb,
-=======
-      component: _75c5ad2e,
-      name: "information"
-    }, {
-      path: "/lecture",
-      component: _50551180,
-      name: "lecture"
-    }, {
-      path: "/sandan",
-      component: _234f381f,
-      name: "sandan"
-    }, {
-      path: "/timetable",
-      component: _1aaeadba,
-      name: "timetable"
-    }, {
-      path: "/",
-      component: _cfe11558,
->>>>>>> Stashed changes
+      component: _1d216c8a,
       name: "index"
     }],
 
