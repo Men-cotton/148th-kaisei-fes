@@ -17,11 +17,11 @@
     <div class="timetable-container">
       <div class="days">
         <div v-on:click="show_day=1" class="day-select">
-          <div v-if="show_day==1" class="selected day day1"><p class="selected_text">1日目</p></div>
+          <div v-if="show_day==1" class="selected day day1"><p class="selected-text">1日目</p></div>
           <div v-else class="day day1"><p>1日目</p></div>
         </div>
         <div v-on:click="show_day=2" class="day-select">
-          <div v-if="show_day==2" class="selected day day2"><p class="selected_text">2日目</p></div>
+          <div v-if="show_day==2" class="selected day day2"><p class="selected-text">2日目</p></div>
           <div v-else class="day day2"><p>2日目</p></div>
         </div>
       </div>
@@ -29,31 +29,31 @@
       <div class="place">
         <div v-on:click="show_place='小講堂'">
           <div v-if="show_place=='小講堂'" class="place-p selected">
-            <div class="selected_text">小講堂</div>
+            <div class="selected-text">小講堂</div>
           </div>
           <div v-else class="place-p">小講堂</div>
         </div>
         <div v-on:click="show_place='本館ホール'">
           <div v-if="show_place=='本館ホール'" class="place-p selected">
-            <div class="selected_text">本館ホール</div>
+            <div class="selected-text">本館ホール</div>
           </div>
           <div v-else class="place-p">本館ホール</div>
         </div>
         <div v-on:click="show_place='中学視聴覚室'">
           <div v-if="show_place=='中学視聴覚室'" class="place-p selected">
-            <div class="selected_text">中学視聴覚室</div>
+            <div class="selected-text">中学視聴覚室</div>
           </div>
           <div v-else class="place-p">中学視聴覚室</div>
         </div>
         <div v-on:click="show_place='柔道場'">
           <div v-if="show_place=='柔道場'" class="place-p selected">
-            <div class="selected_text">柔道場</div>
+            <div class="selected-text">柔道場</div>
           </div>
           <div v-else class="place-p">柔道場</div>
         </div>
         <div v-on:click="show_place='第２グラウンド'">
           <div v-if="show_place=='第２グラウンド'" class="place-p selected">
-            <div class="selected_text">第２グラウンド</div>
+            <div class="selected-text">第２グラウンド</div>
           </div>
           <div v-else class="place-p">第２グラウンド</div>
         </div>
@@ -152,7 +152,7 @@
     background-color: #D6DBDE;
   }
 
-  .selected_text {
+  .selected-text {
     color: #411445;
   }
 
@@ -199,7 +199,7 @@
   }
 
   .grid-container {
-    background: rgba(221, 226, 229, 0.6);;
+    background: rgba(221, 226, 229, 0.6);
     width: 100%;
     display: grid;
     grid-gap: 0px;
