@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+<<<<<<< Updated upstream
 <<<<<<<
 const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
@@ -12,6 +13,15 @@ const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackC
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+=======
+const _50ad5e38 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
+const _ab1ffa10 = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
+const _75c5ad2e = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
+const _50551180 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
+const _234f381f = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
+const _1aaeadba = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
+const _cfe11558 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+>>>>>>> Stashed changes
 
 
 Vue.use(Router)
@@ -90,11 +100,19 @@ export function createRouter() {
 
     routes: [{
       path: "/booth",
+<<<<<<< Updated upstream
       component: _1fb457af,
       name: "booth"
     }, {
       path: "/feature",
       component: _58c30aa2,
+=======
+      component: _50ad5e38,
+      name: "booth"
+    }, {
+      path: "/feature",
+      component: _ab1ffa10,
+>>>>>>> Stashed changes
       name: "feature"
     }, {
       path: "/header",
@@ -106,6 +124,7 @@ export function createRouter() {
       name: "hemenu"
     }, {
       path: "/information",
+<<<<<<< Updated upstream
       component: _22191d36,
       name: "information"
     }, {
@@ -123,6 +142,25 @@ export function createRouter() {
     }, {
       path: "/",
       component: _67166ecb,
+=======
+      component: _75c5ad2e,
+      name: "information"
+    }, {
+      path: "/lecture",
+      component: _50551180,
+      name: "lecture"
+    }, {
+      path: "/sandan",
+      component: _234f381f,
+      name: "sandan"
+    }, {
+      path: "/timetable",
+      component: _1aaeadba,
+      name: "timetable"
+    }, {
+      path: "/",
+      component: _cfe11558,
+>>>>>>> Stashed changes
       name: "index"
     }],
 

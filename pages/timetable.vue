@@ -28,23 +28,33 @@
 
       <div class="place">
         <div v-on:click="show_place='小講堂'">
-          <div v-if="show_place=='小講堂'" class="place-p selected"><div class="selected_text">小講堂</div></div>
+          <div v-if="show_place=='小講堂'" class="place-p selected">
+            <div class="selected_text">小講堂</div>
+          </div>
           <div v-else class="place-p">小講堂</div>
         </div>
         <div v-on:click="show_place='本館ホール'">
-          <div v-if="show_place=='本館ホール'" class="place-p selected"><div class="selected_text">本館ホール</div></div>
+          <div v-if="show_place=='本館ホール'" class="place-p selected">
+            <div class="selected_text">本館ホール</div>
+          </div>
           <div v-else class="place-p">本館ホール</div>
         </div>
         <div v-on:click="show_place='中学視聴覚室'">
-          <div v-if="show_place=='中学視聴覚室'" class="place-p selected"><div class="selected_text">中学視聴覚室</div></div>
+          <div v-if="show_place=='中学視聴覚室'" class="place-p selected">
+            <div class="selected_text">中学視聴覚室</div>
+          </div>
           <div v-else class="place-p">中学視聴覚室</div>
         </div>
         <div v-on:click="show_place='柔道場'">
-          <div v-if="show_place=='柔道場'" class="place-p selected"><div class="selected_text">柔道場</div></div>
+          <div v-if="show_place=='柔道場'" class="place-p selected">
+            <div class="selected_text">柔道場</div>
+          </div>
           <div v-else class="place-p">柔道場</div>
         </div>
         <div v-on:click="show_place='第２グラウンド'">
-          <div v-if="show_place=='第２グラウンド'" class="place-p selected"><div class="selected_text">第２グラウンド</div></div>
+          <div v-if="show_place=='第２グラウンド'" class="place-p selected">
+            <div class="selected_text">第２グラウンド</div>
+          </div>
           <div v-else class="place-p">第２グラウンド</div>
         </div>
       </div>
@@ -58,41 +68,19 @@
         <div class="time fourteen">14</div>
         <div class="time fifteen">15</div>
         <div class="time sixteen">16</div>
+      </div>
 
-        <div v-for="event in should_show_events" :key="event.id">
-          <div class="group group1">{{event.name}}</div>
-          <div class="group-time G1-start">{{event.start_time}}</div>
-          <div class="name"></div>
-          <div class="group-time G1-end">{{event.end_time}}</div>
-        </div>
-
-        <div class="group group1">開成管弦楽団 文化祭演奏会</div>
-        <div class="group-time G1-start">9:00</div>
+      <div v-for="event in should_show_events" :key="event.id" class="event-container">
+        <div class="group group1">{{event.name}}</div>
+        <div class="group-time G1-start">{{event.start_time}}</div>
         <div class="name"></div>
-        <div class="group-time G1-end">11:00</div>
-
-        <div class="group group2">大道芸、自由自在。</div>
-        <div class="group-time G2-start">11:10</div>
-        <div class="name"></div>
-        <div class="group-time G2-end">12:15</div>
-
-        <div class="group1">開成管弦楽団 文化祭演奏会</div>
-        <div class="group-time G3-start">9:00</div>
-        <div class="name"></div>
-        <div class="group-time G3-end">11:00</div>
-
-        <div class="group1">開成管弦楽団 文化祭演奏会</div>
-        <div class="group-time G4-start">9:00</div>
-        <div class="name"></div>
-        <div class="group-time G4-end">11:00</div>
-
+        <div class="group-time G1-end">{{event.end_time}}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
     export default {
 
         component: {},
@@ -213,6 +201,18 @@
   .grid-container {
     background: rgba(221, 226, 229, 0.6);;
     width: 100%;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 40px 15px 50px auto 15px;
+    grid-template-rows: repeat(32, 32.5px);
+    grid-auto-flow: column;
+  }
+
+  .event-container {
+    position: absolute;
+    top: 357px;
+    left: 25px;
+    width: calc(100% - 50px);
     display: grid;
     grid-gap: 0px;
     grid-template-columns: 40px 15px 50px auto 15px;
