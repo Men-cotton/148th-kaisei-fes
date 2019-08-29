@@ -35,9 +35,9 @@
 
 <style>
       svg {
-            height: 80px;
+            height: 70px;
             position: absolute;
-            width: 80px;
+            width: 70px;
       }
 
       @media (max-width: 640px) {
@@ -46,8 +46,8 @@
             }
       }
       .plate {
-            height: 80px;
-            width: 80px;
+            height: 60px;
+            width: 60px;
       }
       .burger {
             filter: url(#gooeyness);
@@ -58,7 +58,7 @@
       }
       .line {
             fill: none;
-            stroke: black;
+            stroke: white;
             stroke-width: 6px;
             stroke-linecap: round;
             stroke-linejoin: round;

@@ -6,18 +6,21 @@
     </section>
     <section class="menu">
       <div class="flex-box">
-        <nuxt-link to="information" no-prefetch="true">
+        <nuxt-link to="information" no-prefetch>
           <img :src="img1" class="box-img">
         </nuxt-link>
-<!--        <a href="">
-          <img :src="img1" class="box-img">
-        </a>
-        <a href="">
-          <img src="~/assets/timetable.svg" class="box-img">
-        </a>
-        <a href="">
-          <img src="~/assets/kikaku.svg" class="box-img">
-        </a>--->
+        <nuxt-link to="map" no-prefetch>
+          <img :src="img2" class="box-img">
+        </nuxt-link>
+        <nuxt-link to="sandan" no-prefetch>
+          <img :src="img3" class="box-img">
+        </nuxt-link>
+        <nuxt-link to="timetable" no-prefetch>
+          <img :src="img4" class="box-img">
+        </nuxt-link>
+        <nuxt-link to="feature" no-prefetch>
+          <img :src="img5" class="box-img">
+        </nuxt-link>
       </div>
     </section>
   </div>
@@ -25,13 +28,22 @@
 
 <script>
 import access from '~/assets/access.svg';
+import map from '~/assets/map.svg';
+import sandan from '~/assets/sandan.svg';
+import timetable from '~/assets/timetable.svg';
+import feature from '~/assets/feature.svg';
 
 import Logo from '~/assets/mister_fujino.jpg'
 
 export default {
   data(){
     return{
-      img1: access
+      img1: access,
+      img2: map,
+      img3: sandan,
+      img4: timetable,
+      img5: feature,
+
     }
   },
   components: {
