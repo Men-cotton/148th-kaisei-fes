@@ -71,10 +71,10 @@
       </div>
 
       <div v-for="event in should_show_events" :key="event.id" class="event-container">
-        <div class="group group1">{{event.name}}</div>
-        <div class="group-time" v-bind:class=event.start_row>{{event.start_time}}</div>
+        <div class="group" v-bind:style="{'grid-row': event.start_row + '/' + (event.end_row + 1)}">{{event.name}}</div>
+        <div class="group-time" v-bind:style="{'grid-row': event.start_row}">{{event.start_time}}</div>
         <div class="name"></div>
-        <div class="group-time" v-bind:class=event.end_row>{{event.end_time}}</div>
+        <div class="group-time" v-bind:style="{'grid-row': event.end_row}">{{event.end_time}}</div>
       </div>
     </div>
   </div>
@@ -94,27 +94,27 @@
                         day: 1,
                         place: '小講堂',
                         start_time: '9:15',
-                        start_row: 'grid-row-2',
+                        start_row: 2,
                         end_time: '10:55',
-                        end_row: 'grid-row-8',
+                        end_row: 8,
                     },
                     {
                         name: 'うし',
                         day: 1,
                         place: '本館ホール',
                         start_time: '9:15',
-                        start_row: 'grid-row-2',
+                        start_row: 2,
                         end_time: '10:55',
-                        end_row: 'grid-row-8',
+                        end_row: 8,
                     },
                     {
                         name: 'たぷ',
                         day: 2,
                         place: '小講堂',
                         start_time: '9:15',
-                        start_row: 'grid-row-2',
+                        start_row: 2,
                         end_time: '10:55',
-                        end_row: 'grid-row-8',
+                        end_row: 8,
                     },
                 ],
             }
@@ -245,6 +245,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-column: 3/5;
   }
 
   .group-time {
@@ -255,26 +256,4 @@
     grid-column: 3/4;
   }
 
-  .group1 {
-    grid-column: 3/5;
-    grid-row: 2/9;
-  }
-
-  .grid-row-2 {
-    grid-row: 2/3;
-  }
-
-  .grid-row-8 {
-    grid-row: 8/9;
-  }
-
-  .group2 {
-    grid-column: 3/5;
-    grid-row: 10/14;
-  }
-
-  .G2-start {
-
-
-  }
 </style>
