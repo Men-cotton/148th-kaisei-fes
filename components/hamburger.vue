@@ -34,24 +34,12 @@
 </script>
 
 <style>
-      body {
-            align-items: center;
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            margin: 0;
-      }
       svg {
             height: 80px;
             position: absolute;
             width: 80px;
       }
-      .plates {
-            display: flex;
-            flex-wrap: wrap;
-            max-height: 160px;
-            width: 640px;
-      }
+
       @media (max-width: 640px) {
             .plates {
                   width: 320px;

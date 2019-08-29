@@ -4,10 +4,11 @@ import { interopDefault } from './utils'
 
 const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
-const _59fafef6 = () => interopDefault(import('../pages/header.vue' /* webpackChunkName: "pages/header" */))
 const _1f67b706 = () => interopDefault(import('../pages/header23.vue' /* webpackChunkName: "pages/header23" */))
+const _08ea7bfb = () => interopDefault(import('../pages/headerppp.vue' /* webpackChunkName: "pages/headerppp" */))
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
+const _20c1f4ac = () => interopDefault(import('../pages/realindex.vue' /* webpackChunkName: "pages/realindex" */))
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -95,13 +96,13 @@ export function createRouter() {
       component: _32e104ae,
       name: "feature"
     }, {
-      path: "/header",
-      component: _59fafef6,
-      name: "header"
-    }, {
       path: "/header23",
       component: _1f67b706,
       name: "header23"
+    }, {
+      path: "/headerppp",
+      component: _08ea7bfb,
+      name: "headerppp"
     }, {
       path: "/information",
       component: _75d2e3e4,
@@ -110,6 +111,10 @@ export function createRouter() {
       path: "/lecture",
       component: _4e73d994,
       name: "lecture"
+    }, {
+      path: "/realindex",
+      component: _20c1f4ac,
+      name: "realindex"
     }, {
       path: "/sandan",
       component: _407c27a9,
