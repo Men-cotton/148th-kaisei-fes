@@ -68,8 +68,7 @@
 </template>
 
 <script>
-  import algoliasearch from 'algoliasearch';
-  import 'instantsearch.css/themes/algolia-min.css';
+  import algolaisearch from 'vue-instantsearch'
 
 
   export default {
