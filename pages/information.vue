@@ -1,5 +1,6 @@
 <template>
 <div class="container">
+
   <div class="containerH1">
     <div class="header1">来場時ご案内</div>
   </div>
@@ -39,6 +40,15 @@
   </div>
 </div>
 </template>
+<script>
+  import Myheader from '~layouts/Myheader.vue'
+
+  export default {
+    components:{
+      Myheader
+    }
+  }
+</script>
 <style>
 @media screen and (max-width:960px) {
   .container{

@@ -1,0 +1,137 @@
+<template>
+      <div>
+            <h1></h1>
+
+            <input id="burger" type="checkbox" />
+            <label for="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            </label>
+
+            <nav>
+                  <ul>
+                        <li><n-link to="information" no-prefetch>ご案内</n-link></li>
+                        <li><n-link to="map" no-prefetch>校内マップ</n-link></li>
+                        <li><n-link to="sandan" no-prefetch>企画一覧</n-link></li>
+                        <li><n-link to="timetable" no-prefetch>タイムテーブル</n-link></li>
+                        <li><n-link to="menu" no-prefetch>食品メニュー</n-link></li>
+                        <li><n-link to="feature" no-prefetch>文化祭特集</n-link></li>
+                  </ul>
+            </nav>
+      </div>
+</template>
+
+<script>
+
+</script>
+
+<style lang="scss">
+      $blackColor: #411415;
+
+      body {
+            background: $blackColor;
+            h1 {
+                  position: fixed;
+                  top: 20px;
+                  left: 20px;
+                  z-index: 6;
+                  font-size: 20px;
+                  font-weight: 900;
+                  font-family: sans-serif;
+                  text-transform: uppercase;
+                  > span {
+                        text-transform: none;
+                        opacity: .5;
+                        font-weight: 300;
+                        font-size: 12px;
+                  }
+            }
+            input + label {
+                  position: fixed;
+                  top: 20px;
+                  right: 20px;
+                  height: 23px;
+                  width: 22px;
+                  z-index: 5;
+                  span {
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        top: 50%;
+                        margin-top: -1px;
+                        left: 0;
+                        display: block;
+                        background: $blackColor;
+                        transition: .5s;
+                  }
+                  span:first-child {
+                        top: 3px;
+                  }
+                  span:last-child {
+                        top: 21px;
+                  }
+            }
+            label:hover {
+                  cursor: pointer;
+            }
+            input:checked + label {
+                  span {
+                        opacity: 0;
+                        top: 50%;
+                  }
+                  span:first-child {
+                        opacity: 1;
+                        transform: rotate(405deg);
+                  }
+                  span:last-child {
+                        opacity: 1;
+                        transform: rotate(-405deg);
+                  }
+            }
+            input ~ nav {
+                  background: white;
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 80px;
+                  z-index: 3;
+                  transition: .3s;
+                  transition-delay: 0s;
+                  overflow: hidden;
+                  > ul {
+                        text-align: center;
+                        position: absolute;
+                        top: 20vh;
+                        left: 20%;
+                        right: 20%;
+                        > li {
+                              opacity: 0;
+                              transition: .5s;
+                              transition-delay: 0s;
+                              > a {
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                    color: $blackColor;
+                                    font-weight: 700;
+                                    font-family: sans-serif;
+                                    display: block;
+                                    padding: 30px;
+                              }
+                        }
+                  }
+            }
+            input:checked ~ nav {
+                  height: 100%;
+                  transition-delay: 0s;
+                  > ul {
+                        > li {
+                              opacity: 1;
+                              transition-delay: .2s;
+                        }
+                  }
+            }
+      }
+
+</style>

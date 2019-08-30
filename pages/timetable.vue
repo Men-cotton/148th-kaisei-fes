@@ -81,6 +81,7 @@
 </template>
 
 <script>
+
     function calcRow(time) {
         var times = time.split(':');
         var minute = (parseInt(times[0]) - 9) * 60 + parseInt(times[1]);
@@ -88,8 +89,8 @@
     }
 
     export default {
-
-        component: {},
+        components: {
+        },
         data() {
             return {
                 show_day: 1,
