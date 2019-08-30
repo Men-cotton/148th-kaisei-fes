@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Header/>
     <section class="top">
         <img src="~/assets/logo.svg" alt="logo" class="logo">
         <div class="date">2019.09.21(Sat)09:00-17:00<br>2019.09.22(Sun)09:00-17:00</div>
@@ -33,9 +34,12 @@ import sandan from '~/assets/sandan.svg';
 import timetable from '~/assets/timetable.svg';
 import feature from '~/assets/feature.svg';
 
-import Logo from '~/assets/mister_fujino.jpg'
+import Header from '~/components/Myheader.vue'
 
 export default {
+  components: {
+    Header
+  },
   data(){
     return{
       img1: access,
@@ -46,9 +50,6 @@ export default {
 
     }
   },
-  components: {
-    Logo
-  }
 }
 
 </script>

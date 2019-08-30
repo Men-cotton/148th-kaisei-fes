@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Header/>
     <div class="containerX">
       <div class="titlebar">
         <p>講演会企画</p>
@@ -51,10 +52,19 @@
     </div>
   </div>
 </template>
+<script>
+  import Header from '~/components/Myheader.vue'
+  export default {
+    components: {
+      Header
+    },
+  }
+</script>
 <style>
 @media screen and (max-width:768px) {
   .container{
     background-color: #EFEDE1;
+    margin-top: 45px;
   }
   .titlebar{
       background-color: #C32121;

@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-
+  <Header/>
   <div class="containerH1">
     <div class="along"><img src="../assets/sectionmark_along.svg"></img></div>
     <div class="header1">来場時ご案内</div>
@@ -31,7 +31,7 @@
       <p>小さなお子様でも楽しめるような参団をピックアップしてまとめたリストをA会場受付またはB会場受付にてお配りしておりますので、ぜひご利用ください。</p>
     </div>
     <div class="alone"><img src="../assets/sectionmark_alone.svg"></img></div>
-    <div class="header2">道に迷ったら 赤い文化祭Tシャツを着た人へ！</div>
+    <div class="header2">道に迷ったら赤い文化祭Tシャツを着た人へ！</div>
     <div class="text">
       <p>道に迷ってしまったときや、道案内をしてもらいたいときは【下図のイラスト１】のような近くの赤い文化祭Tシャツを着ている者にお気軽にお申し付けください。目的地までご案内いたします。</p>
     </div>
@@ -49,32 +49,42 @@
 </div>
 </template>
 <script>
-
+  import Header from '~/components/Myheader.vue'
+  export default {
+    components: {
+      Header
+    },
+  }
 </script>
 <style>
+  .containerH1{
+    margin-top: 45px;
+  }
 @media screen and (max-width:960px) {
   .container{
     background-color: #411445;
     color: #FFFFFF;
-    padding: 15px;
+    padding: 10px 15px;
   }
   .header1{
-    font-size: 36pt;
+    font-size: 32px;
+    font-weight: bold;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    margin: 0px 15px -40px 15px;
+    margin: 0px 15px -26px 15px;
     position: relative;
-    top: -58px;
+    top: -38px;
     left: 20px;
   }
   .header2{
     font-size: 16pt;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    margin: 10px 15px -35px 15px;
+    margin: 10px 15px -40px 15px;
     position: relative;
     top: -42px;
     left: 20px;
   }
   .text{
+    font-size: 15px;
     margin: 0px 15px 15px 15px;
   }
   .along{
@@ -91,13 +101,13 @@
     grid-template-rows: auto auto;
   }
   .containerH1{
-    padding: 10px 0px;
+    padding: 20px 0px 10px;
     grid-row: 1;
     grid-column: 1;
     background-color: #912A55;
   }
   .containerT1{
-    padding: 10px 0px;
+    padding: 20px 0px 10px;
     grid-row: 1;
     grid-column: 2;
   }
@@ -113,8 +123,10 @@
     grid-column: 2;
   }
   .header1{
+    margin-top: 3px;
     text-align: center;
     font-size: 20pt;
+    font-weight: bold;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
   }
   .header2{
@@ -126,6 +138,7 @@
     left: 30px;
   }
   .text{
+    font-size: 16px;
     position: relative;
     top: -42px;
     margin: 0px 15px -30px 15px;

@@ -1,9 +1,26 @@
 <template>
   <div class="container">
+    <Header/>
     <div class="title">
       <p>企画一覧</p>
     </div>
-    <input v-model="search_text">
+    <div class="search-box-title">
+      <p>キーワード検索</p>
+    </div>
+    <div>
+      <input class="search-box" v-model="search_text">
+    </div>
+    <div class="search-box-title">
+      <p>絞り込み</p>
+    </div>
+    <div class="focus-on">
+      <div class="tenji buttons">展示</div>
+      <div class="sanka buttons">参加型</div>
+      <div class="eiga buttons">映画</div>
+      <div class="perform buttons">パフォーマンス</div>
+      <div class="eats buttons">飲食・販売</div>
+    </div>
+
     <v-app>
       <v-content>
         <div v-for="(project) in projects"
@@ -16,7 +33,7 @@
               <div class="place">{{ project.Place }}</div>
               <div class="name">{{ project.Name }}</div>
               <div class="description">{{ project.Description }}</div>
-              <div class="waitingtime">1分</div>
+              <div class="waitingtime">1<span class="minute">分</span></div>
             </div>
             <div class="grid-container2">
               <div v-if=tap class="buttons map"><p>マップを見る</p></div>
@@ -28,33 +45,7 @@
     </v-app>
 
 
-    <ais-instant-search
-            index-name="148th_Kaisei-Fes"
-            :search-client=searchClient>
-      <ais-search-box placeholder="Search for products..."
 
-      />
-      <ais-hits>
-        <div slot="item" slot-scope="{ item }">
-          <div v-on:click="tap=!tap"
-               v-for="item in items"
-               :key="item.objectID"
-               class="card">
-            <div class="grid-container">
-              <div class="thumbnail"><img src="" height="55px"></img></div>
-              <div class="place">{{ item.Place }}</div>
-              <div class="name">{{ item.Name }}</div>
-              <div class="description">{{ item.Description }}</div>
-              <div class="waitingtime">1分</div>
-            </div>
-            <div class="grid-container2">
-              <div v-if=tap class="buttons map"><p>マップを見る</p></div>
-              <div v-if=tap class="buttons details"><p>詳しく</p></div>
-            </div>
-          </div>
-        </div>
-      </ais-hits>
-    </ais-instant-search>
     <!--一応残したやつ-->
     <div>
       <div v-on:click="tap=!tap"
@@ -77,8 +68,12 @@
 
 <script>
     import algoliasearch from 'algoliasearch/lite';
+    import Header from '~/components/Myheader.vue'
 
     export default {
+        components: {
+          Header
+        },
         name: 'project',
         data: function () {
             return {
@@ -110,42 +105,63 @@
                 });
             }
         }
-
-        /*使えない？わけわからん
-        components: {
-          'ais-InstantSearch': InstantSearch,
-          'ais-SearchBox': SearchBox,
-          'ais-Hits': MyCustomHits,
-        },
-        */
     }
 
 </script>
 
 <style>
-  .MyCustomInstantSearch {
-    height: 20px;
-    width: 80%;
+  .search-box-title{
+    margin-top: 10px;
+    background: #912A55;
+    color: white;
+    padding: 2px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
   }
-
-  .MySearchBox {
-    height: 200px;
-    width: 80px;
-
+  .search-box{
+    width: 100%;
+    height: 35px;
+    border-radius: 0 0 5px 5px;
   }
-
-  .MyCustomHits {
+  .focus-on{
+    background: #F8F9FA;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 33% 16.5% 16.5% 33%;
+    grid-template-rows: 50px 50px;
+    border-radius: 0 0 5px 5px;
+  }
+  .buttons{
+    margin: 5px;
+  }
+  .tenji{
+    grid-column: 1/2;
+    grid-row: 1/2;
 
   }
-
+  .sanka{
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .eiga{
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  .perform{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .eats{
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
   .img {
     border-radius: 27.5px;
   }
 
   .container {
-    padding: 0px 15px;
+    padding: 30px 15px;
     background-color: #3F0E47;
   }
 
@@ -164,6 +180,7 @@
 
   /*--カード--*/
   .card {
+    margin: 10px 0;
     border: solid 0.5px #828282;
     border-radius: 10px;
     background-color: #F8F9FA;
@@ -190,7 +207,7 @@
   }
 
   .name {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
     grid-column: 2 / 3;
     grid-row: 2;
@@ -204,14 +221,23 @@
   }
 
   .waitingtime {
-    font-size: 25px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
     grid-column: 3;
     grid-row: 1 / 4;
+  }
+  .minute{
+    font-size: 15px;
+    margin-top: 10px;
   }
 
   .grid-container2 {
     display: grid;
     grid-template-columns: 49.5% 1% 49.5%;
+    margin: revert;
   }
 
   .map {

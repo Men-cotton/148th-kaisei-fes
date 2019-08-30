@@ -2,15 +2,15 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _06aa3062 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
-const _56fe1abc = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
-const _7b728622 = () => interopDefault(import('../pages/headerppp.vue' /* webpackChunkName: "pages/headerppp" */))
-const _4922b7d8 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
-const _7a66012a = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
-const _4bc394c0 = () => interopDefault(import('../pages/realindex.vue' /* webpackChunkName: "pages/realindex" */))
-const _2cecab35 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
-const _47875366 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
-const _4e0c477e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
+const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
+const _08ea7bfb = () => interopDefault(import('../pages/headerppp.vue' /* webpackChunkName: "pages/headerppp" */))
+const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
+const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
+const _20c1f4ac = () => interopDefault(import('../pages/realindex.vue' /* webpackChunkName: "pages/realindex" */))
+const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
+const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
+const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -88,39 +88,39 @@ export function createRouter() {
 
     routes: [{
       path: "/booth",
-      component: _06aa3062,
+      component: _54815524,
       name: "booth"
     }, {
       path: "/feature",
-      component: _56fe1abc,
+      component: _32e104ae,
       name: "feature"
     }, {
       path: "/headerppp",
-      component: _7b728622,
+      component: _08ea7bfb,
       name: "headerppp"
     }, {
       path: "/information",
-      component: _4922b7d8,
+      component: _75d2e3e4,
       name: "information"
     }, {
       path: "/lecture",
-      component: _7a66012a,
+      component: _4e73d994,
       name: "lecture"
     }, {
       path: "/realindex",
-      component: _4bc394c0,
+      component: _20c1f4ac,
       name: "realindex"
     }, {
       path: "/sandan",
-      component: _2cecab35,
+      component: _407c27a9,
       name: "sandan"
     }, {
       path: "/timetable",
-      component: _47875366,
+      component: _22e01559,
       name: "timetable"
     }, {
       path: "/",
-      component: _4e0c477e,
+      component: _1d216c8a,
       name: "index"
     }],
 

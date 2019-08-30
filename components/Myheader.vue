@@ -10,12 +10,12 @@
             </label>
             <nav>
                   <ul>
-                        <li><n-link to="information" no-prefetch>ご案内</n-link></li>
-                        <li><n-link to="map" no-prefetch>校内マップ</n-link></li>
-                        <li><n-link to="sandan" no-prefetch>企画一覧</n-link></li>
-                        <li><n-link to="timetable" no-prefetch>タイムテーブル</n-link></li>
-                        <li><n-link to="menu" no-prefetch>食品メニュー</n-link></li>
-                        <li><n-link to="feature" no-prefetch>文化祭特集</n-link></li>
+                        <li><n-link to="information">ご案内</n-link></li>
+                        <li><n-link to="map">校内マップ</n-link></li>
+                        <li><n-link to="sandan">企画一覧</n-link></li>
+                        <li><n-link to="timetable">タイムテーブル</n-link></li>
+                        <li><n-link to="menu">食品メニュー</n-link></li>
+                        <li><n-link to="feature">文化祭特集</n-link></li>
                   </ul>
             </nav>
       </div>
@@ -88,7 +88,7 @@
                   top: 0;
                   left: 0;
                   width: 100%;
-                  height: 80px;
+                  height: 65px;
                   z-index: 3;
                   transition: .3s;
                   transition-delay: 0s;

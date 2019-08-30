@@ -10,7 +10,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_buefy_b8e8589e from 'nuxt_plugin_buefy_b8e8589e' // Source: ./buefy.js (mode: 'all')
+import nuxt_plugin_buefy_bc1045b6 from 'nuxt_plugin_buefy_bc1045b6' // Source: ./buefy.js (mode: 'all')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -129,8 +129,8 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_buefy_b8e8589e === 'function') {
-    await nuxt_plugin_buefy_b8e8589e(app.context, inject)
+  if (typeof nuxt_plugin_buefy_bc1045b6 === 'function') {
+    await nuxt_plugin_buefy_bc1045b6(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

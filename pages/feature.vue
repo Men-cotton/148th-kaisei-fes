@@ -1,11 +1,12 @@
 <template>
   <div class="container">
+    <Header/>
     <div class="title">
-      <h1>Pick UP! 文化祭</h1>
+      <p>Pick Up! 文化祭</p>
     </div>
 
     <div class="search">
-      <h2 class="search-text"><p>絞り込み</p></h2>
+      <div class="search-text"><p>絞り込み</p></div>
       <div class="button-grid">
         <div class="buttons left-button">
           <p>文化祭準備編</p>
@@ -57,6 +58,7 @@
 </template>
 
 <script>
+    import Header from '~/components/Myheader.vue'
     import Logo from '~/assets/mister_fujino.jpg'
     import Article from '~/components/FeatureArticle.vue'
 
@@ -65,6 +67,7 @@
         components: {
             Logo,
             Article,
+          Header
         },
         data() {
             return {
@@ -79,40 +82,16 @@
     color: #ccbd14
   }
 
-  h1 {
-    font-family: Noto Sans JP;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 43px;
-    display: flex;
-    align-items: center;
-  }
-
-  h2 {
-    font-family: Noto Sans JP;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-
   .container {
-    padding: 0px 15px 30px;
+    padding: 30px 15px;
     background-color: #411445;
     color: white;
   }
 
   .title {
-    padding-left: 57px;
-    padding-top: 82px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding: 80px 0px;
   }
 
   .search {
@@ -133,7 +112,7 @@
     position: relative;
     width: 100%;
     height: 25px;
-
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
