@@ -2,9 +2,11 @@
 <div class="container">
 
   <div class="containerH1">
+    <div class="along"><img src="../assets/sectionmark_along.svg"></img></div>
     <div class="header1">来場時ご案内</div>
   </div>
   <div class="containerT1">
+    <div class="alone"><img src="../assets/sectionmark_alone.svg"></img></div>
     <div class="header2">アクセス</div>
     <div class="text">
       <p>山手線・京浜東北線 西日暮里駅から徒歩1分。</p>
@@ -13,26 +15,32 @@
     </div>
   </div>
   <div class="containerH2">
+    <div class="along"><img src="../assets/sectionmark_along.svg"></img></div>
     <div class="header1">ご注意</div>
   </div>
   <div class="containerT2">
+    <div class="alone"><img src="../assets/sectionmark_alone.svg"></img></div>
     <div class="header2">ベビーカーをお持ちのお客様へ</div>
     <div class="text">
       <p>校門を入ってすぐのA会場受付にてベビーカー預かりサービスを実施しています。ベビーカーを持ちながら会場内を回るのは大変かと思われますので、このサービスをぜひご利用ください。</p>
       <p>また、授乳をしたいという方は赤いTシャツを着た文化祭委員にお声がけください。そうしていただければご案内することができます。オムツ替えについては衛生面と安全面の問題上、トイレでしていただくことをお願いいたします。</p>
     </div>
+    <div class="alone"><img src="../assets/sectionmark_alone.svg"></img></div>
     <div class="header2">小さなお子様をお連れのお客様へ</div>
     <div class="text">
       <p>小さなお子様でも楽しめるような参団をピックアップしてまとめたリストをA会場受付またはB会場受付にてお配りしておりますので、ぜひご利用ください。</p>
     </div>
+    <div class="alone"><img src="../assets/sectionmark_alone.svg"></img></div>
     <div class="header2">道に迷ったら 赤い文化祭Tシャツを着た人へ！</div>
     <div class="text">
       <p>道に迷ってしまったときや、道案内をしてもらいたいときは【下図のイラスト１】のような近くの赤い文化祭Tシャツを着ている者にお気軽にお申し付けください。目的地までご案内いたします。</p>
     </div>
+    <div class="alone"><img src="../assets/sectionmark_alone.svg"></img></div>
     <div class="header2">休憩所のご利用について</div>
     <div class="text">
       <p>休憩所はパンフレットに記載された場所にございます。昼食を食べたい時や少し休みたい時にご利用ください。ただ、席には限りがございますので、他のお客様と譲り合ってご利用いただくことよろしくお願いいたします。</p>
     </div>
+    <div class="alone"><img src="../assets/sectionmark_alone.svg"></img></div>
     <div class="header2">お客様全員が楽しめる開成祭にするために</div>
     <div class="text">
       <p>お客様全員にマナーを守っていただくことにより、お客様全員が開成祭を楽しんでいただけると考えております。マナーはしっかりと守り、他のお客様のご迷惑になるような行動はおやめください。マナー違反や迷惑行為をしているのではないかと思われるときは文化祭準備委員がお声がけさせていただくことがございますのでご了承ください。</p>
@@ -41,13 +49,7 @@
 </div>
 </template>
 <script>
-  import Myheader from '~layouts/Myheader.vue'
 
-  export default {
-    components:{
-      Myheader
-    }
-  }
 </script>
 <style>
 @media screen and (max-width:960px) {
@@ -59,15 +61,25 @@
   .header1{
     font-size: 36pt;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    margin: 0px 15px -10px 15px;
+    margin: 0px 15px -40px 15px;
+    position: relative;
+    top: -58px;
+    left: 20px;
   }
   .header2{
     font-size: 16pt;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    margin: 10px 15px 0px 15px;
+    margin: 10px 15px -35px 15px;
+    position: relative;
+    top: -42px;
+    left: 20px;
   }
   .text{
-    margin: 0px 15px 5px 15px;
+    margin: 0px 15px 15px 15px;
+  }
+  .along{
+    position: relative;
+    top: 15px;
   }
 }
 @media screen and (min-width:960px) {
@@ -109,9 +121,20 @@
     font-size: 16pt;
     font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
     margin: 5px 15px 5px 15px;
+    position: relative;
+    top: -42px;
+    left: 30px;
   }
   .text{
-    margin: 0px 15px 5px 15px;
+    position: relative;
+    top: -42px;
+    margin: 0px 15px -30px 15px;
+  }
+  .along{
+    display: none;
+  }
+  .alone{
+    margin: 10px;
   }
 }
 </style>

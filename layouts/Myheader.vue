@@ -8,7 +8,6 @@
                   <span></span>
                   <span></span>
             </label>
-
             <nav>
                   <ul>
                         <li><n-link to="information" no-prefetch>ご案内</n-link></li>
@@ -21,14 +20,8 @@
             </nav>
       </div>
 </template>
-
-<script>
-
-</script>
-
 <style lang="scss">
       $blackColor: #411415;
-
       body {
             background: $blackColor;
             h1 {
@@ -133,5 +126,4 @@
                   }
             }
       }
-
 </style>

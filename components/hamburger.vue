@@ -28,11 +28,6 @@
             </div>
       </div>
 </template>
-
-<script>
-
-</script>
-
 <style>
       svg {
             height: 70px;
