@@ -3,11 +3,25 @@
     <div class="title">
       <p>企画一覧</p>
     </div>
+    <input v-model="search_text">
     <v-app>
       <v-content>
-        <div v-for="(project) in projects" v-bind:datasrc="project.picture">
+        <div v-for="(project) in projects"
+             v-bind:datasrc="project.picture"
+             v-on:click="tap=!tap"
+             class="card">
           <v-avatar>
-            {{project.Name}}
+            <div class="grid-container">
+              <div class="thumbnail"><img src="" height="55px"></img></div>
+              <div class="place">{{ project.Place }}</div>
+              <div class="name">{{ project.Name }}</div>
+              <div class="description">{{ project.Description }}</div>
+              <div class="waitingtime">1分</div>
+            </div>
+            <div class="grid-container2">
+              <div v-if=tap class="buttons map"><p>マップを見る</p></div>
+              <div v-if=tap class="buttons details"><p>詳しく</p></div>
+            </div>
           </v-avatar>
         </div>
       </v-content>
@@ -62,7 +76,6 @@
 </template>
 
 <script>
-    //import {algoliasearch} from 'vue-instantsearch';
     import algoliasearch from 'algoliasearch/lite';
 
     export default {
@@ -71,6 +84,7 @@
             return {
                 projects: [],
                 index: null,
+                search_text: '',
                 tap: false,
             };
         },
@@ -83,10 +97,15 @@
             self.index = searchClient.initIndex('project');
             this.searchProject();
         },
+        watch: {
+            search_text: function () {
+                this.searchProject()
+            }
+        },
         methods: {
             searchProject: function () {
                 var self = this;
-                self.index.search("手品", (err, {hits} = {}) => {
+                self.index.search(self.search_text, (err, {hits} = {}) => {
                     self.projects = hits;
                 });
             }
