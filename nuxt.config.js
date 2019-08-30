@@ -1,9 +1,7 @@
 module.exports = {
-  mode: 'universal',
+    mode: 'universal',
 
-  head: {
-
-  }
+    head: {},
 }
 
 export default {
