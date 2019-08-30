@@ -81,6 +81,12 @@
 </template>
 
 <script>
+    function calcRow(time) {
+        var times = time.split(':');
+        var minute = (parseInt(times[0]) - 9) * 60 + parseInt(times[1]);
+        return Math.floor(minute / 15) + 1;
+    }
+
     export default {
 
         component: {},
@@ -94,7 +100,7 @@
                         day: 1,
                         place: '小講堂',
                         start_time: '9:15',
-                        start_row: 2,
+                        start_row: calcRow('9:15'),
                         end_time: '10:55',
                         end_row: 8,
                     },
