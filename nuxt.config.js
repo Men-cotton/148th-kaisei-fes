@@ -35,8 +35,6 @@ export default {
     css: [],
 
     router:{
-
-      prefetchLinks: false
     },
     /*
     ** Plugins to load before mounting the App

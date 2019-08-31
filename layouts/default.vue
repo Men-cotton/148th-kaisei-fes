@@ -7,6 +7,7 @@ html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 15px;
+  line-height: 23px;
   letter-spacing: 0.05em;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

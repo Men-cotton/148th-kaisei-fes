@@ -24,7 +24,6 @@
 <style lang="scss">
       $blackColor: #411415;
       body {
-            background: $blackColor;
             h1 {
                   position: fixed;
                   top: 20px;
@@ -87,7 +86,8 @@
                   }
             }
             input ~ nav {
-                  background: white;
+                  background: #495057;
+                  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);;
                   position: fixed;
                   top: 0;
                   left: 0;
