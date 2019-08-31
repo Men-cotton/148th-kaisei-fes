@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container-time">
     <Header/>
     <div class="title">
       <p>タイムテーブル</p>
     </div>
-    <div>
+    <div class="usage">
       <p>開成祭のタイムテーブル一覧です。時間限定で行う企画はすべてここに載っています。
         使い方・見方
         ・縦軸が時間です。
@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <div class="place">
+      <div class="place-row">
         <div v-on:click="show_place='小講堂'">
           <div v-if="show_place=='小講堂'" class="place-p selected">
             <div class="selected-text">小講堂</div>
@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <div class="grid-container">
+      <div class="grid-container-time">
         <div class="time nine">９</div>
         <div class="time ten">10</div>
         <div class="time eleven">11</div>
@@ -518,14 +518,10 @@
 </script>
 
 <style>
-  .container {
+  .container-time {
     padding: 0px 15px;
-    background-color: #3F0E47;
-    color: white;
-
-
+    background-color: #411445;
   }
-
   .title {
     color: white;
     font-size: 32px;
@@ -535,6 +531,9 @@
   .timetable-container {
 
 
+  }
+  .usage{
+    color: white;
   }
 
   .selected {
@@ -571,7 +570,7 @@
     color: #7f7d7d;
   }
 
-  .place {
+  .place-row {
     height: 40px;
     display: grid;
     overflow-x: scroll;
@@ -590,7 +589,7 @@
     justify-content: center;
   }
 
-  .grid-container {
+  .grid-container-time {
     position: relative;
     background: rgba(221, 226, 229, 0.6);
     width: 100%;
@@ -614,6 +613,7 @@
 
   .time {
     background: #912A55;
+    color: white;
     border-bottom: 0.5px solid #ffffff;
     grid-row: span 4;
     display: flex;

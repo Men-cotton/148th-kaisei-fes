@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-sandan">
     <Header/>
     <div class="title">
       <p>企画一覧</p>
@@ -34,22 +34,7 @@
 
 
     <!--一応残したやつ-->
-    <div>
-      <div v-on:click="tap=!tap"
-           class="card">
-        <div class="grid-container">
-          <div class="thumbnail"><img src="" height="55px"></img></div>
-          <div class="place"></div>
-          <div class="name">鉄道研究部</div>
-          <div class="description">部誌の配布</div>
-          <div class="waitingtime">1分</div>
-        </div>
-        <div v-if="tap" class="grid-container2">
-          <div class="buttons map"><p>マップを見る</p></div>
-          <div class="buttons details"><p>詳しく</p></div>
-        </div>
-      </div>
-    </div>
+
   </div>
 </template>
 
@@ -158,9 +143,9 @@
     border-radius: 27.5px;
   }
 
-  .container {
+  .container-sandan {
     padding: 30px 15px;
-    background-color: #3F0E47;
+    background-color: #411445;
   }
 
   .title {

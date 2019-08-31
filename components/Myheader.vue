@@ -10,6 +10,7 @@
             </label>
             <nav>
                   <ul>
+                        <li><n-link to="/">トップ</n-link></li>
                         <li><n-link to="information">ご案内</n-link></li>
                         <li><n-link to="map">校内マップ</n-link></li>
                         <li><n-link to="sandan">企画一覧</n-link></li>
@@ -39,6 +40,9 @@
                         font-weight: 300;
                         font-size: 12px;
                   }
+            }
+            ul {
+                  list-style: none;
             }
             input + label {
                   position: fixed;

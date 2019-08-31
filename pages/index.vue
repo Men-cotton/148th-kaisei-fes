@@ -61,7 +61,6 @@ export default {
 
   .container{
     background-color: #411445;
-    color: white;
   }
   .top{
     padding:40vh 4vw;
@@ -78,6 +77,7 @@ export default {
     font-style: normal;
     font-weight: normal;
     font-size: 2vw;
+    color: white;
     align-items: center;
     text-align: center;
     vertical-align:bottom;
@@ -95,5 +95,33 @@ export default {
   }
   .box-img{
     width:47vw;
+  }
+  @media screen and (orientation:portrait){
+    .top{
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .logo{
+      width:80vw;
+    }
+    .date{
+      font-size:4.5vw;
+      padding:10vh 0 0 0;
+    }
+    .flex-box a{
+      margin:2vw 0;
+    }
+    .box-img{
+      width:92vw;
+    }
+    #img3{
+      order:4;
+    }
+    #img4{
+      order:3;
+    }
+    #img5{
+      order:5;
+    }
   }
 </style>

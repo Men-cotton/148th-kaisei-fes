@@ -17,7 +17,7 @@ import {
   globalHandleError
 } from './utils.js'
 import { createApp, NuxtError } from './index.js'
-import NuxtLink from './components/nuxt-link.client.js' // should be included after ./index.js
+import NuxtLink from './components/nuxt-link.server.js' // should be included after ./index.js
 import consola from 'consola'
 
 consola.wrapConsole()
