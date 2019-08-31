@@ -68,14 +68,14 @@
         <div class="time fourteen">14</div>
         <div class="time fifteen">15</div>
         <div class="time sixteen">16</div>
+        <div v-for="event in should_show_events" :key="event.id" class="event-container">
+          <div class="group" v-bind:style="{'grid-row': event.start_row + '/' + (event.end_row + 1)}">{{event.name}}</div>
+          <div class="group-time" v-bind:style="{'grid-row': event.start_row}">{{event.start_time}}</div>
+          <div class="name"></div>
+          <div class="group-time" v-bind:style="{'grid-row': event.end_row}">{{event.end_time}}</div>
+        </div>
       </div>
 
-      <div v-for="event in should_show_events" :key="event.id" class="event-container">
-        <div class="group" v-bind:style="{'grid-row': event.start_row + '/' + (event.end_row + 1)}">{{event.name}}</div>
-        <div class="group-time" v-bind:style="{'grid-row': event.start_row}">{{event.start_time}}</div>
-        <div class="name"></div>
-        <div class="group-time" v-bind:style="{'grid-row': event.end_row}">{{event.end_time}}</div>
-      </div>
     </div>
   </div>
 </template>
@@ -212,6 +212,7 @@
   }
 
   .grid-container {
+    position: relative;
     background: rgba(221, 226, 229, 0.6);
     width: 100%;
     display: grid;
@@ -223,7 +224,6 @@
 
   .event-container {
     position: absolute;
-    top: 357px;
     left: 25px;
     width: calc(100% - 50px);
     display: grid;
