@@ -3,7 +3,7 @@
     <Header/>
     <section class="top">
         <img src="~/assets/logo.svg" alt="logo" class="logo">
-        <div class="date">2019.09.21(Sat)09:00-17:00<br>2019.09.22(Sun)09:00-17:00</div>
+        <div class="date">2019.09.21(Sat)09:00-16:30<br>2019.09.22(Sun)09:00-17:00</div>
     </section>
     <section class="menu">
       <div class="flex-box">
@@ -96,52 +96,4 @@ export default {
   .box-img{
     width:47vw;
   }
-  /* }
-  .sorit{
-        font-size: 24px;
-        font-weight: bold;
-      }
-      .kaiseisai{
-        font-size: 48px;
-        font-weight: bold;
-
-      }
-  .title{
-    padding: 80px 0px;
-    margin: 0px 40px;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  .whendes{
-    height: 18vh;
-  }
-  .when{
-    font-size: 20px;
-    text-align: center;
-  }
-  .date{
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .plzwait{
-    text-align: center;
-  }
-  .buttons{
-    margin: 20px auto;
-    height: 40px;
-    width: 80%;
-    border-radius: 5px;
-    background-color: #912A55;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; */
-  
 </style>

@@ -1,11 +1,11 @@
-module.exports = {
+export default {
     mode: 'universal',
     head: {
         htmlAttrs:{
             prefix: 'og: '
         }
     },
-    titleTemplate: '%s - 149th開成祭',
+    titleTemplate: '%s - 148th開成祭',
     meta: [
         {charset: 'utf-8'},
         { name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -29,10 +29,15 @@ module.exports = {
     /*
     ** Customize the progress-bar color
     */
-    loading: {color: '#411445'},
+    loading: {background: '#411445'},
     /*
     ** Global CSS*/
     css: [],
+
+    router:{
+
+      prefetchLinks: true
+    },
     /*
     ** Plugins to load before mounting the App
     */
@@ -40,9 +45,16 @@ module.exports = {
     /*
     ** Nuxt.js modules
     */
+    routes: [
+        'sandan',
+        'timetable',
+        'lecture',
+        'feature',
+        'information',
+        'booth'
+    ],
 
     modules: [
-        'nuxt-buefy',
     ],
     /*
     ** Build configuration

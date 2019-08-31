@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Header/>
     <div class="title">
       <p>タイムテーブル</p>
     </div>
@@ -82,6 +83,7 @@
 </template>
 
 <script>
+  import Header from '~/components/Myheader.vue'
 
     function calcRow(time) {
         var times = time.split(':');
@@ -92,7 +94,9 @@
     }
 
     export default {
-        components: {},
+        components: {
+          Header
+        },
         data() {
             return {
                 show_day: 1,
@@ -571,7 +575,7 @@
     height: 40px;
     display: grid;
     overflow-x: scroll;
-    grid-template-columns: 160px 160px 160px 160px 160px;
+    grid-template-columns: 180px 180px 180px 180px 180px;
   }
 
   .place-p {
