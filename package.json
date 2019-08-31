@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "kaisei-fes",
   "author": "Aiki Murayama",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -12,12 +12,10 @@
   },
   "dependencies": {
     "algoliasearch": "^3.34.0",
-    "buefy": "^0.8.2",
     "instantsearch.css": "^7.3.1",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.3.13",
     "vue-instantsearch": "^2.3.0",
-    "vue-meta": "^2.2.2",
+    "vue-meta": "^1.6.0",
     "vuejs-toggle-switch": "latest"
   },
   "devDependencies": {
