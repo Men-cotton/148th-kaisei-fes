@@ -7,7 +7,7 @@ const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackC
 const _08ea7bfb = () => interopDefault(import('../pages/headerppp.vue' /* webpackChunkName: "pages/headerppp" */))
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
-const _20c1f4ac = () => interopDefault(import('../pages/realindex.vue' /* webpackChunkName: "pages/realindex" */))
+const _457d7c40 = () => interopDefault(import('../pages/pre-index.vue' /* webpackChunkName: "pages/pre-index" */))
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -107,9 +107,9 @@ export function createRouter() {
       component: _4e73d994,
       name: "lecture"
     }, {
-      path: "/realindex",
-      component: _20c1f4ac,
-      name: "realindex"
+      path: "/pre-index",
+      component: _457d7c40,
+      name: "pre"
     }, {
       path: "/sandan",
       component: _407c27a9,
