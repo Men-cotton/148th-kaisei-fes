@@ -2,14 +2,23 @@
   <div class="card">
     <div v-on:click="tap=!tap" class="grid-container">
       <div class="thumbnail"><img src="" height="55px"></img></div>
-      <div class="place">{{ project.Place }}</div>
+      <div class="place">{{ project.Place }} {{project.Room}}</div>
       <div class="name">{{ project.Name }}</div>
       <div class="description">{{ project.Description }}</div>
       <div class="waitingtime">1<span class="minute">分</span></div>
     </div>
     <div class="grid-container2">
-      <div v-if=tap class="buttons map"><p>マップを見る</p></div>
-      <div v-if=tap class="buttons details"><p>詳しく</p></div>
+      <div v-show=tap class="buttons map"><p>マップを見る</p></div>
+      <div v-show=tap class="buttons details"><p>詳しく</p></div>
+    </div>
+    <div v-show="tap" class="describe-more">
+      <div class="about-this"><img src="~/assets/sectionmark_alone.svg"><p>この団体について</p></div>
+      <div>(Sandan-introduction)</div>
+      <div class="about-this"><img src="~/assets/sectionmark_alone.svg"><p>Image</p></div>
+      <div>(shasin)</div>
+      <div class="about-this"><img src="~/assets/sectionmark_alone.svg"><p>宣伝...</p></div>
+      <div>(Sandan-introduction)</div>
+
     </div>
   </div>
 </template>
@@ -40,7 +49,7 @@
   .grid-container {
     display: grid;
     grid-template-columns: 55px auto 45px;
-    grid-template-rows: 17px 25px 20px;
+    grid-template-rows: 21px 24px 20px;
   }
 
   .thumbnail {
@@ -49,6 +58,7 @@
   }
 
   .place {
+    text-align: start;
     font-size: 13px;
     color: #495057;
     grid-column: 2 / 3;
@@ -87,7 +97,6 @@
   .grid-container2 {
     display: grid;
     grid-template-columns: 49.5% 1% 49.5%;
-    margin: revert;
   }
 
   .map {
@@ -96,5 +105,18 @@
 
   .details {
     grid-column: 3/4;
+  }
+  .describe-more{
+    margin: 0 10px;
+  }
+  .about-this{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    padding-top: 7px;
+  }
+  .about-this >p{
+    position: relative;
+    left: 5px;
   }
 </style>

@@ -7,19 +7,19 @@
     </section>
     <section class="menu">
       <div class="flex-box">
-        <nuxt-link to="information" no-prefetch>
+        <nuxt-link to="information">
           <img :src="img1" class="box-img">
         </nuxt-link>
-        <nuxt-link to="map" no-prefetch>
+        <nuxt-link to="map">
           <img :src="img2" class="box-img">
         </nuxt-link>
-        <nuxt-link to="sandan" no-prefetch>
+        <nuxt-link to="sandan">
           <img :src="img3" class="box-img">
         </nuxt-link>
-        <nuxt-link to="timetable" no-prefetch>
+        <nuxt-link to="timetable">
           <img :src="img4" class="box-img">
         </nuxt-link>
-        <nuxt-link to="feature" no-prefetch>
+        <nuxt-link to="feature">
           <img :src="img5" class="box-img">
         </nuxt-link>
       </div>
