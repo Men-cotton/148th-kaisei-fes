@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <Header/>
+  <Header></Header>
   <div class="containerH1">
     <div class="along"><img src="../assets/sectionmark_along.svg"></img></div>
     <div class="header1">来場時ご案内</div>
@@ -110,6 +110,8 @@
     padding: 20px 0px 10px;
     grid-row: 1;
     grid-column: 2;
+    position: relative;
+    top: 40px;
   }
   .containerH2{
     padding: 10px 0px;
