@@ -49,9 +49,9 @@
             input + label {
                   position: fixed;
                   top: 13.5px;
-                  right: 20px;
-                  height: 23px;
-                  width: 22px;
+                  right: 18px;
+                  height: 27px;
+                  width: 26px;
                   z-index: 5;
                   span {
                         position: absolute;
@@ -65,10 +65,10 @@
                         transition: .5s;
                   }
                   span:first-child {
-                        top: 3px;
+                        top: 2px;
                   }
                   span:last-child {
-                        top: 21px;
+                        top: 25px;
                   }
             }
             label:hover {
@@ -120,7 +120,7 @@
                                     font-weight: 700;
                                     font-family: sans-serif;
                                     display: block;
-                                    padding: 4vh;
+                                    padding: 3.5vh;
                               }
                         }
                   }
@@ -135,7 +135,7 @@
                         }
                   }
             }
-            @media screen {
+            @media screen and (min-width: 600px) {
 
             }
       }

@@ -77,7 +77,7 @@
   }
   .alone{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
     display: flex;
     flex-direction: row;
   }

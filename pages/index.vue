@@ -85,7 +85,7 @@ export default {
   .date{
     min-width:300px;
     height:8vw;
-    font-family: Ubuntu Condensed;
+    font-family: Ubuntu Condensed,monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 2vw;
@@ -108,7 +108,25 @@ export default {
   .box-img{
     width:47vw;
   }
-  @media screen and (orientation:portrait){
+  @media screen and (min-width: 900px){
+    .box-img{
+      width: 30vw;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    .top{
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .logo{
+      width:80vw;
+    }
+    .date{
+      font-size:4.5vw;
+      padding:10vh 0 0 0;
+    }
+  }
+  @media screen and (max-width: 600px){
     .top{
       flex-wrap:wrap;
       justify-content:center;
