@@ -2,7 +2,7 @@
       <div>
             <h1></h1>
 
-            <input id="burger" type="checkbox" />
+            <input style="display: none" id="burger" type="checkbox" />
             <label for="burger">
                   <span></span>
                   <span></span>
@@ -45,7 +45,6 @@
             }
             input {
                   position: relative;
-                  top: -3000px
             }
             input + label {
                   position: fixed;
