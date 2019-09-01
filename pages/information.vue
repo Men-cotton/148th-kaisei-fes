@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="container-info">
   <Header></Header>
   <div class="containerH1">
     <div class="along"><img src="../assets/sectionmark_along.svg"><div class="along-line"><p>来場時ご案内</p></div></div>
@@ -106,7 +106,7 @@
 
 }
 @media screen and (min-width:960px) {
-  .container{
+  .container-info{
     background-color: #411445;
     color: #FFFFFF;
     display: grid;
