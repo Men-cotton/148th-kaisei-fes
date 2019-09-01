@@ -18,16 +18,16 @@
   <div class="containerT2">
     <div class="alone"><img src="../assets/sectionmark_alone.svg"><p>ベビーカーをお持ちのお客様へ</p></div>
     <div class="text">
-      <p>校門を入ってすぐのA会場受付にてベビーカー預かりサービスを実施しています。ベビーカーを持ちながら会場内を回るのは大変かと思われますので、このサービスをぜひご利用ください。</p>
-      <p>また、授乳をしたいという方は赤いTシャツを着た文化祭委員にお声がけください。そうしていただければご案内することができます。オムツ替えについては衛生面と安全面の問題上、トイレでしていただくことをお願いいたします。</p>
+      <p>校門を入ってすぐのA会場インフォメーションセンターにてベビーカー預かりサービスを実施しています。ベビーカーを持ちながら会場内を回るのは大変かと思われますので、ぜひご利用ください。</p>
+      <p>また、授乳をしたいという方は赤いTシャツを着た文化祭委員にお声がけください。ご案内いたします。また、オムツ替えの場所についてはトイレをご利用ください。</p>
     </div>
     <div class="alone"><img src="../assets/sectionmark_alone.svg"><p>小さなお子様をお連れのお客様へ</p></div>
     <div class="text">
-      <p>小さなお子様でも楽しめるような参団をピックアップしてまとめたリストをA会場受付またはB会場受付にてお配りしておりますので、ぜひご利用ください。</p>
+      <p>小さなお子様でも楽しめるような参団をピックアップしてまとめたリストを、A会場インフォメーションセンターまたはB会場インフォメーションセンターにてお配りしておりますので、ぜひご利用ください。</p>
     </div>
     <div class="alone"><img src="../assets/sectionmark_alone.svg"><p>道に迷ったら赤い文化祭Tシャツを着た人へ！</p></div>
     <div class="text">
-      <p>道に迷ってしまったときや、道案内をしてもらいたいときは【下図のイラスト１】のような近くの赤い文化祭Tシャツを着ている者にお気軽にお申し付けください。目的地までご案内いたします。</p>
+      <p>道に迷ってしまったときや道がわからないときは、近くの赤い文化祭Tシャツ（下図参照）を着ている者にお気軽にお申し付けください。目的地までご案内いたします。</p>
     </div>
     <div class="alone"><img src="../assets/sectionmark_alone.svg"><p>休憩所のご利用について</p></div>
     <div class="text">
@@ -35,10 +35,21 @@
     </div>
     <div class="alone"><img src="../assets/sectionmark_alone.svg"><p>お客様全員が楽しめる開成祭にするために</p></div>
     <div class="text">
-      <p>お客様全員にマナーを守っていただくことにより、お客様全員が開成祭を楽しんでいただけると考えております。マナーはしっかりと守り、他のお客様のご迷惑になるような行動はおやめください。マナー違反や迷惑行為をしているのではないかと思われるときは文化祭準備委員がお声がけさせていただくことがございますのでご了承ください。</p>
+      <p>お客様全員にマナーを守っていただくことにより、お客様全員に開成祭を楽しんでいただけると考えております。
+        マナーはしっかりと守り、他のお客様のご迷惑になるような行動はおやめください。マナー違反や迷惑行為をしているのではないかと思われるときは文化祭準備委員が声をかけさせていただくことがございますので ご了承ください。</p>
     </div>
   </div>
-</div>
+  <div class="containerH3">
+    <div class="along"><img src="../assets/sectionmark_along.svg"><div class="along-line"><p>安全のために</p></div></div>
+  </div>
+  <div class="containerT3">
+    <div class="alone"><img src="../assets/sectionmark_alone.svg"><p>ベビーカーをお持ちのお客様へ</p></div>
+    <div class="text">
+      <p>校門を入ってすぐのA会場インフォメーションセンターにてベビーカー預かりサービスを実施しています。ベビーカーを持ちながら会場内を回るのは大変かと思われますので、ぜひご利用ください。</p>
+      <p>また、授乳をしたいという方は赤いTシャツを着た文化祭委員にお声がけください。ご案内いたします。また、オムツ替えの場所についてはトイレをご利用ください。</p>
+    </div>
+  </div>
+  </div>
 </template>
 <script>
   import Header from '~/components/Myheader.vue'
@@ -49,24 +60,17 @@
   }
 </script>
 <style>
-  .containerH1{
-    margin-top: 45px;
+  .container-info{
   }
   .along{
     border-left-style: revert;
     position: relative;
-    left: 10px;
     font-size: 32px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    padding-top: 7px;
   }
-  .along-line >p{
-    position: relative;
-    left: 7px;
-    top: 9px;
-  }
+
   .along-line{
     width: 100%;
     border-bottom: #CCBD14 2px solid;
@@ -77,27 +81,34 @@
     display: flex;
     flex-direction: row;
     padding-top: 7px;
+    padding-bottom: 3px;
   }
   .alone >p{
     position: relative;
     left: 7px;
   }
-@media screen and (max-width:960px) {
-  .container{
+  .container-info {
     background-color: #411445;
     color: #FFFFFF;
-    padding: 10px 15px;
   }
-  .header1{
-    font-size: 32px;
-    font-weight: bold;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-
+@media screen and (max-width:960px) {
+  .containerH1{
+  margin-top: 45px;
   }
-  .header2{
-    font-size: 16pt;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-
+  .container-info{
+    padding: 10px 15px 30px;
+  }
+  .along{
+    padding-top: 7px;
+  }
+  .along-line >p{
+       position: relative;
+       left: 7px;
+       top: 2px;
+     }
+  .alone{
+    position: relative;
+    left: 5px;
   }
   .text{
     font-size: 15px;
@@ -107,58 +118,58 @@
 }
 @media screen and (min-width:960px) {
   .container-info{
-    background-color: #411445;
-    color: #FFFFFF;
+    padding: 65px 0 0;
     display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 28% 72%;
+    grid-template-rows: auto auto auto;
+  }
+  .containerH1 ,.containerH2 ,.containerH3{
+    text-align: center;
+    background-color: #912A55;
+
+  }
+  .containerT1 ,.containerT2 ,.containerT3{
+    padding: 0 10px;
   }
   .containerH1{
-    padding: 20px 0px 10px;
+    padding: 14px 0px 10px;
     grid-row: 1;
     grid-column: 1;
-    background-color: #912A55;
   }
   .containerT1{
-    padding: 20px 0px 10px;
+    padding: 17px 10px 10px;
     grid-row: 1;
     grid-column: 2;
     position: relative;
-    top: 40px;
   }
   .containerH2{
-    padding: 10px 0px;
+    padding: 16px 0px 10px;
     grid-row: 2;
     grid-column: 1;
-    background-color: #912A55;
   }
   .containerT2{
-    padding: 10px 0px;
+    padding: 14px 10px 30px;
     grid-row: 2;
     grid-column: 2;
   }
-  .header1{
-    margin-top: 3px;
-    text-align: center;
-    font-size: 20pt;
-    font-weight: bold;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
+  .containerH3{
+    padding: 16px 0 30px;
+    grid-row: 3;
+    grid-column: 1;
+
   }
-  .header2{
-    font-size: 16pt;
-    font-family: "A-OTF Midashi Go MB31 Pr6N", Sans-Serif;
-    margin: 5px 15px 5px 15px;
-    position: relative;
-    top: -42px;
-    left: 30px;
+  .containerT3{
+    padding: 14px 10px 30px;
+    grid-row: 3;
+    grid-column: 2;
   }
   .text{
     font-size: 16px;
-    position: relative;
-    top: -42px;
-    margin: 0px 15px -30px 15px;
   }
-  .along{
+  .along-line{
+    border: none;
+  }
+  .along >img{
     display: none;
   }
 }

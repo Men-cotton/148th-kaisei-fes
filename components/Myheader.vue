@@ -43,6 +43,10 @@
             ul {
                   list-style: none;
             }
+            input {
+                  position: relative;
+                  top: -3000px
+            }
             input + label {
                   position: fixed;
                   top: 20px;
@@ -58,7 +62,7 @@
                         margin-top: -1px;
                         left: 0;
                         display: block;
-                        background: $blackColor;
+                        background: white;
                         transition: .5s;
                   }
                   span:first-child {
