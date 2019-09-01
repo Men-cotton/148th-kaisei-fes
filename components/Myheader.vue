@@ -119,7 +119,7 @@
                                     font-weight: 700;
                                     font-family: sans-serif;
                                     display: block;
-                                    padding: 25px;
+                                    padding: 4vh;
                               }
                         }
                   }

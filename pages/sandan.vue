@@ -4,6 +4,15 @@
     <div class="title">
       <p>企画一覧</p>
     </div>
+    <div class="sandan-desc">
+      <p>開成祭で行われる企画の一覧ページです。</p>
+      <p>操作方法</p>
+      <p>キーワード検索<br>参加団体の団体名</p>
+      <p>絞り込み</p>
+      <p></p>
+      <p>各団体のカードをタップすると詳細が開きます。「マップを見る」でその企画がやっている場所の地図を見ることができます。
+        <br>「詳しく」をタップすると展示内容の詳しい情報が出てきます。</p>
+    </div>
     <div class="search-box-title">
       <p>キーワード検索</p>
     </div>
@@ -22,7 +31,7 @@
     </div>
 
     <v-app>
-      <v-content>
+      <v-content class="card-setting">
         <SandanCard v-for="(project) in projects"
                     v-bind:key="project.objectID"
                     v-bind:project="project"
@@ -138,6 +147,10 @@
     grid-column: 3/5;
     grid-row: 2/3;
   }
+  .sandan-desc{
+    color: white;
+
+  }
 
   .img {
     border-radius: 27.5px;
@@ -152,12 +165,12 @@
     color: white;
     font-size: 32px;
     padding: 80px 0px;
+    grid-template-columns: repeat();
   }
 
   /*--カードの並べ方--*/
-  .ais-results {
+  .card-setting {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 </style>

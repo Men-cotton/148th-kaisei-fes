@@ -48,7 +48,7 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 55px auto 45px;
+    grid-template-columns: 55px auto 35px;
     grid-template-rows: 21px 24px 20px;
   }
 
@@ -90,11 +90,14 @@
   }
 
   .minute {
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 10px;
   }
 
 @media screen and (min-width: 600px) {
+  .card{
+    margin: 5px;
+  }
   .grid-container2 {
     display: grid;
     grid-template-columns: 49.5% 1% 49.5%;

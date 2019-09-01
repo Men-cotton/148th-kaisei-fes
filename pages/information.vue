@@ -2,7 +2,7 @@
 <div class="container-info">
   <Header></Header>
   <div class="containerH1">
-    <div class="along"><img src="../assets/sectionmark_along.svg"><div class="along-line"><p>来場時ご案内</p></div></div>
+    <div class="along"><img src="../assets/sectionmark_along.svg"><div class="along-line"><p>来場案内</p></div></div>
   </div>
   <div class="containerT1">
     <div class="alone"><img src="../assets/sectionmark_alone.svg"><p>アクセス</p></div>
@@ -80,8 +80,6 @@
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 5px;
   }
   .alone >p{
     position: relative;
@@ -97,7 +95,7 @@
     padding-top: 100px;
   }
   .containerH1{
-  margin-top: 60px;
+  margin-top: 80px;
   }
   .container-info{
     padding: 10px 15px 30px;
@@ -108,11 +106,14 @@
   .along-line >p{
        position: relative;
        left: 7px;
-       top: 2px;
+       top: 1px;
      }
   .alone{
     position: relative;
     left: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
   }
   .text{
     font-size: 15px;
@@ -152,7 +153,7 @@
     grid-column: 1;
   }
   .containerT2{
-    padding: 17px 10px 30px;
+    padding: 17px 10px 10px;
     grid-row: 2;
     grid-column: 2;
   }
@@ -175,6 +176,10 @@
   }
   .along >img{
     display: none;
+  }
+  .alone{
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
 }
 </style>
