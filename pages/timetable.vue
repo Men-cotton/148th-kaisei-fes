@@ -16,41 +16,35 @@
       </p>
     </div>
     <div class="timetable-container">
-      <div class="days">
-        <div v-on:click="show_day=1" class="day-select">
-          <div v-bind:class="{selected: show_day==1}" class="day day1">
-            <p v-bind:class="{'selected-text': show_day==1}">1日目</p>
-          </div>
+      <div class="day-row">
+        <div v-on:click="show_day=1" v-bind:class="[{selected: show_day==1}, 'day day1']">
+          <p v-bind:class="{'selected-text': show_day==1}">1日目</p>
         </div>
-        <div v-on:click="show_day=2" class="day-select">
-          <div v-bind:class="{selected: show_day==2}" class="day day2">
-            <p v-bind:class="{'selected-text': show_day==2}">2日目</p>
-          </div>
+        <div v-on:click="show_day=2" v-bind:class="[{selected: show_day==2}, 'day day2']">
+          <p v-bind:class="{'selected-text': show_day==2}">2日目</p>
         </div>
       </div>
 
       <div class="place-row">
         <div v-for="place in places_list">
-          <div v-on:click="show_place=place.name">
-            <div v-bind:class="[{ selected: show_place==place.name },'place-p']">
-              <div v-bind:class="{ 'selected-text': show_place==place.name }">{{place.name}}</div>
-            </div>
+          <div v-on:click="show_place=place.name" v-bind:class="[{ selected: show_place==place.name }, 'place-p']">
+            <p v-bind:class="{ 'selected-text': show_place==place.name }">{{place.name}}</p>
           </div>
         </div>
       </div>
-
-      <div class="grid-container-time">
-        <div v-for="n in 8" class="time">{{ n + 8 }}</div>
-        <div v-for="event in should_show_events" :key="event.id" class="event-container">
-          <div class="group" v-bind:style="{'grid-row': event.start_row + '/' + (event.end_row + 1)}">{{event.name}}
-          </div>
-          <div class="group-time" v-bind:style="{'grid-row': event.start_row}">{{event.start_time}}</div>
-          <!-- <div class="name"></div> -->
-          <div class="group-time" v-bind:style="{'grid-row': event.end_row}">{{event.end_time}}</div>
-        </div>
-      </div>
-
     </div>
+
+    <div class="grid-container-time">
+      <div v-for="n in 8" class="time">{{ n + 8 }}</div>
+      <div v-for="event in should_show_events" :key="event.id" class="event-container">
+        <div class="group" v-bind:style="{'grid-row': event.start_row + '/' + (event.end_row + 1)}">{{event.name}}
+        </div>
+        <div class="group-time" v-bind:style="{'grid-row': event.start_row}">{{event.start_time}}</div>
+        <!-- <div class="name"></div> -->
+        <div class="group-time" v-bind:style="{'grid-row': event.end_row}">{{event.end_time}}</div>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -516,8 +510,6 @@
   }
 
   .timetable-container {
-
-
   }
 
   .usage {
@@ -535,7 +527,7 @@
     color: #411445;
   }
 
-  .days {
+  .day-row {
     display: grid;
     grid-template-columns: auto auto;
   }
@@ -561,17 +553,21 @@
   .place-row {
     height: 40px;
     display: grid;
-    overflow-x: scroll;
     grid-template-columns: 180px 180px 180px 180px 180px;
   }
 
+  @media screen and (max-width: 480px) {
+    .place-row {
+      overflow-x: scroll;
+    }
+  }
+
   .place-p {
-    height: 100%;
+    height: 40px;
     color: #7f7d7d;
     background: #EAEFF2;
     border-top: 0.5px solid #000000;
     border-left: 0.5px solid #000000;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
