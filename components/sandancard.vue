@@ -94,9 +94,9 @@
     margin-top: 10px;
   }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .card{
-    margin: 5px;
+    margin: 5px 0;
   }
   .grid-container2 {
     display: grid;
@@ -110,7 +110,7 @@
   }
 }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     .grid-container2{
       grid-template-columns: 100%;
       grid-template-rows: 40px 40px;

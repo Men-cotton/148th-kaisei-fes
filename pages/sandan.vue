@@ -164,13 +164,13 @@
   .title {
     color: white;
     font-size: 32px;
-    padding: 80px 0px;
-    grid-template-columns: repeat();
+    padding: 80px 0px;;
   }
 
   /*--カードの並べ方--*/
   .card-setting {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    grid-column-gap: 10px;
   }
 </style>
