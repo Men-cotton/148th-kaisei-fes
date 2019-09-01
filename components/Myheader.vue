@@ -12,7 +12,7 @@
                   <ul>
                         <li><n-link to="/">トップ</n-link></li>
                         <li><n-link to="information">ご案内</n-link></li>
-                        <li><n-link to="map">校内マップ</n-link></li>
+                        <li><n-link to="">校内マップ</n-link></li>
                         <li><n-link to="sandan">企画一覧</n-link></li>
                         <li><n-link to="timetable">タイムテーブル</n-link></li>
                         <li><n-link to="menu">食品メニュー</n-link></li>
@@ -101,11 +101,13 @@
                   transition-delay: 0s;
                   overflow: hidden;
                   > ul {
+                        padding: 0;
+                        color: white;
                         text-align: center;
                         position: absolute;
-                        top: 20vh;
-                        left: 20%;
-                        right: 20%;
+                        top: 15vh;
+                        left: 10%;
+                        right: 10%;
                         > li {
                               opacity: 0;
                               transition: .5s;
@@ -113,11 +115,11 @@
                               > a {
                                     text-decoration: none;
                                     text-transform: uppercase;
-                                    color: $blackColor;
+                                    color: white;
                                     font-weight: 700;
                                     font-family: sans-serif;
                                     display: block;
-                                    padding: 30px;
+                                    padding: 25px;
                               }
                         }
                   }
@@ -131,6 +133,9 @@
                               transition-delay: .2s;
                         }
                   }
+            }
+            @media screen {
+
             }
       }
 </style>

@@ -6,19 +6,21 @@ module.exports = {
         }
     },
     titleTemplate: '%s - 148th開成祭',
-    meta: [
-        {charset: 'utf-8'},
-        { name: 'viewport', content: 'width=device-width, initial-scale=1'},
-        { hid: 'description', name: 'description', content: '148th開成祭の公式ホームページです。'},
-        { hid: 'og:site_name', property: 'og:site_name', content: '148th開成祭' },
-        { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:url', property: 'og:url', content: 'https://kaisei-fes.com' },
-        { hid: 'og:title', property: 'og:title', content: '148th開成祭' },
-        { hid: 'og:description', property: 'og:description', content: '2019/9/21(土),22(日)開催。' },
-        { hid: 'og:image', property: 'og:image', content: 'https://kaisei-fes.com/assets/icon.JPG' },
-        { name: 'Twitter:Card', content: 'Summary_large_image' }
-
-    ],
+    meta: {
+        charset: 'utf-8',
+        viewport: 'width=device-width, initial-scale=1',
+        name: '148th開成祭',
+        description: '148th開成祭の公式ホームページです。',
+        'og:type': 'website',
+        'og:url': 'https://kaisei-fes.com',
+        'og:title': '148th開成祭',
+        'og:description': '2019/9/21(土),22(日)開催。',
+        'og:image': 'https://kaisei-fes.com/assets/icon.JPG',
+        'Twitter:Card': 'Summary_large_image',
+        theme_color: '#411445',
+        background_color: '#411445',
+        lang: 'ja',
+    },
 /*    link: [
         {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
@@ -53,6 +55,7 @@ module.exports = {
     ],
 
     modules: [
+    '@nuxtjs/pwa',
     ],
     /*
     ** Build configuration

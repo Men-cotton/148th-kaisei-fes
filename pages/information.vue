@@ -60,8 +60,6 @@
   }
 </script>
 <style>
-  .container-info{
-  }
   .along{
     border-left-style: revert;
     position: relative;
@@ -69,6 +67,8 @@
     font-weight: bold;
     display: flex;
     flex-direction: row;
+    padding:  10px 0;
+
   }
 
   .along-line{
@@ -77,23 +77,27 @@
   }
   .alone{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
-    padding-top: 7px;
-    padding-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 5px;
   }
   .alone >p{
     position: relative;
     left: 7px;
   }
   .container-info {
+    padding-top: ;
     background-color: #411445;
     color: #FFFFFF;
   }
 @media screen and (max-width:960px) {
+  .container-info{
+    padding-top: 100px;
+  }
   .containerH1{
-  margin-top: 45px;
+  margin-top: 60px;
   }
   .container-info{
     padding: 10px 15px 30px;
@@ -112,7 +116,7 @@
   }
   .text{
     font-size: 15px;
-    margin: 0px 15px 15px 15px;
+    margin: 0px 5px 5px 5px;
   }
 
 }
@@ -143,23 +147,23 @@
     position: relative;
   }
   .containerH2{
-    padding: 16px 0px 10px;
+    padding: 14px 0px 10px;
     grid-row: 2;
     grid-column: 1;
   }
   .containerT2{
-    padding: 14px 10px 30px;
+    padding: 17px 10px 30px;
     grid-row: 2;
     grid-column: 2;
   }
   .containerH3{
-    padding: 16px 0 30px;
+    padding: 14px 0 30px;
     grid-row: 3;
     grid-column: 1;
 
   }
   .containerT3{
-    padding: 14px 10px 30px;
+    padding: 17px 10px 30px;
     grid-row: 3;
     grid-column: 2;
   }
