@@ -48,7 +48,7 @@
             }
             input + label {
                   position: fixed;
-                  top: 20px;
+                  top: 13.5px;
                   right: 20px;
                   height: 23px;
                   width: 22px;
@@ -95,7 +95,7 @@
                   top: 0;
                   left: 0;
                   width: 100%;
-                  height: 65px;
+                  height: 50px;
                   z-index: 3;
                   transition: .3s;
                   transition-delay: 0s;
@@ -105,7 +105,7 @@
                         color: white;
                         text-align: center;
                         position: absolute;
-                        top: 15vh;
+                        top: 10vh;
                         left: 10%;
                         right: 10%;
                         > li {
@@ -116,6 +116,7 @@
                                     text-decoration: none;
                                     text-transform: uppercase;
                                     color: white;
+                                    font-size: 17px;
                                     font-weight: 700;
                                     font-family: sans-serif;
                                     display: block;

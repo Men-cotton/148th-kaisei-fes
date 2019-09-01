@@ -555,7 +555,7 @@
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
   }
-  
+
   @media screen and (max-width: 600px) {
     .place-row {
       overflow-x: scroll;
