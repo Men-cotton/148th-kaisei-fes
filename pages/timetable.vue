@@ -590,11 +590,11 @@
 
   .event-container {
     position: absolute;
-    left: 25px;
-    width: calc(100% - 50px);
+    left: 20px;
+    width: calc(100% - 40px);
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 40px 15px 50px auto 15px;
+    grid-template-columns: 40px 1px 50px auto 1px;
     grid-template-rows: repeat(32, 32.5px);
     grid-auto-flow: column;
   }
@@ -616,6 +616,7 @@
     padding: 5px 5px 5px 25px;
     background: #F8F9FA;
     border: 1px solid #CCBD14;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -105,7 +105,7 @@
                         color: white;
                         text-align: center;
                         position: absolute;
-                        top: 20vh;
+                        top: 15vh;
                         left: 10%;
                         right: 10%;
                         > li {
@@ -119,7 +119,7 @@
                                     font-weight: 700;
                                     font-family: sans-serif;
                                     display: block;
-                                    padding: 30px;
+                                    padding: 25px;
                               }
                         }
                   }

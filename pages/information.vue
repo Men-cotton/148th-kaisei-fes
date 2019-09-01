@@ -67,6 +67,8 @@
     font-weight: bold;
     display: flex;
     flex-direction: row;
+    padding:  10px 0;
+
   }
 
   .along-line{
@@ -75,11 +77,11 @@
   }
   .alone{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .alone >p{
     position: relative;
