@@ -53,6 +53,7 @@ module.exports = {
     ],
 
     modules: [
+    '@nuxtjs/pwa',
     ],
     /*
     ** Build configuration

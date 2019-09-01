@@ -7,7 +7,7 @@ import _6f6c098b from '../layouts/default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"htmlAttrs":{"prefix":"og: "},"meta":[],"link":[],"style":[],"script":[]},
+  head: {"htmlAttrs":{"prefix":"og: ","lang":"en"},"meta":[{"hid":"charset","charset":"utf-8"},{"hid":"viewport","name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"148th-kaisei-fes"},{"hid":"author","name":"author","content":"Aiki Murayama"},{"hid":"description","name":"description","content":"kaisei-fes"},{"hid":"theme-color","name":"theme-color","content":"black"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"148th-kaisei-fes"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"148th-kaisei-fes"},{"hid":"og:description","name":"og:description","property":"og:description","content":"kaisei-fes"}],"link":[{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.4ee26b8b.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64.c6617e.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512.c6617e.png","sizes":"512x512"}],"style":[],"script":[],"title":"148th-kaisei-fes"},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
