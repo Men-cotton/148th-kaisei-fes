@@ -81,7 +81,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
   .alone >p{
     position: relative;

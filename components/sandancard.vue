@@ -94,18 +94,33 @@
     margin-top: 10px;
   }
 
+@media screen and (min-width: 600px) {
   .grid-container2 {
     display: grid;
     grid-template-columns: 49.5% 1% 49.5%;
   }
-
   .map {
     grid-column: 1/2;
   }
-
   .details {
     grid-column: 3/4;
   }
+}
+
+  @media screen and (max-width: 600px) {
+    .grid-container2{
+      grid-template-columns: 100%;
+      grid-template-rows: 40px 40px;
+      grid-gap: 10px;
+    }
+    .map {
+      grid-row: 1/2;
+    }
+    .details {
+      grid-row: 2/3;
+    }
+  }
+
   .describe-more{
     margin: 0 10px;
   }

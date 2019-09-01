@@ -1,24 +1,8 @@
 <template>
       <div>
-            <h1></h1>
+            <div>
 
-            <input style="display: none" id="burger" type="checkbox" />
-            <label for="burger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-            </label>
-            <nav>
-                  <ul>
-                        <li><n-link to="/">トップ</n-link></li>
-                        <li><n-link to="information">ご案内</n-link></li>
-                        <li><n-link to="">校内マップ</n-link></li>
-                        <li><n-link to="sandan">企画一覧</n-link></li>
-                        <li><n-link to="timetable">タイムテーブル</n-link></li>
-                        <li><n-link to="menu">食品メニュー</n-link></li>
-                        <li><n-link to="feature">文化祭特集</n-link></li>
-                  </ul>
-            </nav>
+            </div>
       </div>
 </template>
 <style lang="scss">
@@ -133,9 +117,6 @@
                               transition-delay: .2s;
                         }
                   }
-            }
-            @media screen {
-
             }
       }
 </style>
