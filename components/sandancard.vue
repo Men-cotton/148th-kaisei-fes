@@ -13,11 +13,11 @@
     </div>
     <div v-show="tap" class="describe-more">
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg"><p>この団体について</p></div>
-      <div>(Sandan-introduction)</div>
+      <div>{{project.Sandan-introduction}}</div>
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg"><p>Image</p></div>
-      <div>(shasin)</div>
+      <div>{{project.Thumbnail}}</div>
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg"><p>宣伝...</p></div>
-      <div>(Sandan-introduction)</div>
+      <div>{{project.Sandan-introduction}}</div>
 
     </div>
   </div>

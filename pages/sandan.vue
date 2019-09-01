@@ -24,7 +24,7 @@
     <v-app>
       <v-content>
         <SandanCard v-for="(project) in projects"
-                    v-bind:key="project.id"
+                    v-bind:key="project.objectID"
                     v-bind:project="project"
                     v-bind:datasrc="project.picture"
         >
