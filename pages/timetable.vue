@@ -553,12 +553,15 @@
   .place-row {
     height: 40px;
     display: grid;
-    grid-template-columns: 180px 180px 180px 180px 180px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
   }
-
-  @media screen and (max-width: 480px) {
+  
+  @media screen and (max-width: 600px) {
     .place-row {
       overflow-x: scroll;
+      scroll-behavior: smooth;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+
     }
   }
 

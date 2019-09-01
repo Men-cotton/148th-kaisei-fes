@@ -170,7 +170,7 @@
   /*--カードの並べ方--*/
   .card-setting {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fill, min-content(375px, 1fr));
     grid-column-gap: 10px;
   }
 </style>
