@@ -101,11 +101,13 @@
                   transition-delay: 0s;
                   overflow: hidden;
                   > ul {
+                        padding: 0;
+                        color: white;
                         text-align: center;
                         position: absolute;
                         top: 20vh;
-                        left: 20%;
-                        right: 20%;
+                        left: 10%;
+                        right: 10%;
                         > li {
                               opacity: 0;
                               transition: .5s;
@@ -113,7 +115,7 @@
                               > a {
                                     text-decoration: none;
                                     text-transform: uppercase;
-                                    color: $blackColor;
+                                    color: white;
                                     font-weight: 700;
                                     font-family: sans-serif;
                                     display: block;

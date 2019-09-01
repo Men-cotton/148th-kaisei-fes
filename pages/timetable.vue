@@ -613,7 +613,7 @@
   .group {
     font-size: 20px;
     color: #000000;
-    padding: 5px;
+    padding: 5px 5px 5px 25px;
     background: #F8F9FA;
     border: 1px solid #CCBD14;
     display: flex;
