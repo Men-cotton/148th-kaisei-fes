@@ -18,57 +18,29 @@
     <div class="timetable-container">
       <div class="days">
         <div v-on:click="show_day=1" class="day-select">
-          <div v-if="show_day==1" class="selected day day1"><p class="selected-text">1日目</p></div>
-          <div v-else class="day day1"><p>1日目</p></div>
+          <div v-bind:class="{selected: show_day==1}" class="day day1">
+            <p v-bind:class="{'selected-text': show_day==1}">1日目</p>
+          </div>
         </div>
         <div v-on:click="show_day=2" class="day-select">
-          <div v-if="show_day==2" class="selected day day2"><p class="selected-text">2日目</p></div>
-          <div v-else class="day day2"><p>2日目</p></div>
+          <div v-bind:class="{selected: show_day==2}" class="day day2">
+            <p v-bind:class="{'selected-text': show_day==2}">2日目</p>
+          </div>
         </div>
       </div>
 
       <div class="place-row">
-        <div v-on:click="show_place='小講堂'">
-          <div v-if="show_place=='小講堂'" class="place-p selected">
-            <div class="selected-text">小講堂</div>
+        <div v-for="place in places_list">
+          <div v-on:click="show_place=place.name">
+            <div v-bind:class="[{ selected: show_place==place.name },'place-p']">
+              <div v-bind:class="{ 'selected-text': show_place==place.name }">{{place.name}}</div>
+            </div>
           </div>
-          <div v-else class="place-p">小講堂</div>
-        </div>
-        <div v-on:click="show_place='本館ホール'">
-          <div v-if="show_place=='本館ホール'" class="place-p selected">
-            <div class="selected-text">本館ホール</div>
-          </div>
-          <div v-else class="place-p">本館ホール</div>
-        </div>
-        <div v-on:click="show_place='中学視聴覚室'">
-          <div v-if="show_place=='中学視聴覚室'" class="place-p selected">
-            <div class="selected-text">中学視聴覚室</div>
-          </div>
-          <div v-else class="place-p">中学視聴覚室</div>
-        </div>
-        <div v-on:click="show_place='柔道場'">
-          <div v-if="show_place=='柔道場'" class="place-p selected">
-            <div class="selected-text">柔道場</div>
-          </div>
-          <div v-else class="place-p">柔道場</div>
-        </div>
-        <div v-on:click="show_place='第２グラウンド'">
-          <div v-if="show_place=='第２グラウンド'" class="place-p selected">
-            <div class="selected-text">第２グラウンド</div>
-          </div>
-          <div v-else class="place-p">第２グラウンド</div>
         </div>
       </div>
 
       <div class="grid-container-time">
-        <div class="time nine">９</div>
-        <div class="time ten">10</div>
-        <div class="time eleven">11</div>
-        <div class="time twelve">12</div>
-        <div class="time thirteen">13</div>
-        <div class="time fourteen">14</div>
-        <div class="time fifteen">15</div>
-        <div class="time sixteen">16</div>
+        <div v-for="n in 8" class="time">{{ n + 8 }}</div>
         <div v-for="event in should_show_events" :key="event.id" class="event-container">
           <div class="group" v-bind:style="{'grid-row': event.start_row + '/' + (event.end_row + 1)}">{{event.name}}
           </div>
@@ -83,7 +55,7 @@
 </template>
 
 <script>
-  import Header from '~/components/Myheader.vue'
+    import Header from '~/components/Myheader.vue'
 
     function calcRow(time) {
         var times = time.split(':');
@@ -95,7 +67,7 @@
 
     export default {
         components: {
-          Header
+            Header
         },
         data() {
             return {
@@ -502,7 +474,14 @@
                         end_time: '14:25',
                         end_row: calcRow('14:25'),
                     },
-                ]
+                ],
+                places_list: [
+                    {name: '小講堂'},
+                    {name: '本館ホール'},
+                    {name: '中学視聴覚室'},
+                    {name: '柔道場'},
+                    {name: '第２グラウンド'},
+                ],
             }
         },
         computed: {
@@ -522,6 +501,7 @@
     padding: 0px 15px;
     background-color: #411445;
   }
+
   .title {
     color: white;
     font-size: 32px;
@@ -532,7 +512,8 @@
 
 
   }
-  .usage{
+
+  .usage {
     color: white;
   }
 
