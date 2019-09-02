@@ -91,9 +91,6 @@
     color: #FFFFFF;
   }
 @media screen and (max-width:960px) {
-  .container-info{
-    padding-top: 100px;
-  }
   .containerH1{
   margin-top: 80px;
   }
@@ -123,7 +120,7 @@
 }
 @media screen and (min-width:960px) {
   .container-info{
-    padding: 65px 0 0;
+    padding: 55px 0 0;
     display: grid;
     grid-template-columns: 28% 72%;
     grid-template-rows: auto auto auto;

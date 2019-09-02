@@ -1,5 +1,5 @@
 <template>
-  <div class="container-feature">
+  <div class="container-foodmenu">
     <Header/>
     <div class="title">
       <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>食品メニュー</p></div></div>
@@ -37,7 +37,7 @@
     color: #ccbd14
   }
 
-  .container-feature {
+  .container-foodmenu {
     padding: 0px 15px 30px;
     background-color: #411445;
     color: white;
@@ -68,12 +68,13 @@
   }
 
   .buttons{
-    margin: 10px 0;
+    margin: 5px 0;
   }
   .menu-desc{
-    margin: 0 5px;
+    margin: 0 5px 35px;
     padding: 20px 10px;
-    background: rgba(226, 226, 226, 0.6);
+    background: rgba(226, 226, 226, 0.3);
+    border: rgba(226, 226, 226, 0.3) double;
   }
 
 

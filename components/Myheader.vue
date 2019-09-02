@@ -48,7 +48,7 @@
             }
             input + label {
                   position: fixed;
-                  top: 13.5px;
+                  top: 15px;
                   right: 20px;
                   height: 25px;
                   width: 24px;
@@ -65,10 +65,10 @@
                         transition: .5s;
                   }
                   span:first-child {
-                        top: 2px;
+                        top: 3px;
                   }
                   span:last-child {
-                        top: 22px;
+                        top: 23px;
                   }
             }
             label:hover {
@@ -95,7 +95,7 @@
                   top: 0;
                   left: 0;
                   width: 100%;
-                  height: 50px;
+                  height: 55px;
                   z-index: 3;
                   transition: .3s;
                   transition-delay: 0s;
