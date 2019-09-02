@@ -37,10 +37,6 @@
         </SandanCard>
       </v-content>
     </v-app>
-
-
-    <!--一応残したやつ-->
-
   </div>
 </template>
 
@@ -48,6 +44,11 @@
     import algoliasearch from 'algoliasearch/lite';
     import Header from '~/components/Myheader.vue';
     import SandanCard from '~/components/sandancard.vue';
+
+    const searchClient = algoliasearch(
+        'CBBW6NQXPV',
+        '7a788ae60b68dff01a8328d0e1150c85'
+    );
 
     export default {
         components: {
@@ -65,10 +66,6 @@
         },
         created: function () {
             var self = this;
-            var searchClient = algoliasearch(
-                'CBBW6NQXPV',
-                '7a788ae60b68dff01a8328d0e1150c85'
-            );
             self.index = searchClient.initIndex('project');
             this.searchProject();
         },
