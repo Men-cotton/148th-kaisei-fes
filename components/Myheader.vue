@@ -49,9 +49,9 @@
             input + label {
                   position: fixed;
                   top: 13.5px;
-                  right: 18px;
-                  height: 27px;
-                  width: 26px;
+                  right: 20px;
+                  height: 25px;
+                  width: 24px;
                   z-index: 5;
                   span {
                         position: absolute;
@@ -68,7 +68,7 @@
                         top: 2px;
                   }
                   span:last-child {
-                        top: 25px;
+                        top: 22px;
                   }
             }
             label:hover {

@@ -105,6 +105,7 @@
   }
 
   .search-box {
+    background: #F8F9FA;
     width: 100%;
     height: 35px;
     border-radius: 0 0 5px 5px;
