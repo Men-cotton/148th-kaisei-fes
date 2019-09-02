@@ -1,6 +1,6 @@
 <template>
       <div>
-            <h1></h1>
+            <h6></h6>
 
             <input style="display: none" id="burger" type="checkbox" />
             <label for="burger">
@@ -12,7 +12,7 @@
                   <ul>
                         <li><n-link to="/">トップ</n-link></li>
                         <li><n-link to="information">ご案内</n-link></li>
-                        <li><n-link to="">校内マップ</n-link></li>
+                        <li><n-link to="">校内マップ(準備中)</n-link></li>
                         <li><n-link to="sandan">企画一覧</n-link></li>
                         <li><n-link to="timetable">タイムテーブル</n-link></li>
                         <li><n-link to="foodmenu">食品メニュー</n-link></li>
@@ -24,7 +24,7 @@
 <style lang="scss">
       $blackColor: #411415;
       body {
-            h1 {
+            h6 {
                   position: fixed;
                   top: 20px;
                   left: 20px;

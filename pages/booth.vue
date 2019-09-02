@@ -1,6 +1,5 @@
 <template>
     <div id="root">
-        <Header/>
         <div id="vain-square"></div>
         <div id="title">
             <div class="box-lower box-lower-short"></div>
@@ -78,7 +77,12 @@
 </template>
 
 <script>
+    import Header from '~/components/Myheader.vue';
+
     export default {
+        components:{
+            Header
+        },
         head() {
             return {
                 meta:
