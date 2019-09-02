@@ -75,7 +75,7 @@ export default {
     background-color: #411445;
   }
   .top{
-    padding:40vh 4vw;
+    padding:37vh 4vw;
     display:flex;
     justify-content:space-between;
   }

@@ -78,7 +78,7 @@
                         place: '小講堂',
                         start_time: '9:15',
                         start_row: calcRow(true, '9:15'),
-                        end_time: '10:55',
+                        end_time: '11:00',
                         end_row: calcRow(false, '10:55'),
                     },
                     {
@@ -96,7 +96,7 @@
                         place: '小講堂',
                         start_time: '12:30',
                         start_row: calcRow(true, '12:30'),
-                        end_time: '14:05',
+                        end_time: '14:10',
                         end_row: calcRow(false, '14:05'),
                     },
                     {
@@ -105,7 +105,7 @@
                         place: '小講堂',
                         start_time: '14:25',
                         start_row: calcRow(true, '14:25'),
-                        end_time: '15:05',
+                        end_time: '15:10',
                         end_row: calcRow(false, '15:05'),
                     },
                     {
@@ -114,7 +114,7 @@
                         place: '小講堂',
                         start_time: '15:20',
                         start_row: calcRow(true, '15:20'),
-                        end_time: '15:45',
+                        end_time: '15:50',
                         end_row: calcRow(false, '15:45'),
                     },
                     {
@@ -123,7 +123,7 @@
                         place: '小講堂',
                         start_time: '16:00',
                         start_row: calcRow(true, '16:00'),
-                        end_time: '16:45',
+                        end_time: '16:50',
                         end_row: calcRow(false, '16:45'),
                     },
                     {
@@ -132,7 +132,7 @@
                         place: '小講堂',
                         start_time: '9:20',
                         start_row: calcRow(true, '9:20'),
-                        end_time: '10:15',
+                        end_time: '10:20',
                         end_row: calcRow(false, '10:15'),
                     },
                     {
@@ -141,7 +141,7 @@
                         place: '小講堂',
                         start_time: '10:35',
                         start_row: calcRow(true, '10:35'),
-                        end_time: '11:40',
+                        end_time: '11:45',
                         end_row: calcRow(false, '11:40'),
                     },
                     {
@@ -150,7 +150,7 @@
                         place: '小講堂',
                         start_time: '11:55',
                         start_row: calcRow(true, '11:55'),
-                        end_time: '12:35',
+                        end_time: '12:40',
                         end_row: calcRow(false, '12:35'),
                     },
                     {
@@ -159,7 +159,7 @@
                         place: '小講堂',
                         start_time: '12:50',
                         start_row: calcRow(true, '12:50'),
-                        end_time: '13:45',
+                        end_time: '13:50',
                         end_row: calcRow(false, '13:45'),
                     },
                     {
@@ -168,7 +168,7 @@
                         place: '小講堂',
                         start_time: '14:00',
                         start_row: calcRow(true, '14:00'),
-                        end_time: '14:25',
+                        end_time: '14:30',
                         end_row: calcRow(false, '14:25'),
                     },
                     {
@@ -177,7 +177,7 @@
                         place: '小講堂',
                         start_time: '14:40',
                         start_row: calcRow(true, '14:40'),
-                        end_time: '16:25',
+                        end_time: '16:30',
                         end_row: calcRow(false, '16:25'),
                     },
 
@@ -187,7 +187,7 @@
                         place: '本館ホール',
                         start_time: '9:15',
                         start_row: calcRow(true, '9:15'),
-                        end_time: '10:45',
+                        end_time: '10:50',
                         end_row: calcRow(false, '10:45'),
                     },
                     {
@@ -196,7 +196,7 @@
                         place: '本館ホール',
                         start_time: '11:05',
                         start_row: calcRow(true, '11:05'),
-                        end_time: '11:50',
+                        end_time: '11:55',
                         end_row: calcRow(false, '11:50'),
                     },
                     {
@@ -205,7 +205,7 @@
                         place: '本館ホール',
                         start_time: '12:05',
                         start_row: calcRow(true, '12:05'),
-                        end_time: '13:00',
+                        end_time: '13:05',
                         end_row: calcRow(false, '13:00'),
                     },
                     {
@@ -214,7 +214,7 @@
                         place: '本館ホール',
                         start_time: '13:15',
                         start_row: calcRow(true, '13:15'),
-                        end_time: '14:40',
+                        end_time: '14:45',
                         end_row: calcRow(false, '14:40'),
                     },
                     {
@@ -223,7 +223,7 @@
                         place: '本館ホール',
                         start_time: '15:00',
                         start_row: calcRow(true, '15:00'),
-                        end_time: '16:05',
+                        end_time: '16:10',
                         end_row: calcRow(false, '16:05'),
                     },
                     {
@@ -232,7 +232,7 @@
                         place: '本館ホール',
                         start_time: '16:30',
                         start_row: calcRow(true, '16:30'),
-                        end_time: '16:55',
+                        end_time: '17:00',
                         end_row: calcRow(false, '16:55'),
                     },
                     {
@@ -241,7 +241,7 @@
                         place: '本館ホール',
                         start_time: '9:10',
                         start_row: calcRow(true, '9:10'),
-                        end_time: '10:00',
+                        end_time: '10:05',
                         end_row: calcRow(false, '10:00'),
                     },
                     {
@@ -250,7 +250,7 @@
                         place: '本館ホール',
                         start_time: '10:15',
                         start_row: calcRow(true, '10:15'),
-                        end_time: '12:05',
+                        end_time: '12:10',
                         end_row: calcRow(false, '12:05'),
                     },
                     {
@@ -259,7 +259,7 @@
                         place: '本館ホール',
                         start_time: '12:20',
                         start_row: calcRow(true, '12:20'),
-                        end_time: '13:45',
+                        end_time: '13:50',
                         end_row: calcRow(false, '13:45'),
                     },
                     {
@@ -268,7 +268,7 @@
                         place: '本館ホール',
                         start_time: '14:05',
                         start_row: calcRow(true, '14:05'),
-                        end_time: '14:55',
+                        end_time: '15:00',
                         end_row: calcRow(false, '14:55'),
                     },
                     {
@@ -277,7 +277,7 @@
                         place: '本館ホール',
                         start_time: '15:20',
                         start_row: calcRow(true, '15:20'),
-                        end_time: '16:45',
+                        end_time: '16:50',
                         end_row: calcRow(false, '16:45'),
                     },
 
@@ -287,7 +287,7 @@
                         place: '中学視聴覚室',
                         start_time: '9:40',
                         start_row: calcRow(true, '9:40'),
-                        end_time: '10:15',
+                        end_time: '10:20',
                         end_row: calcRow(false, '10:15'),
                     },
                     {
@@ -296,7 +296,7 @@
                         place: '中学視聴覚室',
                         start_time: '11:00',
                         start_row: calcRow(true, '11:00'),
-                        end_time: '11:45',
+                        end_time: '11:50',
                         end_row: calcRow(false, '11:45'),
                     },
                     {
@@ -305,7 +305,7 @@
                         place: '中学視聴覚室',
                         start_time: '12:05',
                         start_row: calcRow(true, '12:05'),
-                        end_time: '12:45',
+                        end_time: '12:50',
                         end_row: calcRow(false, '12:45'),
                     },
                     {
@@ -314,7 +314,7 @@
                         place: '中学視聴覚室',
                         start_time: '13:00',
                         start_row: calcRow(true, '13:00'),
-                        end_time: '16:45',
+                        end_time: '16:50',
                         end_row: calcRow(false, '16:45'),
                     },
                     {
@@ -323,7 +323,7 @@
                         place: '中学視聴覚室',
                         start_time: '9:15',
                         start_row: calcRow(true, '9:15'),
-                        end_time: '10:40',
+                        end_time: '10:45',
                         end_row: calcRow(false, '10:40'),
                     },
                     {
@@ -332,7 +332,7 @@
                         place: '中学視聴覚室',
                         start_time: '10:55',
                         start_row: calcRow(true, '10:55'),
-                        end_time: '12:30',
+                        end_time: '12:35',
                         end_row: calcRow(false, '12:30'),
                     },
                     {
@@ -341,7 +341,7 @@
                         place: '中学視聴覚室',
                         start_time: '12:45',
                         start_row: calcRow(true, '12:45'),
-                        end_time: '13:50',
+                        end_time: '13:55',
                         end_row: calcRow(false, '13:50'),
                     },
                     {
@@ -350,7 +350,7 @@
                         place: '中学視聴覚室',
                         start_time: '14:05',
                         start_row: calcRow(true, '14:05'),
-                        end_time: '14:40',
+                        end_time: '14:45',
                         end_row: calcRow(false, '14:40'),
                     },
                     {
@@ -359,7 +359,7 @@
                         place: '中学視聴覚室',
                         start_time: '14:55',
                         start_row: calcRow(true, '14:55'),
-                        end_time: '15:35',
+                        end_time: '15:40',
                         end_row: calcRow(false, '15:35'),
                     },
                     {
@@ -368,7 +368,7 @@
                         place: '中学視聴覚室',
                         start_time: '15:50',
                         start_row: calcRow(true, '15:50'),
-                        end_time: '16:25',
+                        end_time: '16:30',
                         end_row: calcRow(false, '16:25'),
                     },
 
@@ -378,7 +378,7 @@
                         place: '柔道場',
                         start_time: '12:00',
                         start_row: calcRow(true, '12:00'),
-                        end_time: '14:55',
+                        end_time: '15:00',
                         end_row: calcRow(false, '14:55'),
                     },
                     {
@@ -387,7 +387,7 @@
                         place: '柔道場',
                         start_time: '15:25',
                         start_row: calcRow(true, '15:25'),
-                        end_time: '16:10',
+                        end_time: '16:15',
                         end_row: calcRow(false, '16:10'),
                     },
                     {
@@ -396,7 +396,7 @@
                         place: '柔道場',
                         start_time: '11:00',
                         start_row: calcRow(true, '11:00'),
-                        end_time: '11:45',
+                        end_time: '11:50',
                         end_row: calcRow(false, '11:45'),
                     },
 
@@ -406,7 +406,7 @@
                         place: '第２グラウンド',
                         start_time: '11:15',
                         start_row: calcRow(true, '11:15'),
-                        end_time: '11:40',
+                        end_time: '11:45',
                         end_row: calcRow(false, '11:40'),
                     },
                     {
@@ -415,7 +415,7 @@
                         place: '第２グラウンド',
                         start_time: '13:00',
                         start_row: calcRow(true, '13:00'),
-                        end_time: '13:35',
+                        end_time: '13:40',
                         end_row: calcRow(false, '13:35'),
                     },
                     {
@@ -424,7 +424,7 @@
                         place: '第２グラウンド',
                         start_time: '14:00',
                         start_row: calcRow(true, '14:00'),
-                        end_time: '14:55',
+                        end_time: '15:00',
                         end_row: calcRow(false, '14:55'),
                     },
                     {
@@ -433,7 +433,7 @@
                         place: '第２グラウンド',
                         start_time: '9:50',
                         start_row: calcRow(true, '9:50'),
-                        end_time: '10:25',
+                        end_time: '10:30',
                         end_row: calcRow(false, '10:25'),
                     },
                     {
@@ -442,7 +442,7 @@
                         place: '第２グラウンド',
                         start_time: '10:50',
                         start_row: calcRow(true, '10:50'),
-                        end_time: '11:25',
+                        end_time: '11:30',
                         end_row: calcRow(false, '11:25'),
                     },
                     {
@@ -451,7 +451,7 @@
                         place: '第２グラウンド',
                         start_time: '12:00',
                         start_row: calcRow(true, '12:00'),
-                        end_time: '12:25',
+                        end_time: '12:30',
                         end_row: calcRow(false, '12:25'),
                     },
                     {
@@ -460,7 +460,7 @@
                         place: '第２グラウンド',
                         start_time: '12:55',
                         start_row: calcRow(true, '12:40'), // m(_ _ )m
-                        end_time: '12:55',
+                        end_time: '13:00',
                         end_row: calcRow(false, '12:55'),
                     },
                     {
@@ -469,7 +469,7 @@
                         place: '第２グラウンド',
                         start_time: '14:00',
                         start_row: calcRow(true, '14:00'),
-                        end_time: '14:25',
+                        end_time: '14:30',
                         end_row: calcRow(false, '14:25'),
                     },
                 ],
@@ -496,7 +496,7 @@
 
 <style>
   .container-time {
-    padding: 0px 15px;
+    padding: 0px 15px 30px;
     background-color: #411445;
   }
   .title {
@@ -603,6 +603,7 @@
     grid-template-columns: 40px 15px 50px auto 15px;
     grid-template-rows: repeat(32, 32.5px);
     grid-auto-flow: column;
+    border-radius: 10px 0;
   }
 
   .event-container {

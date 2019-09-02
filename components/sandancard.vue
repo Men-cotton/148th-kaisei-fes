@@ -15,7 +15,7 @@
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg">
         <p>この団体について</p>
       </div>
-      <div>{{project.Description}}</div>
+      <div>{{project.Sandan-introduction}}</div>
       <!--
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg">
         <p>Image</p></div>

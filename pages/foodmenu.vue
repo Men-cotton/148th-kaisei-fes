@@ -6,10 +6,10 @@
     </div>
 
     <div class="page-desc">
-      <p>開成祭で行われる食品販売のメニューを確認できます。喫茶、</p>
+      <p>開成祭で行われる食品販売のメニューを確認できます。詳細なメニューの完成は来週までお待ちください。</p>
     </div>
 
-    <n-link to="booth"><div class="buttons">模擬店</div></n-link>
+    <div class="buttons">模擬店</div>
     <div class="menu-desc">開成祭名物「開成焼き」や海鮮チヂミ、ドリンク、かき氷を販売しています。<br>運営：文化祭準備委員会模擬店係</div>
     <div class="buttons">喫茶 "令和"</div>
     <div class="menu-desc">落ち着いた空間を。開成祭で本格的な喫茶店を楽しめます。Mr. & Ms.開成候補がウェイターとして働いています。<br>運営：文化祭準備委員会喫茶係</div>

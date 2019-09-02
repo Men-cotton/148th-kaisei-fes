@@ -8,14 +8,16 @@
       <p>開成祭で行われる企画の一覧ページです。</p>
       <h3>操作方法</h3>
       <p>各団体のカードをタップ・クリックすると詳細が開きます。<br>
-        「マップを見る」でその企画がやっている場所の地図を見ることができます。 「詳しく」で展示内容の詳しい情報を見ることができます。</p>
+        「マップを見る」をクリックするとその企画がやっている場所の地図を見ることができます。 「詳しく」をクリックすると展示内容の詳しい情報を見ることができます。</p>
     </div>
     <div class="search-box-title">
       <p>キーワード検索</p>
     </div>
     <div>
       <input class="search-box" v-model="search_text">
+      <div></div>
     </div>
+    <!--開発中
     <div class="search-box-title">
       <p>絞り込み</p>
     </div>
@@ -26,6 +28,7 @@
       <div class="perform buttons">パフォーマンス</div>
       <div class="eats buttons">飲食・販売</div>
     </div>
+    -->
 
     <v-app>
       <v-content class="card-setting">

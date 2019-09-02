@@ -12,6 +12,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 import nuxt_plugin_workbox_81ada420 from 'nuxt_plugin_workbox_81ada420' // Source: ./workbox.js (mode: 'client')
 import nuxt_plugin_nuxticons_6f67cff4 from 'nuxt_plugin_nuxticons_6f67cff4' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_fathom_e0fe14d8 from 'nuxt_plugin_fathom_e0fe14d8' // Source: ../plugins/fathom.js (mode: 'all')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -136,6 +137,10 @@ async function createApp(ssrContext) {
 
   if (typeof nuxt_plugin_nuxticons_6f67cff4 === 'function') {
     await nuxt_plugin_nuxticons_6f67cff4(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_fathom_e0fe14d8 === 'function') {
+    await nuxt_plugin_fathom_e0fe14d8(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
