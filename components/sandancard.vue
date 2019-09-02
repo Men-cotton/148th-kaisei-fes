@@ -1,7 +1,7 @@
 <template>
   <div class="card">
-    <div v-on:click="tap=!tap" class="grid-container">
-     <!-- <div class="thumbnail"><img :src="require('~/assets'+'/images/4-6.jpeg')" height="55px"></div> -->
+    <div v-on:click="cardUpdate" class="grid-container">
+      <!-- <div class="thumbnail"><img :src="require('~/assets'+'/images/4-6.jpeg')" height="55px"></div> -->
       <div class="place">{{ project.Place }} {{project.Room}}</div>
       <div class="name">{{ project.Name }}</div>
       <div class="description">{{ project.Description }}</div>
@@ -9,9 +9,9 @@
     </div>
     <div v-show=tap class="grid-container2">
       <div class="buttons map"><p>マップを見る</p></div>
-      <div class="buttons details"><p>詳しく</p></div>
+      <div v-on:click="moreinfo=!moreinfo" class="buttons details"><p>詳しく</p></div>
     </div>
-    <div v-show=tap class="describe-more">
+    <div v-show=moreinfo class="describe-more">
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg">
         <p>この団体について</p>
       </div>
@@ -32,6 +32,13 @@
         data() {
             return {
                 tap: false,
+                moreinfo: false,
+            }
+        },
+        methods: {
+            cardUpdate: function () {
+                this.tap = !this.tap;
+                this.moreinfo = false;
             }
         },
     }
