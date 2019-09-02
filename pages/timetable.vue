@@ -254,7 +254,7 @@
                         end_row: calcRow(false, '12:05'),
                     },
                     {
-                        name: 'バンコン',
+                        name: 'バンドコンテスト',
                         day: 2,
                         place: '本館ホール',
                         start_time: '12:20',

@@ -16,9 +16,6 @@
       <div>{{project.Sandan-introduction}}</div>
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg"><p>Image</p></div>
       <div>{{project.Thumbnail}}</div>
-      <div class="about-this"><img src="~/assets/sectionmark_alone.svg"><p>宣伝...</p></div>
-      <div>{{project.Sandan-introduction}}</div>
-
     </div>
   </div>
 </template>
