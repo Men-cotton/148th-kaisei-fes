@@ -15,7 +15,7 @@
                         <li><n-link to="">校内マップ</n-link></li>
                         <li><n-link to="sandan">企画一覧</n-link></li>
                         <li><n-link to="timetable">タイムテーブル</n-link></li>
-                        <li><n-link to="menu">食品メニュー</n-link></li>
+                        <li><n-link to="foodmenu">食品メニュー</n-link></li>
                         <li><n-link to="feature">文化祭特集</n-link></li>
                   </ul>
             </nav>

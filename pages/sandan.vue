@@ -2,16 +2,13 @@
   <div class="container-sandan">
     <Header/>
     <div class="title">
-      <p>企画一覧</p>
+      <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>企画一覧</p></div></div>
     </div>
-    <div class="sandan-desc">
+    <div class="usage">
       <p>開成祭で行われる企画の一覧ページです。</p>
-      <p>操作方法</p>
-      <p>キーワード検索<br>参加団体の団体名</p>
-      <p>絞り込み</p>
-      <p></p>
-      <p>各団体のカードをタップすると詳細が開きます。「マップを見る」でその企画がやっている場所の地図を見ることができます。
-        <br>「詳しく」をタップすると展示内容の詳しい情報が出てきます。</p>
+      <h3>操作方法</h3>
+      <p>各団体のカードをタップ・クリックすると詳細が開きます。<br>
+        「マップを見る」でその企画がやっている場所の地図を見ることができます。 「詳しく」で展示内容の詳しい情報を見ることができます。</p>
     </div>
     <div class="search-box-title">
       <p>キーワード検索</p>
@@ -148,25 +145,47 @@
     grid-column: 3/5;
     grid-row: 2/3;
   }
-  .sandan-desc{
+  .usage {
     color: white;
-
+    margin: 10px 0;
   }
-
+  .usage >p{
+    margin: 3px 0;
+  }
   .img {
     border-radius: 27.5px;
   }
 
   .container-sandan {
-    padding: 30px 15px;
+    padding: 0 15px 30px;
     background-color: #411445;
   }
 
   .title {
     color: white;
     font-size: 32px;
-    padding: 80px 0px;;
+    font-weight: bold;
+    padding: 110px 0px 40px;
   }
+  .long{
+    border-left-style: revert;
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    padding:  10px 0;
+
+  }
+  .long-line{
+    width: 100%;
+    border-bottom: #CCBD14 2px solid;
+  }
+  .long-line >p{
+    position: relative;
+    left: 7px;
+  }
+
 
   /*--カードの並べ方--*/
   .card-setting {

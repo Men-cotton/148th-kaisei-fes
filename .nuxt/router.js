@@ -4,6 +4,7 @@ import { interopDefault } from './utils'
 
 const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
+const _3654d0b5 = () => interopDefault(import('../pages/foodmenu.vue' /* webpackChunkName: "pages/foodmenu" */))
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
 const _457d7c40 = () => interopDefault(import('../pages/pre-index.vue' /* webpackChunkName: "pages/pre-index" */))
@@ -93,6 +94,10 @@ export function createRouter() {
       path: "/feature",
       component: _32e104ae,
       name: "feature"
+    }, {
+      path: "/foodmenu",
+      component: _3654d0b5,
+      name: "foodmenu"
     }, {
       path: "/information",
       component: _75d2e3e4,

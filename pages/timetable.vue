@@ -2,18 +2,15 @@
   <div class="container-time">
     <Header/>
     <div class="title">
-      <p>タイムテーブル</p>
+      <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>タイムテーブル</p></div></div>
     </div>
     <div class="usage">
-      <p>開成祭のタイムテーブル一覧です。時間限定で行う企画はすべてここに載っています。
-        使い方・見方
-        ・縦軸が時間です。
-        ・１日目、２日目をタップすると日にち毎のタイムテーブルを切り替えられます。
-        今表示されているのは小講堂ですが、この列を横にスクロールすると別の場所が出てきます。
-      </p>
-      <p>場所一覧
-        小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド
-      </p>
+      <p>開成祭のタイムテーブル一覧です。時間限定で行う企画はすべてここに載っています。</p>
+      <h3>使い方・見方</h3>
+      <p>・縦軸が時間です。<br>
+        ・１日目、２日目をタップすると日にちを切り替えることができます。 今表示されている小講堂の行を横にスクロールすると別の場所の場所が出てきます。それをタップするとタイムテーブルが切り替わります。
+      <h3>ステージ場所一覧</h3>
+        <p>小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド</p>
     </div>
     <div class="timetable-container">
       <div class="day-row">
@@ -502,11 +499,28 @@
     padding: 0px 15px;
     background-color: #411445;
   }
-
   .title {
     color: white;
     font-size: 32px;
-    padding: 80px 0px;
+    font-weight: bold;
+    padding: 110px 0px 40px;
+  }
+  .long{
+    border-left-style: revert;
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    padding:  10px 0;
+  }
+  .long-line{
+    width: 100%;
+    border-bottom: #CCBD14 2px solid;
+  }
+  .long-line >p{
+    position: relative;
+    left: 7px;
   }
 
   .timetable-container {
@@ -514,6 +528,10 @@
 
   .usage {
     color: white;
+    margin: 10px 0;
+  }
+  .usage >p{
+    margin: 3px 0;
   }
 
   .selected {

@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container-feature">
     <Header/>
     <div class="title">
-      <p>Pick Up! 文化祭</p>
+      <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>文化祭特集</p></div></div>
     </div>
 
     <div class="search">
@@ -82,8 +82,8 @@
     color: #ccbd14
   }
 
-  .container {
-    padding: 30px 15px;
+  .container-feature {
+    padding: 0px 15px 30px;
     background-color: #411445;
     color: white;
   }
@@ -91,7 +91,25 @@
   .title {
     color: white;
     font-size: 32px;
-    padding: 80px 0px;
+    font-weight: bold;
+    padding: 110px 0px 40px;
+  }
+  .long{
+    border-left-style: revert;
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    padding:  10px 0;
+  }
+  .long-line{
+    width: 100%;
+    border-bottom: #CCBD14 2px solid;
+  }
+  .long-line >p{
+    position: relative;
+    left: 7px;
   }
 
   .search {
