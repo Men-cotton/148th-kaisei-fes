@@ -2,7 +2,9 @@
   <div class="container-sandan">
     <Header/>
     <div class="title">
-      <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>企画一覧</p></div></div>
+      <div class="long"><img src="../assets/sectionmark_along.svg">
+        <div class="long-line"><p>企画一覧</p></div>
+      </div>
     </div>
     <div class="usage">
       <p>開成祭で行われる企画の一覧ページです。</p>
@@ -61,10 +63,9 @@
         name: 'project',
         data: function () {
             return {
-                projects: [],
+                sorted_projects: [],
                 index: null,
                 search_text: '',
-                // tap: false,
             };
         },
         created: function () {
@@ -81,8 +82,18 @@
             searchProject: function () {
                 var self = this;
                 self.index.search(self.search_text, (err, {hits} = {}) => {
-                    self.projects = hits;
+                    self.sorted_projects = hits;
                 });
+            }
+        },
+        computed: {
+            projects: function () {
+                var array = this.sorted_projects;
+                for (var i = array.length; i > 0; i--) {
+                    var rand = Math.floor(Math.random() * i);
+                    [array[i - 1], array[rand]] = [array[rand], array[i - 1]]
+                }
+                return array;
             }
         }
     }
@@ -145,13 +156,16 @@
     grid-column: 3/5;
     grid-row: 2/3;
   }
+
   .usage {
     color: white;
     margin: 10px 0;
   }
-  .usage >p{
+
+  .usage > p {
     margin: 3px 0;
   }
+
   .img {
     border-radius: 27.5px;
   }
@@ -167,21 +181,24 @@
     font-weight: bold;
     padding: 110px 0px 40px;
   }
-  .long{
+
+  .long {
     border-left-style: revert;
     position: relative;
     font-size: 32px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    padding:  10px 0;
+    padding: 10px 0;
 
   }
-  .long-line{
+
+  .long-line {
     width: 100%;
     border-bottom: #CCBD14 2px solid;
   }
-  .long-line >p{
+
+  .long-line > p {
     position: relative;
     left: 7px;
   }
