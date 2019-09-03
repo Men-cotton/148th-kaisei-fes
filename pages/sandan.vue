@@ -69,8 +69,7 @@
             };
         },
         created: function () {
-            var self = this;
-            self.index = searchClient.initIndex('project');
+            this.index = searchClient.initIndex('project');
             this.searchProject();
         },
         watch: {
@@ -80,10 +79,14 @@
         },
         methods: {
             searchProject: function () {
-                var self = this;
-                self.index.search(self.search_text, (err, {hits} = {}) => {
-                    self.sorted_projects = hits;
-                });
+                this.index.search({
+                        query: this.search_text,
+                        hitsPerPage: 100,
+                    },
+                    (err, {hits} = {}) => {
+                        if (err) throw err;
+                        this.sorted_projects = hits;
+                    });
             }
         },
         computed: {
