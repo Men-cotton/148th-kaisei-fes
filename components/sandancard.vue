@@ -15,7 +15,7 @@
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg">
         <p>この団体について</p>
       </div>
-      <div>{{project.Introduction}}</div>
+      <div v-html="project.Introduction"></div>
       <!--
       <div class="about-this"><img src="~/assets/sectionmark_alone.svg">
         <p>Image</p></div>
