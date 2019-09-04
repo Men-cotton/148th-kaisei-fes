@@ -3,7 +3,7 @@
     <Header/>
     <section class="top">
         <img src="~/assets/logo.svg" alt="logo" class="logo">
-        <div class="date">2019.09.21(Sat)09:00-16:30<br>2019.09.22(Sun)09:00-17:00</div>
+        <div class="date">創立148周年記念開成祭<br><br>DATE<br>2019.09.21(Sat)09:00-17:00<br>2019.09.22(Sun)09:00-16:30</div>
     </section>
     <section class="menu">
       <div class="flex-box">
@@ -28,18 +28,6 @@
 </template>
 
 <script>
-
-  (function(f, a, t, h, o, m){
-    a[h]=a[h]||function(){
-      (a[h].q=a[h].q||[]).push(arguments)
-    };
-    o=f.createElement('script'),
-            m=f.getElementsByTagName('script')[0];
-    o.async=1; o.src=t; o.id='fathom-script';
-    m.parentNode.insertBefore(o,m)
-  })(document, window, '//fathom.kaisei-fes.com/tracker.js', 'fathom');
-  fathom('set', 'siteId', 'PYPVX');
-  fathom('trackPageview');
 
 import access from '~/assets/access.svg';
 import map from '~/assets/map.svg';
@@ -79,7 +67,7 @@ import Footer from '~/components/Myfooter.vue';
     background-color: #411445;
   }
   .top{
-    padding:37vh 4vw;
+    padding:37vh 4vw 20vh;
     display:flex;
     justify-content:space-between;
   }
@@ -87,8 +75,8 @@ import Footer from '~/components/Myfooter.vue';
     width:40vw;
   }
   .date{
+    margin-top: 30px;
     min-width:300px;
-    height:8vw;
     font-family: Ubuntu Condensed,monospace;
     font-style: normal;
     font-weight: normal;
@@ -98,13 +86,14 @@ import Footer from '~/components/Myfooter.vue';
     text-align: center;
     vertical-align:bottom;
     letter-spacing: 0.2em;
-    align-self:flex-end;
+    align-self:center;
   }
   .flex-box{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
-    padding:0 1vw;
+    padding:0 1vw 30px;
+
   }
   .flex-box a{
     margin:1vw;
@@ -127,7 +116,7 @@ import Footer from '~/components/Myfooter.vue';
     }
     .date{
       font-size:4.5vw;
-      padding:10vh 0 0 0;
+      padding:0vh 0 0 0;
     }
   }
   @media screen and (max-width: 600px){
@@ -139,8 +128,9 @@ import Footer from '~/components/Myfooter.vue';
       width:80vw;
     }
     .date{
+      margin-top: 0px;
       font-size:4.5vw;
-      padding:10vh 0 0 0;
+      padding:0vh 0 0 0;
     }
     .flex-box a{
       margin:2vw 0;
