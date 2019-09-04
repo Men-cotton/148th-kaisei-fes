@@ -2,19 +2,18 @@ module.exports = {
     mode: 'universal',
     head: {
         htmlAttrs:{
-            prefix: 'og: '
         }
     },
-    titleTemplate: '%s - 148th開成祭',
+    titleTemplate: '創立148周年記念開成祭',
     meta: {
         charset: 'utf-8',
         viewport: 'width=device-width, initial-scale=1',
-        name: '148th開成祭',
-        description: '148th開成祭の公式ホームページです。',
+        name: '創立148周年記念開成祭',
+        description: '2019年9月21日,22日に行われる、148th開成祭の公式ホームページです。',
         'og:type': 'website',
         'og:url': 'https://kaisei-fes.com',
-        'og:title': '148th開成祭',
-        'og:description': '2019/9/21(土),22(日)開催。',
+        'og:title': '創立148周年記念開成祭',
+        'og:description': '2019/9/21(土),22(日)開催　148th開成祭',
         'og:image': 'https://kaisei-fes.com/assets/icon.JPG',
         'Twitter:Card': 'Summary_large_image',
         theme_color: '#411445',
