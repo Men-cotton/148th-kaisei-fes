@@ -40,6 +40,35 @@ import Footer from '~/components/Myfooter.vue';
 
 
   export default {
+    head: {
+      script: [{
+        innerHTML: `{
+  "name": "148th開成祭",
+  "description": "2019年9月21日,22日に行われる148th開成祭の公式ホームページです。",
+  'og:type': 'website',
+  'og:url': 'https://kaisei-fes.com',
+  'og:title': '創立148周年記念開成祭',
+        'og:description': '2019/9/21(土),22(日)開催　148th開成祭',
+        'og:image': 'https://kaisei-fes.com/assets/icon.JPG',
+        'Twitter:Card': 'Summary_large_image',
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "港区",
+      "addressRegion": "東京都",
+      "streetAddress": "西日暮里4丁目2番4号"
+    },
+    "name": "開成学園中学校・高等学校",
+    "url": "https://kaiseigakuen.jp"
+  },
+  "startDate": "2019-09-21",
+  "endDate": "2019-09-22",
+  "url": "https://kaisei-fes.com"
+}`,
+        type: 'application/ld+json'
+      }]
+    },
   components: {
     Header,
     Footer
