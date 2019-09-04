@@ -14,7 +14,7 @@ module.exports = {
         'og:url': 'https://kaisei-fes.com',
         'og:title': '創立148周年記念開成祭',
         'og:description': '2019/9/21(土),22(日)開催　148th開成祭',
-        'og:image': 'https://kaisei-fes.com/assets/icon.JPG',
+        'og:image': 'https://kaisei-fes.com/assets/forogimage.JPG',
         'Twitter:Card': 'Summary_large_image',
         theme_color: '#411445',
         background_color: '#411445',
@@ -54,7 +54,8 @@ module.exports = {
         'lecture',
         'feature',
         'information',
-        'booth'
+        'foodmenu',
+        'booth',
     ],
 
     modules: [

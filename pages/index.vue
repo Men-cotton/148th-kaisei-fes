@@ -18,10 +18,10 @@
         </nuxt-link>
         <nuxt-link to="timetable">
           <img :src="img4" class="box-img">
-        </nuxt-link>
+        </nuxt-link><!--
         <nuxt-link to="feature">
           <img :src="img5" class="box-img">
-        </nuxt-link>
+        </nuxt-link>-->
       </div>
     </section>
   </div>
