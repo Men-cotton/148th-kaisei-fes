@@ -12,8 +12,5 @@
             color: white;
             background-color: #912A55;
       }
-      .buttons{
-            background-color: #411445;
-      }
 
 </style>

@@ -3,7 +3,7 @@
     <Header/>
     <section class="top">
         <img src="~/assets/logo.svg" alt="logo" class="logo">
-        <div class="date">創立148周年記念開成祭<br><br>DATE<br>2019.09.21(Sat)09:00-17:00<br>2019.09.22(Sun)09:00-16:30</div>
+        <div class="date">創立148周年記念開成祭<br><br>開催日時<br>2019.09.21(土)09:00-17:00<br>2019.09.22(日)09:00-16:30</div>
     </section>
     <section class="menu">
       <div class="flex-box">
@@ -67,7 +67,7 @@ import Footer from '~/components/Myfooter.vue';
     background-color: #411445;
   }
   .top{
-    padding:37vh 4vw 20vh;
+    padding:33vh 4vw 18vh;
     display:flex;
     justify-content:space-between;
   }
@@ -77,7 +77,6 @@ import Footer from '~/components/Myfooter.vue';
   .date{
     margin-top: 30px;
     min-width:300px;
-    font-family: Ubuntu Condensed,monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 2vw;
@@ -128,7 +127,6 @@ import Footer from '~/components/Myfooter.vue';
       width:80vw;
     }
     .date{
-      margin-top: 0px;
       font-size:4.5vw;
       padding:0vh 0 0 0;
     }
