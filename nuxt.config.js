@@ -5,7 +5,7 @@ module.exports = {
         }
     },
     titleTemplate: '創立148周年記念開成祭',
-    meta: {
+    manifest: {
         charset: 'utf-8',
         viewport: 'width=device-width, initial-scale=1',
         name: '創立148周年記念開成祭',
