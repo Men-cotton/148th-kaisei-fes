@@ -6,10 +6,10 @@
     </div>
     <div class="usage">
       <p>開成祭のタイムテーブル一覧です。時間限定で行う企画はすべてここに載っています。</p>
-      <h3>使い方・見方</h3>
+      <h2>使い方・見方</h2>
       <p>・縦軸が時間です。<br>
         ・１日目、２日目をタップすると日にちを切り替えることができます。 今表示されている小講堂の行を横にスクロールすると別の場所の場所が出てきます。それをタップするとタイムテーブルが切り替わります。
-      <h3>ステージ場所一覧</h3>
+      <h2>ステージ場所一覧</h2>
         <p>小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド</p>
     </div>
     <div class="timetable-container">
@@ -536,9 +536,9 @@
 
   .selected {
     color: #411445;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-bottom: 3px solid #912A55;
-    background-color: #D6DBDE;
+    box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+    border-bottom: 4px solid #912A55;
+    background-color: #C4C4C4;
   }
 
   .selected-text {

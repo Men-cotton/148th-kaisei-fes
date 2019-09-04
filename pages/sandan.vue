@@ -10,14 +10,15 @@
       <p>開成祭で行われる企画の一覧ページです。</p>
       <h3>操作方法</h3>
       <p>各団体のカードをタップ・クリックすると詳細が開きます。<br>
-        「マップを見る」をクリックするとその企画がやっている場所の地図を見ることができます。 「詳しく」をクリックすると展示内容の詳しい情報を見ることができます。</p>
+        「マップを見る」は現在準備中です。「詳しく」をタップ・クリックすると展示の詳しい情報を見ることができます。</p>
     </div>
+
     <div class="search-box-title">
       <p>キーワード検索</p>
     </div>
     <div>
       <input class="search-box" v-model="search_text">
-      <div></div>
+      <div class="usage">キーワードで絞り込む際は、団体名や会場名を入力してください。（例：生徒会orA会場or３階）</div>
     </div>
     <!--開発中
     <div class="search-box-title">
@@ -117,6 +118,7 @@
 
   .search-box {
     background: #F8F9FA;
+    font-size: 16px;
     width: 100%;
     height: 35px;
     border-radius: 0 0 5px 5px;
