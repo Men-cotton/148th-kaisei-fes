@@ -62,8 +62,8 @@
         },
         computed: {
             img_src: function () {
-                if(this.project.Thumbnail=='') return "https://i.redd.it/9bfyj3hal2m01.png";
-                var childRef = storageRef.child(this.project.Thumbnail);
+                var thumbnail = this.project.Thumbnail == '' ? 'images/noimage.png' : this.project.Thumbnail;
+                var childRef = storageRef.child(thumbnail);
                 childRef.getDownloadURL().then((url) => this.link = url);
                 return this.link;
             }
@@ -96,7 +96,8 @@
     grid-column: 1;
     grid-row: 1 / 4;
   }
-  .thumbnail >img{
+
+  .thumbnail > img {
     border-radius: 27.5px;
     height: 50px;
     width: 50px;
