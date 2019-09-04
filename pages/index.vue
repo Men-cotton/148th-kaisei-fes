@@ -18,7 +18,9 @@
         </nuxt-link>
         <nuxt-link to="timetable">
           <img :src="img4" class="box-img">
-        </nuxt-link><!--
+        </nuxt-link>
+        <nuxt-link to="foodmenu"><div class="buttons b-in">食品メニュー</div></nuxt-link>
+        <!--
         <nuxt-link to="feature">
           <img :src="img5" class="box-img">
         </nuxt-link>-->
