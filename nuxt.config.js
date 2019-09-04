@@ -43,6 +43,8 @@ module.exports = {
     plugins: [
         {
             src: '~/plugins/fathom.js',
+            ssr: false
+
         }
     ],
     /*
