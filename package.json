@@ -16,6 +16,7 @@
     "firebase": "^6.5.0",
     "instantsearch.css": "^7.3.1",
     "nuxt": "^2.8.1",
+    "vue-analytics": "^5.17.2",
     "vue-instantsearch": "^2.3.0",
     "vue-meta": "^1.6.0",
     "vuejs-toggle-switch": "latest"

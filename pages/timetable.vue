@@ -232,7 +232,7 @@
                         place: '本館ホール',
                         start_time: '16:30',
                         start_row: calcRow(true, '16:30'),
-                        end_time: '17:00',
+                        end_time: '18:00',
                         end_row: calcRow(false, '16:55'),
                     },
                     {

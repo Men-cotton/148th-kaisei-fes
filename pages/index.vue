@@ -30,6 +30,7 @@
 </template>
 
 <script>
+  import VueAnalytics from 'vue-analytics'
 
 import access from '~/assets/access.svg';
 import map from '~/assets/map.svg';
@@ -51,7 +52,7 @@ import Footer from '~/components/Myfooter.vue';
   'og:url': 'https://kaisei-fes.com',
   'og:title': '創立148周年記念開成祭',
         'og:description': '2019/9/21(土),22(日)開催　148th開成祭',
-        'og:image': 'https://kaisei-fes.com/assets/icon.JPG',
+        'og:image': 'https://kaisei-fes.com/assets/forogimage.JPG',
         'Twitter:Card': 'Summary_large_image',
   "location": {
     "@type": "Place",
@@ -69,11 +70,15 @@ import Footer from '~/components/Myfooter.vue';
   "url": "https://kaisei-fes.com"
 }`,
         type: 'application/ld+json'
-      }]
+      }],
+
+      VueAnalytics:{
+        id: 'UA-147087049-1'
+      }
     },
   components: {
     Header,
-    Footer
+    Footer,
   },
   data(){
     return{
