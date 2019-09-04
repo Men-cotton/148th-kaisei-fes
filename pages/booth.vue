@@ -23,13 +23,13 @@
                 <img src="../assets/menu-short-deco.svg" alt="deco" class="menu-deco-short-right">
             </div>
             <div class="menu-item">
-                <h2 class="menu-location">うんこ</h2>
+                <h2 class="menu-location">う</h2>
                 <div class="menu-menu">あ</div>
                 <div class="menu-menu">あ</div>
                 <button class="menu-location-button">あ</button>
             </div>
             <div class="menu-item">
-                <h2 class="menu-location">うんこ</h2>
+                <h2 class="menu-location">う</h2>
                 <div class="menu-menu">あ</div>
                 <div class="menu-menu">あ</div>
                 <button class="menu-location-button">あ</button>

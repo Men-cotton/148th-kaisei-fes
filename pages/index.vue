@@ -10,9 +10,9 @@
         <nuxt-link to="information">
           <img :src="img1" class="box-img">
         </nuxt-link>
-        <nuxt-link to="map">
+<!--        <nuxt-link to="map">
           <img :src="img2" class="box-img">
-        </nuxt-link>
+        </nuxt-link>  -->
         <nuxt-link to="sandan">
           <img :src="img3" class="box-img">
         </nuxt-link>
@@ -28,32 +28,36 @@
 </template>
 
 <script>
+
+  (function(f, a, t, h, o, m){
+    a[h]=a[h]||function(){
+      (a[h].q=a[h].q||[]).push(arguments)
+    };
+    o=f.createElement('script'),
+            m=f.getElementsByTagName('script')[0];
+    o.async=1; o.src=t; o.id='fathom-script';
+    m.parentNode.insertBefore(o,m)
+  })(document, window, '//fathom.kaisei-fes.com/tracker.js', 'fathom');
+  fathom('set', 'siteId', 'PYPVX');
+  fathom('trackPageview');
+
 import access from '~/assets/access.svg';
 import map from '~/assets/map.svg';
 import sandan from '~/assets/sandan.svg';
 import timetable from '~/assets/timetable.svg';
 import feature from '~/assets/feature.svg';
 
-import Header from '~/components/Myheader.vue'
+import Header from '~/components/Myheader.vue';
+import Footer from '~/components/Myfooter.vue';
 
-export default {
+
+  export default {
   components: {
-    Header
+    Header,
+    Footer
   },
   data(){
     return{
-      meta: [
-        {charset: 'utf-8'},
-        { name: 'viewport', content: 'width=device-width, initial-scale=1'},
-        { hid: 'description', name: 'description', content: '148th開成祭の公式ホームページです。'},
-        { hid: 'og:site_name', property: 'og:site_name', content: '148th開成祭' },
-        { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:url', property: 'og:url', content: 'https://kaisei-fes.com' },
-        { hid: 'og:title', property: 'og:title', content: '148th開成祭' },
-        { hid: 'og:description', property: 'og:description', content: '2019/9/21(土),22(日)開催。' },
-        { hid: 'og:image', property: 'og:image', content: 'https://kaisei-fes.com/assets/icon.JPG' },
-        { name: 'Twitter:Card', content: 'Summary_large_image' }
-      ],
       img1: access,
       img2: map,
       img3: sandan,
