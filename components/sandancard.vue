@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div v-on:click="cardUpdate" class="grid-container">
-      <!-- <div class="thumbnail"><img :src="require('~/assets'+'/images/4-6.jpeg')" height="55px"></div> -->
+      <div class="thumbnail"><img :src="img_src" height="55px"></div>
       <div class="place">{{ project.Place }} {{project.Room}}</div>
       <div class="name">{{ project.Name }}</div>
       <div class="description">{{ project.Description }}</div>
@@ -25,7 +25,25 @@
   </div>
 </template>
 
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"/>
 <script>
+    import * as firebase from "firebase/app";
+    import "firebase/storage";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDzflD6t_Q4_J5YUncEibNGxqvOad-yfw0",
+        authDomain: "kaisei-fes.firebaseapp.com",
+        databaseURL: "https://kaisei-fes.firebaseio.com",
+        projectId: "kaisei-fes",
+        storageBucket: "kaisei-fes.appspot.com",
+        messagingSenderId: "740800746798",
+        appId: "1:740800746798:web:adf5b003b15d0d6a"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    var storageRef = firebase.storage().ref();
+
+
     export default {
         name: "sandancard",
         props: ['project'],
@@ -33,14 +51,23 @@
             return {
                 tap: false,
                 moreinfo: false,
+                link: '',
             }
         },
         methods: {
             cardUpdate: function () {
                 this.tap = !this.tap;
                 this.moreinfo = false;
-            }
+            },
         },
+        computed: {
+            img_src: function () {
+                if(this.project.Thumbnail=='') return "https://i.redd.it/9bfyj3hal2m01.png";
+                var childRef = storageRef.child(this.project.Thumbnail);
+                childRef.getDownloadURL().then((url) => this.link = url);
+                return this.link;
+            }
+        }
     }
 </script>
 
