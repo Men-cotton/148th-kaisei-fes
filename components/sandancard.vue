@@ -89,8 +89,17 @@
   }
 
   .thumbnail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
     grid-column: 1;
     grid-row: 1 / 4;
+  }
+  .thumbnail >img{
+    border-radius: 27.5px;
+    height: 50px;
+    width: 50px;
   }
 
   .place {
