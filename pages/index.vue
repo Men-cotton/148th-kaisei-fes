@@ -13,13 +13,15 @@
 <!--        <nuxt-link to="map">
           <img :src="img2" class="box-img">
         </nuxt-link>  -->
-        <nuxt-link to="sandan">
-          <img :src="img3" class="box-img">
-        </nuxt-link>
         <nuxt-link to="timetable">
           <img :src="img4" class="box-img">
         </nuxt-link>
-        <nuxt-link to="foodmenu"><div class="buttons b-in">食品メニュー</div></nuxt-link>
+        <nuxt-link to="sandan">
+          <img :src="img3" class="box-img">
+        </nuxt-link>
+        <nuxt-link to="foodmenu">
+          <img :src="img6" class="box-img">
+        </nuxt-link>
         <!--
         <nuxt-link to="feature">
           <img :src="img5" class="box-img">
@@ -37,6 +39,8 @@ import map from '~/assets/map.svg';
 import sandan from '~/assets/sandan.svg';
 import timetable from '~/assets/timetable.svg';
 import feature from '~/assets/feature.svg';
+import foodmenu from '~/assets/foodmenu.svg';
+
 
 import Header from '~/components/Myheader.vue';
 import Footer from '~/components/Myfooter.vue';
@@ -52,7 +56,7 @@ import Footer from '~/components/Myfooter.vue';
   'og:url': 'https://kaisei-fes.com',
   'og:title': '創立148周年記念開成祭',
         'og:description': '2019/9/21(土),22(日)開催　148th開成祭',
-        'og:image': 'https://kaisei-fes.com/assets/forogimage.JPG',
+
         'Twitter:Card': 'Summary_large_image',
   "location": {
     "@type": "Place",
@@ -87,6 +91,7 @@ import Footer from '~/components/Myfooter.vue';
       img3: sandan,
       img4: timetable,
       img5: feature,
+      img6: foodmenu,
 
     }
   },

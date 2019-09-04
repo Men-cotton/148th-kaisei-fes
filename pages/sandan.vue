@@ -18,7 +18,7 @@
     </div>
     <div>
       <input class="search-box" v-model="search_text">
-      <div class="usage">キーワードで絞り込む際は、団体名や会場名を入力してください。（例：生徒会orA会場or３階）</div>
+      <div class="usage">キーワードで絞り込む際は、団体名や会場名を入力してください。（例：A会場or３階）</div>
     </div>
     <!--開発中
     <div class="search-box-title">
