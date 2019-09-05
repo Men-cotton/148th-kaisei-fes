@@ -448,9 +448,7 @@
   }
 
   .selected {
-    color: #411445;
-    padding-bottom: 0px !important;
-    border-bottom: 4px solid #912A55;
+    border-bottom: 4px solid #912A55 !important;
   }
   
   .buttons-row {
@@ -489,12 +487,15 @@
 
   .button {
     height: 40px;
-    padding-bottom: 4px;
+    border-bottom: 4px solid #EAEFF2;
     color: #411445;
     background: #EAEFF2;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition-duration: 0.4s;
+    transition-property: padding-bottom, border-bottom;
   }
 
   .button:hover {
