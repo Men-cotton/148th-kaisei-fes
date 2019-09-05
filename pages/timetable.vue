@@ -14,33 +14,35 @@
       <h2>ステージ場所一覧</h2>
       <p>小講堂・本館ホール・中学視聴覚室・柔道場・第２グラウンド</p>
     </div>
-    <div class="timetable-container">
-      <div class="day-row">
-        <div v-on:click="show_day=1" v-bind:class="[{selected: show_day==1}, 'day day1']">
-          <p v-bind:class="{'selected-text': show_day==1}">1日目</p>
-        </div>
-        <div v-on:click="show_day=2" v-bind:class="[{selected: show_day==2}, 'day day2']">
-          <p v-bind:class="{'selected-text': show_day==2}">2日目</p>
-        </div>
-      </div>
 
-      <div class="place-row">
-        <div v-for="place in places_list">
-          <div v-on:click="show_place=place.name" v-bind:class="[{ selected: show_place==place.name }, 'place-p']">
-            <p v-bind:class="{ 'selected-text': show_place==place.name }">{{place.name}}</p>
+    <div class="timetable-container">
+      <div class="button-container">
+        <div class="day-row">
+          <div v-on:click="show_day=1" v-bind:class="[{selected: show_day==1}, 'day day1']">
+            <p v-bind:class="{'selected-text': show_day==1}">1日目</p>
+          </div>
+          <div v-on:click="show_day=2" v-bind:class="[{selected: show_day==2}, 'day day2']">
+            <p v-bind:class="{'selected-text': show_day==2}">2日目</p>
+          </div>
+        </div>
+
+        <div class="place-row">
+          <div v-for="place in places_list" v-bind:key="place.name">
+            <div v-on:click="show_place=place.name" v-bind:class="[{ selected: show_place==place.name }, 'place-p']">
+              <p v-bind:class="{ 'selected-text': show_place==place.name }">{{place.name}}</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="grid-container-time">
-      <div v-for="n in 8" class="time">{{ n + 8 }}</div>
-      <TimetableCard v-for="event in should_show_events"
-                     v-bind:key="event.id"
-                     v-bind:event="event"
-      />
+      <div class="grid-container-time">
+        <div v-for="n in 8" class="time">{{ n + 8 }}</div>
+        <TimetableCard v-for="event in should_show_events"
+                       v-bind:key="event.id"
+                       v-bind:event="event"
+        />
+      </div>
     </div>
-
   </div>
 </template>
 
@@ -426,6 +428,13 @@
   }
 
   .timetable-container {
+    background: rgba(221, 226, 229, 0.6);
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .button-container {
+    background-color: #912A55;
+    border-radius: 10px 10px 0px 0px;
   }
 
   .usage {
@@ -451,10 +460,10 @@
   .day-row {
     display: grid;
     grid-template-columns: auto auto;
+    margin-left: 40px;
   }
 
   .day1 {
-    border-radius: 10px 0px 0px 0px;
   }
 
   .day2 {
@@ -475,6 +484,7 @@
     height: 40px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-left: 40px;
   }
 
   @media screen and (max-width: 600px) {
@@ -499,7 +509,6 @@
 
   .grid-container-time {
     position: relative;
-    background: rgba(221, 226, 229, 0.6);
     width: 100%;
     display: grid;
     grid-gap: 0px;
@@ -512,7 +521,7 @@
   .time {
     background: #912A55;
     color: white;
-    border-bottom: 0.5px solid #ffffff;
+    border-top: 0.5px solid #ffffff;
     grid-row: span 4;
     display: flex;
     align-items: center;
