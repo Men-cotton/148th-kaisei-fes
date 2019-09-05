@@ -13,13 +13,21 @@
         「マップを見る」は現在準備中です。「詳しく」をタップ・クリックすると展示の詳しい情報を見ることができます。</p>
     </div>
 
-    <div class="search-box-title">
-      <p>キーワード検索</p>
-    </div>
-    <div>
-      <input class="search-box" v-model="search_text">
-      <div class="usage">キーワードで絞り込む際は、団体名や会場名を入力してください。（例：A会場or３階）</div>
-    </div>
+    <ais-instant-search-ssr>
+      <div class="search-box-title">
+        <p>キーワード検索</p>
+      </div>
+      <div>
+        <input class="search-box" v-model="search_text">
+        <div class="usage search-text">キーワードで絞り込む際は、団体名や会場名を入力してください。（例：A会場or３階）
+          <no-ssr>
+            <ais-powered-by theme="dark"/>
+          </no-ssr>
+        </div>
+      </div>
+      <ais-pagination/>
+    </ais-instant-search-ssr>
+
     <!--開発中
     <div class="search-box-title">
       <p>絞り込み</p>
@@ -47,6 +55,12 @@
 </template>
 
 <script>
+    import {
+        AisInstantSearchSsr,
+        AisPagination,
+        AisPoweredBy,
+        createInstantSearch
+    } from 'vue-instantsearch';
     import algoliasearch from 'algoliasearch/lite';
     import Header from '~/components/Myheader.vue';
     import SandanCard from '~/components/sandancard.vue';
@@ -55,11 +69,19 @@
         'CBBW6NQXPV',
         '7a788ae60b68dff01a8328d0e1150c85'
     );
+    const {tmp, rootMixin} = createInstantSearch({
+        searchClient,
+        indexName: 'instant_search'
+    });
 
     export default {
+        mixins: [rootMixin],
         components: {
             Header,
-            SandanCard
+            SandanCard,
+            AisInstantSearchSsr,
+            AisPagination,
+            AisPoweredBy,
         },
         name: 'project',
         data: function () {
@@ -67,6 +89,7 @@
                 sorted_projects: [],
                 index: null,
                 search_text: '',
+                searchClient,
             };
         },
         created: function () {
@@ -165,6 +188,10 @@
   .usage {
     color: white;
     margin: 10px 0;
+  }
+
+  .search-text {
+    display: flex;
   }
 
   .usage > p {
