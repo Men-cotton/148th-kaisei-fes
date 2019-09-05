@@ -5,8 +5,7 @@
       <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>文化祭特集</p></div></div>
     </div>
     <div class="usage">
-      <p>開成祭をもっと深く知ろう。
-        <br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている様々な「プロ」達の思いを記事にして発信します。</p>
+      <p>Pick Up 文化祭と称して文化祭の記事を発行しています。<br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている様々な「プロ」達の思いを記事にして発信します。</p>
     </div>
 <!---
     <div class="search">
@@ -25,13 +24,25 @@
 
     <div class="all-post">
 <!---以下が一つの投稿カードです--->
+
+            <div class="post-container">
+                <div class="thumbnail">
+                    <img src="">
+                </div>
+                <div class="post-details">
+                    <div class="post-date">2019/09/07</div>
+                    <div class="post-title">NEW! COMING SOON</div>
+                    <div class="post-type">プロフェッショナル編</div>
+                </div>
+            </div>
+
     <nuxt-link to="featureArticle1">
     <div class="post-container">
       <div class="thumbnail">
         <img src="../assets/feature-article/thumbnail.jpg">
       </div>
       <div class="post-details">
-        <div class="post-date">2019/09/03</div>
+        <div class="post-date">2019/09/06</div>
         <div class="post-title">アーケードリズムゲーム『LUXY』</div>
         <div class="post-type">プロフェッショナル編</div>
       </div>
@@ -171,7 +182,7 @@
   }
   /* 投稿のあれ */
   .post-container{
-    margin: 10px 0px;
+    margin: 30px 0px;
   }
   .thumbnail{
     width: 100%;
