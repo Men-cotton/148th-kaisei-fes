@@ -17,18 +17,19 @@
 
     <div class="timetable-container">
       <div class="button-container">
-        <div class="day-row">
-          <div v-on:click="show_day=1" v-bind:class="[{selected: show_day==1}, 'day day1']">
-            <p v-bind:class="{'selected-text': show_day==1}">1日目</p>
+        <div class="buttons-row day-row">
+          <div v-on:click="show_day=1" v-bind:class="[{selected: show_day==1}, 'day day1 button']">
+            <p>1日目</p>
           </div>
-          <div v-on:click="show_day=2" v-bind:class="[{selected: show_day==2}, 'day day2']">
-            <p v-bind:class="{'selected-text': show_day==2}">2日目</p>
+          <div v-on:click="show_day=2" v-bind:class="[{selected: show_day==2}, 'day day2 button']">
+            <p>2日目</p>
           </div>
         </div>
 
-        <div class="place-row">
+        <div class="buttons-row place-row">
           <div v-for="place in places_list" v-bind:key="place.name">
-            <div v-on:click="show_place=place.name" v-bind:class="[{ selected: show_place==place.name }, 'place-p']">
+            <div v-on:click="show_place=place.name"
+                 v-bind:class="[{ selected: show_place==place.name }, 'place-p button']">
               <p v-bind:class="{ 'selected-text': show_place==place.name }">{{place.name}}</p>
             </div>
           </div>
@@ -433,7 +434,7 @@
   }
 
   .button-container {
-    background-color: #912A55;
+    background-color: #495057;
     border-radius: 10px 10px 0px 0px;
   }
 
@@ -448,19 +449,18 @@
 
   .selected {
     color: #411445;
-    box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+    padding-bottom: 0px !important;
     border-bottom: 4px solid #912A55;
-    background-color: #C4C4C4;
   }
-
-  .selected-text {
-    color: #411445;
+  
+  .buttons-row {
+    margin-left: 40px;
+    background-color: #EAEFF2;
+    display: grid;
   }
 
   .day-row {
-    display: grid;
     grid-template-columns: auto auto;
-    margin-left: 40px;
   }
 
   .day1 {
@@ -471,20 +471,11 @@
   }
 
   .day {
-    height: 40px;
     font-size: 18px;
-    background: #EAEFF2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #7f7d7d;
   }
 
   .place-row {
-    height: 40px;
-    display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    margin-left: 40px;
   }
 
   @media screen and (max-width: 600px) {
@@ -492,19 +483,22 @@
       overflow-x: scroll;
       scroll-behavior: smooth;
       grid-template-columns: 150px 150px 150px 150px 150px;
-
     }
   }
 
-  .place-p {
+  .button {
     height: 40px;
-    color: #7f7d7d;
+    padding-bottom: 4px;
+    color: #411445;
     background: #EAEFF2;
-    border-top: 0.5px solid #000000;
-    border-left: 0.5px solid #000000;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .button:hover {
+    padding-bottom: 0px;
+    border-bottom: 4px solid #a38390;
   }
 
   .grid-container-time {
