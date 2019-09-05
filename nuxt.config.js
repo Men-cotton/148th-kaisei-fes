@@ -15,7 +15,7 @@ module.exports = {
         'og:title': '148th開成祭',
         'og:description': '2019/9/21(土),22(日)開催　148th開成祭',
         ogImage: true,
-        ogHost: 'https://kaisei-fes.com',
+        ogHost: 'https://kaisei-fes.com/',
         'Twitter:Card': 'Summary_large_image',
         theme_color: '#411445',
         background_color: '#411445',
