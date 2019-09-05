@@ -5,8 +5,8 @@
       <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>文化祭特集</p></div></div>
     </div>
     <div class="usage">
-      <p>Pick Up!文化祭では。
-        <br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている一種の「プロ」達の思いを記事にして発信しています。</p>
+      <p>開成祭をもっと深く知ろう。
+        <br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている様々な「プロ」達の思いを記事にして発信します。</p>
     </div>
 <!---
     <div class="search">
@@ -25,9 +25,10 @@
 
     <div class="all-post">
 <!---以下が一つの投稿カードです--->
+    <nuxt-link to="featureArticle1">
     <div class="post-container">
       <div class="thumbnail">
-        <img src="">
+        <img src="../assets/feature-article/thumbnail.jpg">
       </div>
       <div class="post-details">
         <div class="post-date">2019/09/03</div>
@@ -35,6 +36,7 @@
         <div class="post-type">プロフェッショナル編</div>
       </div>
     </div>
+    </nuxt-link>
 <!---
     <div class="post-container">
       <div class="thumbnail">
@@ -154,6 +156,8 @@
   .right-button {
     grid-column: 3/4;
   }
+  .thumbnail {
+  }
 
   @media screen and (min-width:768px){
     .post-container{
@@ -170,9 +174,16 @@
     margin: 10px 0px;
   }
   .thumbnail{
-    height: 150px;
+    width: 100%;
+    object-fit: cover;
     background: #7f828b;
     border-radius: 10px 10px 0 0;
+
+  }
+  .thumbnail >img{
+    height: 48vw;
+    width: 100%;
+    object-fit: cover;
 
   }
   .post-details{
