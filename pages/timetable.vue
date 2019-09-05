@@ -461,6 +461,7 @@
 
   .day-row {
     grid-template-columns: auto auto;
+    border-radius: 0px 10px 0px 0px;
   }
 
   .day1 {
