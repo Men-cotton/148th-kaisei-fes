@@ -39,7 +39,7 @@
       譜面は自作した専用のソフトを用いて作成しました。
     </p>
     <p class="ft-text">
-    文化祭が終わってもアプリ版の実装など、LUXYの活動は終わりませんので、最新情報は<a href="https://twitter.com/KPC_otoge"> Twitter(@KPC_otoge_)</a>でご確認ください。
+    文化祭が終わってもアプリ版の実装など、LUXYの活動は終わりませんので、最新情報は<a href="https://twitter.com/KPC_otoge_"> Twitter(@KPC_otoge_)</a>でご確認ください。
     </p>
 
     <div class="ft-subtitle">

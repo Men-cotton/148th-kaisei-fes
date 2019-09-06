@@ -6,6 +6,7 @@ const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChu
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
 const _1b32573e = () => interopDefault(import('../pages/featureA1.vue' /* webpackChunkName: "pages/featureA1" */))
 const _1b406ebf = () => interopDefault(import('../pages/featureA2.vue' /* webpackChunkName: "pages/featureA2" */))
+const _1b4e8640 = () => interopDefault(import('../pages/featureA3.vue' /* webpackChunkName: "pages/featureA3" */))
 const _3654d0b5 = () => interopDefault(import('../pages/foodmenu.vue' /* webpackChunkName: "pages/foodmenu" */))
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
@@ -104,6 +105,10 @@ export function createRouter() {
       path: "/featureA2",
       component: _1b406ebf,
       name: "featureA2"
+    }, {
+      path: "/featureA3",
+      component: _1b4e8640,
+      name: "featureA3"
     }, {
       path: "/foodmenu",
       component: _3654d0b5,
