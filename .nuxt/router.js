@@ -4,7 +4,8 @@ import { interopDefault } from './utils'
 
 const _54815524 = () => interopDefault(import('../pages/booth.vue' /* webpackChunkName: "pages/booth" */))
 const _32e104ae = () => interopDefault(import('../pages/feature.vue' /* webpackChunkName: "pages/feature" */))
-const _61dd3f49 = () => interopDefault(import('../pages/featureArticle1.vue' /* webpackChunkName: "pages/featureArticle1" */))
+const _1b32573e = () => interopDefault(import('../pages/featureA1.vue' /* webpackChunkName: "pages/featureA1" */))
+const _1b406ebf = () => interopDefault(import('../pages/featureA2.vue' /* webpackChunkName: "pages/featureA2" */))
 const _3654d0b5 = () => interopDefault(import('../pages/foodmenu.vue' /* webpackChunkName: "pages/foodmenu" */))
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
@@ -96,9 +97,13 @@ export function createRouter() {
       component: _32e104ae,
       name: "feature"
     }, {
-      path: "/featureArticle1",
-      component: _61dd3f49,
-      name: "featureArticle1"
+      path: "/featureA1",
+      component: _1b32573e,
+      name: "featureA1"
+    }, {
+      path: "/featureA2",
+      component: _1b406ebf,
+      name: "featureA2"
     }, {
       path: "/foodmenu",
       component: _3654d0b5,

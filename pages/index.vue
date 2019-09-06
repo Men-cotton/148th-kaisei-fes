@@ -22,7 +22,7 @@
         <nuxt-link to="foodmenu">
           <img :src="img6" class="box-img">
         </nuxt-link>
-        
+
         <nuxt-link to="feature">
           <img :src="img5" class="box-img">
         </nuxt-link>

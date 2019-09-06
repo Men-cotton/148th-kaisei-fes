@@ -5,7 +5,7 @@
       <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>文化祭特集</p></div></div>
     </div>
     <div class="usage">
-      <p>Pick Up 文化祭と称して文化祭の記事を発行しています。<br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている様々な「プロ」達の思いを記事にして発信します。</p>
+      <p>開成祭、そして開成を伝えよう。Pick Up! 文化祭！<br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている様々な「プロ」達の思いを記事にしています。</p>
     </div>
 <!---
     <div class="search">
@@ -31,19 +31,19 @@
                 </div>
                 <div class="post-details">
                     <div class="post-date">2019/09/07</div>
-                    <div class="post-title">NEW! COMING SOON</div>
+                    <div class="post-title">COMING SOON</div>
                     <div class="post-type">プロフェッショナル編</div>
                 </div>
             </div>
 
-    <nuxt-link to="featureArticle1">
+    <nuxt-link to="featureA1">
     <div class="post-container">
       <div class="thumbnail">
         <img src="../assets/feature-article/thumbnail.jpg">
       </div>
       <div class="post-details">
         <div class="post-date">2019/09/06</div>
-        <div class="post-title">アーケードリズムゲーム『LUXY』</div>
+        <div class="post-title">アーケードリズムゲーム『LUXY』紹介</div>
         <div class="post-type">プロフェッショナル編</div>
       </div>
     </div>
@@ -192,6 +192,7 @@
 
   }
   .thumbnail >img{
+    border-radius: 10px 10px 0 0;
     height: 48vw;
     width: 100%;
     object-fit: cover;

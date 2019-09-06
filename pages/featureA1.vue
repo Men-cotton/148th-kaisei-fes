@@ -2,8 +2,7 @@
   <div class="container-feature">
     <Header/>
     <div class="ft-title">
-      アーケードリズムゲーム<br>『LUXY（ルクシー）』
-      紹介
+      アーケードリズムゲーム<br>『LUXY（ルクシー）』紹介
     </div>
     <div class="ft-subtitle"></div>
     <p class="ft-text">
@@ -11,7 +10,7 @@
       作業は大きく分けて、1.筐体作成 2.ハードウェア作成 3.ソフトウェア作成 4.譜面作成の四つです。
     </p>
     <div class="ft-text">
-      1.筐体とは、ゲームを搭載する台のことです。<br>MDF（木の板）や角材をホームセンターで調達し、ノコギリなどで加工する。<br>→シーラー、ラッカーを用いて塗装する。<br>→木ネジで木材同士を固定して組み立てる<br>、というのが主な作業工程です。
+      1.筐体とは、ゲームを搭載する台のことです。<br>MDF（木の板）や角材をホームセンターで調達し、ノコギリなどで加工する。<br>・シーラー、ラッカーを用いて塗装する。<br>・木ネジで木材同士を固定して組み立てる<br><br>というのが主な作業工程です。
     <img src="../assets/feature-article/image01.jpg">
     <p class="ft-thumb">制作過程1</p>
     <img src="../assets/feature-article/image02.jpg">
@@ -40,7 +39,7 @@
       譜面は自作した専用のソフトを用いて作成しました。
     </p>
     <p class="ft-text">
-    文化祭が終わってもアプリ版の実装など、LUXYの活動は終わりませんので、最新情報はTwitter(@KPC_otoge_)でご確認ください。
+    文化祭が終わってもアプリ版の実装など、LUXYの活動は終わりませんので、最新情報は<a href="https://twitter.com/KPC_otoge"> Twitter(@KPC_otoge_)</a>でご確認ください。
     </p>
 
     <div class="ft-subtitle">
@@ -77,14 +76,22 @@
     background-color: #411445;
     color: white;
   }
+  .head-thumbnail >img{
+    width: 100%;
+    object-fit: cover;
+  }
 
   .ft-title {
-    font-size: 32px;
-    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
     padding: 140px 0px 60px;
   }
+
   .ft-text{
-    padding: 30px 20px;
+    padding: 30px 5px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
     justify-content: center;
 
   }
