@@ -62,10 +62,12 @@
         },
         computed: {
             img_src: function () {
-                var thumbnail = this.project.Thumbnail == '' ? 'images/noimage.png' : this.project.Thumbnail;
-                var childRef = storageRef.child(thumbnail);
-                childRef.getDownloadURL().then((url) => this.link = url);
-                return this.link;
+                if (this.project.Thumbnail == '') return 'https://www.myoji-yurai.net/profileImages/noimage.png';
+                else {
+                    var childRef = storageRef.child(this.project.Thumbnail);
+                    childRef.getDownloadURL().then((url) => this.link = url);
+                    return this.link;
+                }
             }
         }
     }
