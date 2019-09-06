@@ -53,12 +53,26 @@
     import Article from '~/components/FeatureArticle.vue'
 
     export default {
+      head: {
+        script: [{
+          innerHTML: `{
+  "name": "Pick Up! 文化祭① -148th開成祭",
+  "description": "アーケードリズムゲーム 『LUXY（ルクシー）』 紹介",
+  'og:type': 'website',
+  'og:url': 'https://kaisei-fes.com',
+  'og:title': 'Pick Up! 文化祭① -148th開成祭',
+        'og:description': 'アーケードリズムゲーム 『LUXY（ルクシー）』 紹介   2019/9/21(土),22(日)開催　148th開成祭',
+        }`,
+        }],
+      },
+
         name: "feature",
         components: {
             Article,
           Header
         },
         data() {
+
             return {
                 message: "Hello"
             }
