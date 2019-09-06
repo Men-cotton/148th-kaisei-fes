@@ -5,7 +5,7 @@
       <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>文化祭特集</p></div></div>
     </div>
     <div class="usage">
-      <p>開成祭、そして開成を伝えよう。Pick Up! 文化祭！<br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている様々な「プロ」達の思いを記事にしています。</p>
+      <p>Pick Up! 文化祭！<br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている様々な「プロ」達の思いを記事にしています。</p>
     </div>
 <!---
     <div class="search">
