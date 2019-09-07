@@ -30,8 +30,8 @@
                     <img src="">
                 </div>
                 <div class="post-details">
-                    <div class="post-date">2019/09/07</div>
-                    <div class="post-title">COMING SOON</div>
+                    <div class="post-date">2019/09/08</div>
+                    <div class="post-title">開成から開成へ</div>
                     <div class="post-type">プロフェッショナル編</div>
                 </div>
             </div>

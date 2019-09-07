@@ -2,6 +2,7 @@
   <div class="container-feature">
     <Header/>
     <div class="ft-title">
+      開成から開成<br>-Let's talk Kaisei 2019
     </div>
     <div class="ft-subtitle"></div>
     <p class="ft-text">
