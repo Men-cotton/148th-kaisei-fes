@@ -11,6 +11,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+<<<<<<< HEAD
 import nuxt_plugin_workbox_98571862 from 'nuxt_plugin_workbox_98571862' // Source: ./workbox.js (mode: 'client')
 import nuxt_plugin_nuxticons_52c06c96 from 'nuxt_plugin_nuxticons_52c06c96' // Source: ./nuxt-icons.js (mode: 'all')
 
@@ -27,6 +28,14 @@ Vue.component(NoSsr.name, {
     return NoSsr.render(h, ctx)
   }
 })
+=======
+import nuxt_plugin_workbox_81ada420 from 'nuxt_plugin_workbox_81ada420' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_6f67cff4 from 'nuxt_plugin_nuxticons_6f67cff4' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_fathom_e0fe14d8 from 'nuxt_plugin_fathom_e0fe14d8' // Source: ../plugins/fathom.js (mode: 'client')
+
+// Component: <NoSsr>
+Vue.component(NoSsr.name, NoSsr)
+>>>>>>> d6c1ed0574daef991e679a55fa0312caf07549a5
 
 // Component: <NuxtChild>
 Vue.component(NuxtChild.name, NuxtChild)
@@ -148,6 +157,10 @@ async function createApp(ssrContext) {
 
   if (typeof nuxt_plugin_nuxticons_52c06c96 === 'function') {
     await nuxt_plugin_nuxticons_52c06c96(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_fathom_e0fe14d8 === 'function') {
+    await nuxt_plugin_fathom_e0fe14d8(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

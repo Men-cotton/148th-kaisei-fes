@@ -2,20 +2,20 @@ module.exports = {
     mode: 'universal',
     head: {
         htmlAttrs:{
-            prefix: 'og: '
         }
     },
-    titleTemplate: '%s - 148th開成祭',
+    titleTemplate: '148th開成祭',
     meta: {
         charset: 'utf-8',
         viewport: 'width=device-width, initial-scale=1',
         name: '148th開成祭',
-        description: '148th開成祭の公式ホームページです。',
+        description: '2019年9月21日,22日に行われる、創立148周年記念開成祭の公式ホームページです。',
         'og:type': 'website',
         'og:url': 'https://kaisei-fes.com',
         'og:title': '148th開成祭',
-        'og:description': '2019/9/21(土),22(日)開催。',
-        'og:image': 'https://kaisei-fes.com/assets/icon.JPG',
+        'og:description': '2019/9/21(土),22(日)開催　148th開成祭',
+        ogImage: true,
+        ogHost: 'https://kaisei-fes.com/',
         'Twitter:Card': 'Summary_large_image',
         theme_color: '#411445',
         background_color: '#411445',
@@ -41,7 +41,13 @@ module.exports = {
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: [],
+    plugins: [
+        {
+            src: '~/plugins/fathom.js',
+            ssr: false
+
+        }
+    ],
     /*
     ** Nuxt.js modules
     */
@@ -51,7 +57,8 @@ module.exports = {
         'lecture',
         'feature',
         'information',
-        'booth'
+        'foodmenu',
+        'booth',
     ],
 
     modules: [

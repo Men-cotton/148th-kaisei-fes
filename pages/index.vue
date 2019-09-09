@@ -3,22 +3,26 @@
     <Header/>
     <section class="top">
         <img src="~/assets/logo.svg" alt="logo" class="logo">
-        <div class="date">2019.09.21(Sat)09:00-16:30<br>2019.09.22(Sun)09:00-17:00</div>
+        <div class="date">創立148周年記念開成祭<br><br>開催日時<br>2019.09.21(土)09:00-17:00<br>2019.09.22(日)09:00-16:30</div>
     </section>
     <section class="menu">
       <div class="flex-box">
         <nuxt-link to="information">
           <img :src="img1" class="box-img">
         </nuxt-link>
-        <nuxt-link to="map">
+<!--        <nuxt-link to="map">
           <img :src="img2" class="box-img">
+        </nuxt-link>  -->
+        <nuxt-link to="timetable">
+          <img :src="img4" class="box-img">
         </nuxt-link>
         <nuxt-link to="sandan">
           <img :src="img3" class="box-img">
         </nuxt-link>
-        <nuxt-link to="timetable">
-          <img :src="img4" class="box-img">
+        <nuxt-link to="foodmenu">
+          <img :src="img6" class="box-img">
         </nuxt-link>
+
         <nuxt-link to="feature">
           <img :src="img5" class="box-img">
         </nuxt-link>
@@ -28,37 +32,66 @@
 </template>
 
 <script>
+  import VueAnalytics from 'vue-analytics'
+
 import access from '~/assets/access.svg';
 import map from '~/assets/map.svg';
 import sandan from '~/assets/sandan.svg';
 import timetable from '~/assets/timetable.svg';
 import feature from '~/assets/feature.svg';
+import foodmenu from '~/assets/foodmenu.svg';
 
-import Header from '~/components/Myheader.vue'
 
-export default {
+import Header from '~/components/Myheader.vue';
+import Footer from '~/components/Myfooter.vue';
+
+
+  export default {
+    head: {
+      script: [{
+        innerHTML: `{
+  "name": "148th開成祭",
+  "description": "2019年9月21日,22日に行われる148th開成祭の公式ホームページです。",
+  'og:type': 'website',
+  'og:url': 'https://kaisei-fes.com',
+  'og:title': '創立148周年記念開成祭',
+        'og:description': '2019/9/21(土),22(日)開催　148th開成祭',
+
+        'Twitter:Card': 'Summary_large_image',
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "港区",
+      "addressRegion": "東京都",
+      "streetAddress": "西日暮里4丁目2番4号"
+    },
+    "name": "開成学園中学校・高等学校",
+    "url": "https://kaiseigakuen.jp"
+  },
+  "startDate": "2019-09-21",
+  "endDate": "2019-09-22",
+  "url": "https://kaisei-fes.com"
+}`,
+        type: 'application/ld+json'
+      }],
+
+      VueAnalytics:{
+        id: 'UA-147087049-1'
+      }
+    },
   components: {
-    Header
+    Header,
+    Footer,
   },
   data(){
     return{
-      meta: [
-        {charset: 'utf-8'},
-        { name: 'viewport', content: 'width=device-width, initial-scale=1'},
-        { hid: 'description', name: 'description', content: '148th開成祭の公式ホームページです。'},
-        { hid: 'og:site_name', property: 'og:site_name', content: '148th開成祭' },
-        { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:url', property: 'og:url', content: 'https://kaisei-fes.com' },
-        { hid: 'og:title', property: 'og:title', content: '148th開成祭' },
-        { hid: 'og:description', property: 'og:description', content: '2019/9/21(土),22(日)開催。' },
-        { hid: 'og:image', property: 'og:image', content: 'https://kaisei-fes.com/assets/icon.JPG' },
-        { name: 'Twitter:Card', content: 'Summary_large_image' }
-      ],
       img1: access,
       img2: map,
       img3: sandan,
       img4: timetable,
       img5: feature,
+      img6: foodmenu,
 
     }
   },
@@ -75,7 +108,7 @@ export default {
     background-color: #411445;
   }
   .top{
-    padding:40vh 4vw;
+    padding:33vh 4vw 18vh;
     display:flex;
     justify-content:space-between;
   }
@@ -83,9 +116,8 @@ export default {
     width:40vw;
   }
   .date{
+    margin-top: 30px;
     min-width:300px;
-    height:8vw;
-    font-family: Ubuntu Condensed,monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 2vw;
@@ -94,13 +126,14 @@ export default {
     text-align: center;
     vertical-align:bottom;
     letter-spacing: 0.2em;
-    align-self:flex-end;
+    align-self:center;
   }
   .flex-box{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
-    padding:0 1vw;
+    padding:0 1vw 30px;
+
   }
   .flex-box a{
     margin:1vw;
@@ -123,7 +156,7 @@ export default {
     }
     .date{
       font-size:4.5vw;
-      padding:10vh 0 0 0;
+      padding:0vh 0 0 0;
     }
   }
   @media screen and (max-width: 600px){
@@ -136,7 +169,7 @@ export default {
     }
     .date{
       font-size:4.5vw;
-      padding:10vh 0 0 0;
+      padding:0vh 0 0 0;
     }
     .flex-box a{
       margin:2vw 0;

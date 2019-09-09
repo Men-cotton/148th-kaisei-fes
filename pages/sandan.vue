@@ -2,20 +2,33 @@
   <div class="container-sandan">
     <Header/>
     <div class="title">
-      <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>企画一覧</p></div></div>
+      <div class="long"><img src="../assets/sectionmark_along.svg">
+        <div class="long-line"><p>企画一覧</p></div>
+      </div>
     </div>
     <div class="usage">
       <p>開成祭で行われる企画の一覧ページです。</p>
       <h3>操作方法</h3>
       <p>各団体のカードをタップ・クリックすると詳細が開きます。<br>
-        「マップを見る」でその企画がやっている場所の地図を見ることができます。 「詳しく」で展示内容の詳しい情報を見ることができます。</p>
+        「マップを見る」は現在準備中です。「詳しく」をタップ・クリックすると展示の詳しい情報を見ることができます。</p>
     </div>
-    <div class="search-box-title">
-      <p>キーワード検索</p>
-    </div>
-    <div>
-      <input class="search-box" v-model="search_text">
-    </div>
+
+    <ais-instant-search-ssr>
+      <div class="search-box-title">
+        <p>キーワード検索</p>
+      </div>
+      <div>
+        <input class="search-box" v-model="search_text">
+        <div class="usage search-text">キーワードで絞り込む際は、団体名や会場名を入力してください。（例：A会場or３階）
+          <no-ssr>
+            <ais-powered-by theme="dark"/>
+          </no-ssr>
+        </div>
+      </div>
+      <ais-pagination/>
+    </ais-instant-search-ssr>
+
+    <!--開発中
     <div class="search-box-title">
       <p>絞り込み</p>
     </div>
@@ -26,6 +39,7 @@
       <div class="perform buttons">パフォーマンス</div>
       <div class="eats buttons">飲食・販売</div>
     </div>
+    -->
 
     <v-app>
       <v-content class="card-setting">
@@ -41,6 +55,12 @@
 </template>
 
 <script>
+    import {
+        AisInstantSearchSsr,
+        AisPagination,
+        AisPoweredBy,
+        createInstantSearch
+    } from 'vue-instantsearch';
     import algoliasearch from 'algoliasearch/lite';
     import Header from '~/components/Myheader.vue';
     import SandanCard from '~/components/sandancard.vue';
@@ -49,24 +69,31 @@
         'CBBW6NQXPV',
         '7a788ae60b68dff01a8328d0e1150c85'
     );
+    const {tmp, rootMixin} = createInstantSearch({
+        searchClient,
+        indexName: 'instant_search'
+    });
 
     export default {
+        mixins: [rootMixin],
         components: {
             Header,
-            SandanCard
+            SandanCard,
+            AisInstantSearchSsr,
+            AisPagination,
+            AisPoweredBy,
         },
         name: 'project',
         data: function () {
             return {
-                projects: [],
+                sorted_projects: [],
                 index: null,
                 search_text: '',
-                // tap: false,
+                searchClient,
             };
         },
         created: function () {
-            var self = this;
-            self.index = searchClient.initIndex('project');
+            this.index = searchClient.initIndex('project');
             this.searchProject();
         },
         watch: {
@@ -76,10 +103,24 @@
         },
         methods: {
             searchProject: function () {
-                var self = this;
-                self.index.search(self.search_text, (err, {hits} = {}) => {
-                    self.projects = hits;
-                });
+                this.index.search({
+                        query: this.search_text,
+                        hitsPerPage: 100,
+                    },
+                    (err, {hits} = {}) => {
+                        if (err) throw err;
+                        this.sorted_projects = hits;
+                    });
+            }
+        },
+        computed: {
+            projects: function () {
+                var array = this.sorted_projects;
+                for (var i = array.length; i > 0; i--) {
+                    var rand = Math.floor(Math.random() * i);
+                    [array[i - 1], array[rand]] = [array[rand], array[i - 1]]
+                }
+                return array;
             }
         }
     }
@@ -100,6 +141,7 @@
 
   .search-box {
     background: #F8F9FA;
+    font-size: 16px;
     width: 100%;
     height: 35px;
     border-radius: 0 0 5px 5px;
@@ -142,13 +184,20 @@
     grid-column: 3/5;
     grid-row: 2/3;
   }
+
   .usage {
     color: white;
     margin: 10px 0;
   }
-  .usage >p{
+
+  .search-text {
+    display: flex;
+  }
+
+  .usage > p {
     margin: 3px 0;
   }
+
   .img {
     border-radius: 27.5px;
   }
@@ -164,21 +213,24 @@
     font-weight: bold;
     padding: 110px 0px 40px;
   }
-  .long{
+
+  .long {
     border-left-style: revert;
     position: relative;
     font-size: 32px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    padding:  10px 0;
+    padding: 10px 0;
 
   }
-  .long-line{
+
+  .long-line {
     width: 100%;
     border-bottom: #CCBD14 2px solid;
   }
-  .long-line >p{
+
+  .long-line > p {
     position: relative;
     left: 7px;
   }

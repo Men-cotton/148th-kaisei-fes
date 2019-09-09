@@ -21,6 +21,11 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+.usage >p{
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    margin: 3px;
+}
 
 .buttons {
   height: 40px;
@@ -53,5 +58,8 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+a{
+    text-decoration: none;
 }
 </style>

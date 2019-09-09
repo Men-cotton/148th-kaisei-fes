@@ -4,7 +4,10 @@
     <div class="title">
       <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>文化祭特集</p></div></div>
     </div>
-
+    <div class="usage">
+      <p>Pick Up! 文化祭！<br>文化祭準備編では各団体の準備の様子を、プロフェッショナル編では開成で自分の好きな道を極めている様々な「プロ」達の思いを記事にしています。</p>
+    </div>
+<!---
     <div class="search">
       <div class="search-text"><p>絞り込み</p></div>
       <div class="button-grid">
@@ -17,8 +20,37 @@
       </div>
 
     </div>
+    -->
+
     <div class="all-post">
 <!---以下が一つの投稿カードです--->
+
+            <nuxt-link to="featureA2">
+            <div class="post-container">
+                <div class="thumbnail">
+                    <img src="../assets/feature-article/A2/IMG_92522.JPG">
+                </div>
+                <div class="post-details">
+                    <div class="post-date">2019/09/09</div>
+                    <div class="post-title">拝啓　未来の開成生 -生徒会より</div>
+                    <div class="post-type">プロフェッショナル編</div>
+                </div>
+            </div>
+            </nuxt-link>
+
+    <nuxt-link to="featureA1">
+    <div class="post-container">
+      <div class="thumbnail">
+        <img src="../assets/feature-article/thumbnail.jpg">
+      </div>
+      <div class="post-details">
+        <div class="post-date">2019/09/06</div>
+        <div class="post-title">アーケードリズムゲーム『LUXY』紹介 -物理部より</div>
+        <div class="post-type">プロフェッショナル編</div>
+      </div>
+    </div>
+    </nuxt-link>
+<!---
     <div class="post-container">
       <div class="thumbnail">
         <img src="">
@@ -30,18 +62,6 @@
       </div>
     </div>
 
-    <div class="post-container">
-      <div class="thumbnail">
-        <img src="">
-      </div>
-      <div class="post-details">
-        <div class="post-date">2019/08/25</div>
-        <div class="post-title">睡魔との戦い-睡眠同好会</div>
-        <div class="post-type">プロフェッショナル編</div>
-      </div>
-    </div>
-
-      <!---３つ目--->
       <div class="post-container">
         <div class="thumbnail">
           <img src="">
@@ -52,7 +72,7 @@
           <div class="post-type">プロフェッショナル編</div>
         </div>
       </div>
-
+--->
     </div>
   </div>
 </template>
@@ -149,6 +169,8 @@
   .right-button {
     grid-column: 3/4;
   }
+  .thumbnail {
+  }
 
   @media screen and (min-width:768px){
     .post-container{
@@ -162,17 +184,22 @@
   }
   /* 投稿のあれ */
   .post-container{
-    margin: 10px 0px;
+    margin: 30px 0px;
   }
   .thumbnail{
-    height: 150px;
-    background: #7f828b;
     border-radius: 10px 10px 0 0;
 
   }
+  .thumbnail >img{
+    border-radius: 10px 10px 0 0;
+    height: 40vw;
+    width: 100%;
+    object-fit: cover;
+
+  }
   .post-details{
-    height: 70px;
-    padding: 5px 10px;
+    height: auto;
+    padding: 7px 10px;
     background: #F8F9FA;
     color: black;
     border-radius: 0px 0px 10px 10px;
@@ -187,6 +214,7 @@
     color: black;
     font-size: 18px;
     font-weight: bold;
+    margin: 3px 0;
   }
   .post-type{
     color: #495057;

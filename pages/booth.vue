@@ -1,6 +1,9 @@
 <template>
     <div id="root">
+<<<<<<< HEAD
         <Myheader/>
+=======
+>>>>>>> d6c1ed0574daef991e679a55fa0312caf07549a5
         <div id="vain-square"></div>
         <div id="title">
             <div class="box-lower box-lower-short"></div>
@@ -24,8 +27,9 @@
                 <img src="../assets/menu-short-deco.svg" alt="deco" class="menu-deco-short-right">
             </div>
             <div class="menu-item">
+<<<<<<< HEAD
                 <div class="menu-location">
-                    <img src="../assets/images/booth/kaiseiyaki3-2.jpg.jpg" class="menu-location-photo" alt="booth-b-picture">
+                    <img src="../assets/images/booth/kaiseiyaki3-2.jpg" class="menu-location-photo" alt="booth-b-picture">
                     <div class="menu-location-text">B会場１階にて販売</div>
                 </div>
                 <div class="menu-menu">
@@ -52,6 +56,18 @@
                     <div class="menu-menu-sum">100 yen</div>
                 </div>
                 <button class="buttons  menu-item-button">マップを見る</button>
+=======
+                <h2 class="menu-location">う</h2>
+                <div class="menu-menu">あ</div>
+                <div class="menu-menu">あ</div>
+                <button class="menu-location-button">あ</button>
+            </div>
+            <div class="menu-item">
+                <h2 class="menu-location">う</h2>
+                <div class="menu-menu">あ</div>
+                <div class="menu-menu">あ</div>
+                <button class="menu-location-button">あ</button>
+>>>>>>> d6c1ed0574daef991e679a55fa0312caf07549a5
             </div>
             <img src="../assets/menu-long-deco.svg" alt="deco" class="menu-deco-long">
 
@@ -96,6 +112,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
     import Myheader from '../components/Myheader'
     export default {
         layout(context){
@@ -103,6 +120,13 @@
         },
         components:{
             Myheader
+=======
+    import Header from '~/components/Myheader.vue';
+
+    export default {
+        components:{
+            Header
+>>>>>>> d6c1ed0574daef991e679a55fa0312caf07549a5
         },
         head() {
             return {
