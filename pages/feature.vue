@@ -192,7 +192,7 @@
   }
   .thumbnail >img{
     border-radius: 10px 10px 0 0;
-    height: 40vw;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
 
