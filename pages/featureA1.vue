@@ -2,7 +2,7 @@
   <div class="container-feature">
     <Header/>
     <div class="ft-title">
-      アーケードリズムゲーム<br>『LUXY（ルクシー）』紹介
+      アーケードリズムゲーム<br>『LUXY（ルクシー）』紹介　-物理部
     </div>
     <div class="ft-subtitle"></div>
     <p class="ft-text">

@@ -2,7 +2,7 @@
   <div class="container-feature">
     <Header/>
     <div class="ft-title">
-      拝啓　未来の開成生<br>-Let's talk Kaisei 2019
+      拝啓 未来の開成生　-生徒会より
     </div>
     <div class="ft-subtitle"></div>
     <p class="ft-text">　こんにちは、2019年度高校生徒会会長、柴崎珠羽です。148th文化祭では、「開成生と話してみよう」をテーマにした“Let’s talk KAISEI 2019”の参団責任者も務めます。</p>

@@ -32,7 +32,7 @@
                 </div>
                 <div class="post-details">
                     <div class="post-date">2019/09/09</div>
-                    <div class="post-title">拝啓　未来の開成生</div>
+                    <div class="post-title">拝啓　未来の開成生 -生徒会より</div>
                     <div class="post-type">プロフェッショナル編</div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
       </div>
       <div class="post-details">
         <div class="post-date">2019/09/06</div>
-        <div class="post-title">アーケードリズムゲーム『LUXY』紹介 -物理部</div>
+        <div class="post-title">アーケードリズムゲーム『LUXY』紹介 -物理部より</div>
         <div class="post-type">プロフェッショナル編</div>
       </div>
     </div>
