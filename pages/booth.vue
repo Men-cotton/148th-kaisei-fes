@@ -1,10 +1,10 @@
 <template>
     <div id="root">
-        <Header/>
+        <Myheader/>
         <div id="vain-square"></div>
         <div id="title">
             <div class="box-lower box-lower-short"></div>
-            <div class="box-upper box-upper-short"></div>
+            <div class="box-upper box-upper-short"></div>;
 
             <p id="title-title">模擬店</p>
 
@@ -13,8 +13,8 @@
         </div>
 
         <div id="poet">
-            <!--                        <img id="beautiful-pic" src="../assets/beautiful-pic" alt="すごく美しい写真">-->
-            <p id="poet-p">poet</p>
+            <img id="beautiful-pic" src="../assets/images/booth-3-2.png" alt="すごく美しい写真">
+            <p id="poet-p">しあわせは「おいしい」からはじまる。</p>
         </div>
 
         <div id="menu">
@@ -24,16 +24,34 @@
                 <img src="../assets/menu-short-deco.svg" alt="deco" class="menu-deco-short-right">
             </div>
             <div class="menu-item">
-                <h2 class="menu-location">うんこ</h2>
-                <div class="menu-menu">あ</div>
-                <div class="menu-menu">あ</div>
-                <button class="menu-location-button">あ</button>
+                <div class="menu-location">
+                    <img src="../assets/images/booth/kaiseiyaki3-2.jpg.jpg" class="menu-location-photo" alt="booth-b-picture">
+                    <div class="menu-location-text">B会場１階にて販売</div>
+                </div>
+                <div class="menu-menu">
+                    <div class="menu-menu-item">チーズ海鮮チヂミ</div>
+                    <div class="menu-menu-sum">100  yen</div>
+                </div>
+                <div class="menu-menu">
+                    <div class="menu-menu-item">開成焼き</div>
+                    <div class="menu-menu-sum">100  yen</div>
+                </div>
+                <button class="buttons menu-item-button">マップを見る</button>
             </div>
             <div class="menu-item">
-                <h2 class="menu-location">うんこ</h2>
-                <div class="menu-menu">あ</div>
-                <div class="menu-menu">あ</div>
-                <button class="menu-location-button">あ</button>
+                <div class="menu-location">
+                    <img src="../assets/images/booth-3-2.png" class="menu-location-photo" alt="booth-tennis-court-picture">
+                    <div class="menu-location-text">テニスコート奥にて販売</div>
+                </div>
+                <div class="menu-menu">
+                    <div class="menu-menu-item">ドリンク</div>
+                    <div class="menu-menu-sum">100  yen</div>
+                </div>
+                <div class="menu-menu">
+                    <div class="menu-menu-item">かき氷</div>
+                    <div class="menu-menu-sum">100 yen</div>
+                </div>
+                <button class="buttons  menu-item-button">マップを見る</button>
             </div>
             <img src="../assets/menu-long-deco.svg" alt="deco" class="menu-deco-long">
 
@@ -78,7 +96,14 @@
 </template>
 
 <script>
+    import Myheader from '../components/Myheader'
     export default {
+        layout(context){
+            return 'default'
+        },
+        components:{
+            Myheader
+        },
         head() {
             return {
                 meta:
@@ -101,6 +126,27 @@
 
     #root {
         background: #E9E6DB;
+        margin-top: 54px;
+    }
+
+    #beautiful-pic{
+        width:100vw;
+        max-width: 600px;
+        position: relative;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    #poet-p{
+        position: relative;
+        text-align: center;
+        margin-top:-50px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 23px;
     }
 
     #menu {
@@ -108,7 +154,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 100px;
+        margin-top: 150px;
         max-width: 500px;
         min-width: 350px;
     }
@@ -132,17 +178,136 @@
         width: 100%;
     }
 
+    #menu-title{
+        position: relative;
+        height:56px;
+    }
+
+
     #menu-title-title {
         font-family: 'Arima Madurai', cursive;
         font-style: normal;
         font-weight: normal;
         font-size: 25px;
         line-height: 52px;
-        align-items: center;
-        text-align: center;
+
+        position: absolute;
+
+        top:50%;
+        left : 50%;
+
+        transform: translateX(-50%) translateY(-50%);
+
 
         color: #232323;
     }
+
+    .menu-item-button{
+        position:relative;
+        left:100%;
+        transform: translateX(-110%);
+        margin-top:20px;
+        margin-bottom: 40px;
+    }
+
+    .menu-location-text{
+        width:100%;
+        max-width: 600px;
+        background-color: white;
+        font-family: Noto Sans JP,sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 20px;
+        /* or 100% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        width:100vw;
+        position: relative;
+        top:-44px;
+        left:50%;
+
+        transform: translateX(-50%);
+
+        height:40px;
+
+        padding-left:10px;
+
+        opacity: 0.5;
+
+        margin-bottom:-44px;
+
+
+        color: #000000;
+    }
+
+
+
+    .menu-menu-item {
+        font-family: Noto Sans JP;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+        /* identical to box height, or 111% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        margin-right: auto;
+    }
+
+    .menu-menu-item::before{
+        content: url("../assets/images/booth/dot.png");
+        display: inline;
+
+        transform: translateY(-4px);
+        margin-left:10px;
+        margin-right: 10px;
+    }
+
+    .menu-menu-sum{
+        font-family: Abel;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        /* identical to box height, or 111% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        padding-right:20px;
+
+        color: #000000;
+    }
+
+    .menu-menu-sum::before{
+        content: url("../assets/images/booth/line.png");
+        margin-right: 10px;
+    }
+
+    .menu-location-photo{
+        width:100vw;
+        max-width: 600px;
+        position: relative;
+
+        left:50%;
+
+        transform: translateX(-50%);
+    }
+
+    .menu-menu {
+        display: flex;
+        padding-top:20px;
+        justify-content: flex-end;
+    }
+
 
     #notice-color-box {
         background-color: #E9DBCE;
