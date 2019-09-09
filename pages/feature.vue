@@ -25,16 +25,18 @@
     <div class="all-post">
 <!---以下が一つの投稿カードです--->
 
+            <nuxt-link to="featureA2">
             <div class="post-container">
                 <div class="thumbnail">
-                    <img src="">
+                    <img src="../assets/feature-article/A2/IMG_92522.JPG">
                 </div>
                 <div class="post-details">
-                    <div class="post-date">2019/09/08</div>
-                    <div class="post-title">開成から開成へ</div>
+                    <div class="post-date">2019/09/09</div>
+                    <div class="post-title">拝啓　未来の開成生</div>
                     <div class="post-type">プロフェッショナル編</div>
                 </div>
             </div>
+            </nuxt-link>
 
     <nuxt-link to="featureA1">
     <div class="post-container">
@@ -43,7 +45,7 @@
       </div>
       <div class="post-details">
         <div class="post-date">2019/09/06</div>
-        <div class="post-title">アーケードリズムゲーム『LUXY』紹介</div>
+        <div class="post-title">アーケードリズムゲーム『LUXY』紹介 -物理部</div>
         <div class="post-type">プロフェッショナル編</div>
       </div>
     </div>
@@ -185,21 +187,18 @@
     margin: 30px 0px;
   }
   .thumbnail{
-    width: 100%;
-    object-fit: cover;
-    background: #7f828b;
     border-radius: 10px 10px 0 0;
 
   }
   .thumbnail >img{
     border-radius: 10px 10px 0 0;
-    height: 48vw;
+    height: 40vw;
     width: 100%;
     object-fit: cover;
 
   }
   .post-details{
-    height: 100%;
+    height: auto;
     padding: 7px 10px;
     background: #F8F9FA;
     color: black;
