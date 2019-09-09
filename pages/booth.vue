@@ -1,9 +1,6 @@
 <template>
     <div id="root">
-<<<<<<< HEAD
-        <Myheader/>
-=======
->>>>>>> d6c1ed0574daef991e679a55fa0312caf07549a5
+        <Header/>
         <div id="vain-square"></div>
         <div id="title">
             <div class="box-lower box-lower-short"></div>
@@ -27,7 +24,6 @@
                 <img src="../assets/menu-short-deco.svg" alt="deco" class="menu-deco-short-right">
             </div>
             <div class="menu-item">
-<<<<<<< HEAD
                 <div class="menu-location">
                     <img src="../assets/images/booth/kaiseiyaki3-2.jpg" class="menu-location-photo" alt="booth-b-picture">
                     <div class="menu-location-text">B会場１階にて販売</div>
@@ -35,6 +31,9 @@
                 <div class="menu-menu">
                     <div class="menu-menu-item">チーズ海鮮チヂミ</div>
                     <div class="menu-menu-sum">100  yen</div>
+                </div>
+                <div class="menu-description">
+                    あんこ・チョコ・カスタード・栗
                 </div>
                 <div class="menu-menu">
                     <div class="menu-menu-item">開成焼き</div>
@@ -55,19 +54,11 @@
                     <div class="menu-menu-item">かき氷</div>
                     <div class="menu-menu-sum">100 yen</div>
                 </div>
+                <div class="menu-description">
+                    どんな味があるかは店舗にて
+                    お確かめください！
+                </div>
                 <button class="buttons  menu-item-button">マップを見る</button>
-=======
-                <h2 class="menu-location">う</h2>
-                <div class="menu-menu">あ</div>
-                <div class="menu-menu">あ</div>
-                <button class="menu-location-button">あ</button>
-            </div>
-            <div class="menu-item">
-                <h2 class="menu-location">う</h2>
-                <div class="menu-menu">あ</div>
-                <div class="menu-menu">あ</div>
-                <button class="menu-location-button">あ</button>
->>>>>>> d6c1ed0574daef991e679a55fa0312caf07549a5
             </div>
             <img src="../assets/menu-long-deco.svg" alt="deco" class="menu-deco-long">
 
@@ -112,22 +103,17 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-    import Myheader from '../components/Myheader'
+
+    import Header from '~/components/Myheader.vue';
+
     export default {
         layout(context){
             return 'default'
         },
-        components:{
-            Myheader
-=======
-    import Header from '~/components/Myheader.vue';
-
-    export default {
-        components:{
+        components: {
             Header
->>>>>>> d6c1ed0574daef991e679a55fa0312caf07549a5
         },
+
         head() {
             return {
                 meta:
@@ -314,6 +300,23 @@
     .menu-menu-sum::before{
         content: url("../assets/images/booth/line.png");
         margin-right: 10px;
+    }
+
+    .menu-description{
+        font-family: Noto Sans JP;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        padding-top:10px;
+        padding-left:20px;
+
+        color: #000000;
     }
 
     .menu-location-photo{
