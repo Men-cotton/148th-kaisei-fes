@@ -36,7 +36,7 @@
       <div class="tenji buttons">展示</div>
       <div class="sanka buttons">参加型</div>
       <div class="eiga buttons">映画</div>
-      <div class="perform buttons">パフォーマンス</div>
+      <div class="perform buttons">公演</div>
       <div class="eats buttons">飲食・販売</div>
     </div>
     -->
