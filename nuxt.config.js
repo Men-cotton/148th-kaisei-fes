@@ -9,7 +9,7 @@ module.exports = {
         charset: 'utf-8',
         viewport: 'width=device-width, initial-scale=1',
         name: '148th開成祭',
-        description: '2019年9月21日,22日開催、創立148周年記念開成学園文化祭 公式ホームページです。',
+        description: '2019年9月21日,22日開催、創立148周年記念開成学園文化祭の公式ホームページです。',
         'og:type': 'website',
         'og:url': 'https://kaisei-fes.com',
         'og:title': '148th開成祭',
