@@ -5,7 +5,6 @@
       <div class="place">{{ project.Place }} {{project.Room}}</div>
       <div class="name">{{ project.Name }}</div>
       <div class="description">{{ project.Description }}</div>
-      <div class="waitingtime">0<span class="minute">分</span></div>
     </div>
     <div v-show=tap class="grid-container2">
       <div class="buttons map"><p>マップを見る</p></div>
@@ -86,7 +85,7 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 55px auto 40px;
+    grid-template-columns: 55px auto;
     grid-template-rows: 18px 26px 20px;
   }
 
