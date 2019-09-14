@@ -42,7 +42,7 @@ html {
 
 .buttons:hover {
   color: #fff;
-  background-color: #3b8070;
+  background-color: #C2C7CA;
 }
 
 .button--grey {

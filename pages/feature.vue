@@ -25,7 +25,20 @@
     <div class="all-post">
 <!---以下が一つの投稿カードです--->
 
-            <nuxt-link to="featureA2">
+        <nuxt-link to="featureA3">
+            <div class="post-container">
+                <div class="thumbnail">
+                    <img src="../assets/feature-article/A2/IMG_92522.JPG">
+                </div>
+                <div class="post-details">
+                    <div class="post-date">2019/09/14</div>
+                    <div class="post-title">『鉄道』 -鉄研の車窓から-</div>
+                    <div class="post-type">プロフェッショナル編</div>
+                </div>
+            </div>
+        </nuxt-link>
+
+        <nuxt-link to="featureA2">
             <div class="post-container">
                 <div class="thumbnail">
                     <img src="../assets/feature-article/A2/IMG_92522.JPG">
@@ -36,7 +49,7 @@
                     <div class="post-type">プロフェッショナル編</div>
                 </div>
             </div>
-            </nuxt-link>
+        </nuxt-link>
 
     <nuxt-link to="featureA1">
     <div class="post-container">

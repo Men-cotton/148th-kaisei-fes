@@ -2,14 +2,14 @@
   <div class="container-foodmenu">
     <Header/>
     <div class="title">
-      <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>食品メニュー</p></div></div>
+      <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>当日について</p></div></div>
     </div>
 
     <div class="page-desc">
-      <p>開成祭で行われる食品販売のメニューを確認できます。詳細なメニューの完成は来週までお待ちください。</p>
+      <p>当日の各企画の注意点をまとめたページです。ご来場前にご覧ください。</p>
     </div>
 
-    <nuxt-link to="booth"><div class="buttons">模擬店</div></nuxt-link>
+    <div class="buttons">模擬店</div>
     <div class="menu-desc">　開成祭名物「開成焼き」や海鮮チヂミ、ドリンク、かき氷を販売しています。<br>運営：文化祭準備委員会模擬店係</div>
     <div class="buttons">喫茶 "令和"</div>
     <div class="menu-desc">　落ち着いた空間を。開成祭で本格的な喫茶店を楽しめます。Mr. & Ms.開成候補がウェイターとして働いています。<br>運営：文化祭準備委員会喫茶係</div>
