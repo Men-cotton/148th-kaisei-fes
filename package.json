@@ -20,7 +20,6 @@
     "vue-analytics": "^5.17.2",
     "vue-instantsearch": "^2.3.0",
     "vue-meta": "^1.6.0",
-    "vuejs-toggle-switch": "latest"
   },
   "devDependencies": {
     "loader": "^2.1.1",

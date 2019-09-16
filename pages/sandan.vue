@@ -132,7 +132,7 @@
                 return array;
             },
             should_show_projects: function () {
-                var categories = ['展示', '参加型', '映画', 'パフォーマンス', '飲食・販売'];
+                var categories = ['展示', '参加型', '映画', '公演', '飲食・販売'];
 
                 var search = this.search_category;
                 return this.randomized_projects.filter(function (project) {
