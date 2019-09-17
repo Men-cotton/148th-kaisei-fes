@@ -12,6 +12,7 @@ const _a573ca58 = () => interopDefault(import('../pages/foodmenu.vue' /* webpack
 const _22191d36 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _79838937 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
 const _63dd8ad6 = () => interopDefault(import('../pages/map.vue' /* webpackChunkName: "pages/map" */))
+const _4c288454 = () => interopDefault(import('../pages/onday.vue' /* webpackChunkName: "pages/onday" */))
 const _44793ba1 = () => interopDefault(import('../pages/pre-index.vue' /* webpackChunkName: "pages/pre-index" */))
 const _35276d88 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _ebcfe1cc = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
@@ -62,6 +63,10 @@ export const routerOptions = {
       path: "/map",
       component: _63dd8ad6,
       name: "map"
+    }, {
+      path: "/onday",
+      component: _4c288454,
+      name: "onday"
     }, {
       path: "/pre-index",
       component: _44793ba1,

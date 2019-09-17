@@ -13,7 +13,7 @@
         </div>
 
         <div id="poet">
-            <img id="beautiful-pic" src="../assets/images/booth-3-2.png" alt="すごく美しい写真">
+            <img id="beautiful-pic" src="../assets/images/booth/sandwitch.jpg" alt="すごく美しい写真">
             <p id="poet-p">しあわせは「おいしい」からはじまる。</p>
         </div>
 
@@ -157,6 +157,7 @@
         font-weight: normal;
         font-size: 15px;
         line-height: 23px;
+        background-color: rgba(255,255,255,0.3);
     }
 
     #menu {
