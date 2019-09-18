@@ -11,7 +11,7 @@
 
     <nuxt-link to="booth"><div class="buttons">模擬店</div></nuxt-link>
     <div class="menu-desc">　開成祭名物「開成焼き」や海鮮チヂミ、ドリンク、かき氷を販売しています。<br>運営：文化祭準備委員会模擬店係</div>
-    <div class="buttons">喫茶 "令和"</div>
+    <nuxt-link to="cafe"><div class="buttons">喫茶 "令和"</div></nuxt-link>
     <div class="menu-desc">　落ち着いた空間を。開成祭で本格的な喫茶店を楽しめます。Mr. & Ms.開成候補がウェイターとして働いています。<br>運営：文化祭準備委員会喫茶係</div>
     <div class="buttons">東洋食品サービス</div>
     <div class="menu-desc">　毎日営業している学校の食堂が、出店販売を行います。販売されているものは全てパック包装のため、休憩所に持ち運んで食事することができます。<br>

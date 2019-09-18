@@ -494,7 +494,6 @@
         font-style: normal;
         font-weight: 300;
         font-size: 32px;
-        line-height: 46px;
         display: flex;
         align-items: center;
 

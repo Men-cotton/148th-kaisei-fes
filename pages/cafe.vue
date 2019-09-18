@@ -4,7 +4,7 @@
         <div id="vain-square"></div>
         <div id="title">
             <div class="box-lower box-lower-short"></div>
-            <div class="box-upper box-upper-short"></div>;
+            <div class="box-upper box-upper-short"></div>
 
             <p id="title-title">喫茶 令和</p>
 
@@ -514,7 +514,6 @@
         font-style: normal;
         font-weight: 300;
         font-size: 32px;
-        line-height: 46px;
         display: flex;
         align-items: center;
 
