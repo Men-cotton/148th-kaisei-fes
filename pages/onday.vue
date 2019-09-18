@@ -6,8 +6,10 @@
     </div>
 
     <div class="page-desc">
-      <p>当日の各企画の注意点をまとめたページです。ご来場前にご覧ください。</p>
+      <p>当日に関する、細かいながら重要な事柄をまとめました。ご来場前にご覧ください。</p>
     </div>
+
+    <div class="p-alone"><img src="../assets/sectionmark_alone.svg"><p>アクセス</p></div>
 
     <div class="buttons">模擬店</div>
     <div class="menu-desc">　開成祭名物「開成焼き」や海鮮チヂミ、ドリンク、かき氷を販売しています。<br>運営：文化祭準備委員会模擬店係</div>
@@ -69,6 +71,12 @@
   .long-line >p{
     position: relative;
     left: 7px;
+  }
+  .p-alone{
+    position: relative;
+    left: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
   }
 
   .buttons{
