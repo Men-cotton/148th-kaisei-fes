@@ -24,7 +24,18 @@
 
     <div class="all-post">
 <!---以下が一つの投稿カードです--->
-
+        <nuxt-link to="featureA4">
+            <div class="post-container">
+                <div class="thumbnail">
+                    <img src="../assets/feature-article/A2/IMG_92522.JPG">
+                </div>
+                <div class="post-details">
+                    <div class="post-date">2019/09/18</div>
+                    <div class="post-title">日本語に恋して -日本語同好会</div>
+                    <div class="post-type">プロフェッショナル編</div>
+                </div>
+            </div>
+        </nuxt-link>
         <nuxt-link to="featureA3">
             <div class="post-container">
                 <div class="thumbnail">

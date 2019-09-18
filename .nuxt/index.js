@@ -11,8 +11,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_98571862 from 'nuxt_plugin_workbox_98571862' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_52c06c96 from 'nuxt_plugin_nuxticons_52c06c96' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_workbox_81ada420 from 'nuxt_plugin_workbox_81ada420' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_6f67cff4 from 'nuxt_plugin_nuxticons_6f67cff4' // Source: ./nuxt-icons.js (mode: 'all')
 import nuxt_plugin_fathom_e0fe14d8 from 'nuxt_plugin_fathom_e0fe14d8' // Source: ../plugins/fathom.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -143,12 +143,12 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_98571862 === 'function') {
-    await nuxt_plugin_workbox_98571862(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_81ada420 === 'function') {
+    await nuxt_plugin_workbox_81ada420(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_nuxticons_52c06c96 === 'function') {
-    await nuxt_plugin_nuxticons_52c06c96(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_6f67cff4 === 'function') {
+    await nuxt_plugin_nuxticons_6f67cff4(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_fathom_e0fe14d8 === 'function') {

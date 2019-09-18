@@ -13,7 +13,7 @@
         </div>
 
         <div id="poet">
-            <img id="beautiful-pic" src="../assets/images/booth/sandwitch.jpg" alt="すごく美しい写真">
+            <img id="beautiful-pic" src="" alt="すごく美しい写真">
             <p id="poet-p">しあわせは「おいしい」からはじまる。</p>
         </div>
 
