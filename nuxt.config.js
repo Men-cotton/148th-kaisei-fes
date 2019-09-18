@@ -59,6 +59,7 @@ module.exports = {
         'information',
         'foodmenu',
         'booth',
+        'today',
         'featureA1',
         'featureA2',
         'featureA3',

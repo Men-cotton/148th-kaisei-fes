@@ -13,11 +13,11 @@ const _3654d0b5 = () => interopDefault(import('../pages/foodmenu.vue' /* webpack
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
 const _05ee9c14 = () => interopDefault(import('../pages/map.vue' /* webpackChunkName: "pages/map" */))
-const _e01288d6 = () => interopDefault(import('../pages/onday.vue' /* webpackChunkName: "pages/onday" */))
 const _457d7c40 = () => interopDefault(import('../pages/pre-index.vue' /* webpackChunkName: "pages/pre-index" */))
 const _9ff8973a = () => interopDefault(import('../pages/realtime.vue' /* webpackChunkName: "pages/realtime" */))
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
+const _45a3d90e = () => interopDefault(import('../pages/today.vue' /* webpackChunkName: "pages/today" */))
 const _1d216c8a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -70,10 +70,6 @@ export const routerOptions = {
       component: _05ee9c14,
       name: "map"
     }, {
-      path: "/onday",
-      component: _e01288d6,
-      name: "onday"
-    }, {
       path: "/pre-index",
       component: _457d7c40,
       name: "pre"
@@ -89,6 +85,10 @@ export const routerOptions = {
       path: "/timetable",
       component: _22e01559,
       name: "timetable"
+    }, {
+      path: "/today",
+      component: _45a3d90e,
+      name: "today"
     }, {
       path: "/",
       component: _1d216c8a,

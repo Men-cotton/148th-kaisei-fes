@@ -13,13 +13,11 @@
         <!--                <h3 class="suggestion-location-name"></h3>-->
         <!--            </div>-->
         <!--        </div>-->
-        <Foot></Foot>
     </div>
 </template>
 
 <script>
     import Head from "~/components/Myheader.vue"
-    import Foot from "~/components/Myfooter.vue"
 
 
 
@@ -41,7 +39,6 @@
         },
         components: {
             Head,
-            Foot
         },
 
         methods: {
@@ -76,6 +73,7 @@
 <style scoped>
     #container {
         background-color: #411445;
+
     }
 
     #title {
@@ -88,12 +86,11 @@
         padding-top: 50px;
         padding-bottom: -20px;
 
-        font-family: Noto Sans JP;
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 32px;
 
-        width: 40%;
+        width: 50%;
         max-width: 300px;
 
         color: white;

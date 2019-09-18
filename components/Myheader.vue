@@ -12,7 +12,7 @@
                   <ul>
                         <li><n-link to="/">トップ</n-link></li>
                         <li><n-link to="information">ご案内</n-link></li>
-                        <li><n-link to="">校内マップ(準備中)</n-link></li>
+                        <li><n-link to="map">校内マップ</n-link></li>
                         <li><n-link to="sandan">企画一覧</n-link></li>
                         <li><n-link to="timetable">タイムテーブル</n-link></li>
                         <li><n-link to="foodmenu">食品メニュー</n-link></li>
