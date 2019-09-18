@@ -62,6 +62,9 @@ module.exports = {
         'featureA1',
         'featureA2',
         'featureA3',
+        'featureA4',
+        'realtime',
+
     ],
 
     modules: [
