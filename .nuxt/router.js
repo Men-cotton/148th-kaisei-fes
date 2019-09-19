@@ -10,6 +10,7 @@ const _1b32573e = () => interopDefault(import('../pages/featureA1.vue' /* webpac
 const _1b406ebf = () => interopDefault(import('../pages/featureA2.vue' /* webpackChunkName: "pages/featureA2" */))
 const _1b4e8640 = () => interopDefault(import('../pages/featureA3.vue' /* webpackChunkName: "pages/featureA3" */))
 const _1b5c9dc1 = () => interopDefault(import('../pages/featureA4.vue' /* webpackChunkName: "pages/featureA4" */))
+const _1b6ab542 = () => interopDefault(import('../pages/featureA5.vue' /* webpackChunkName: "pages/featureA5" */))
 const _3654d0b5 = () => interopDefault(import('../pages/foodmenu.vue' /* webpackChunkName: "pages/foodmenu" */))
 const _75d2e3e4 = () => interopDefault(import('../pages/information.vue' /* webpackChunkName: "pages/information" */))
 const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackChunkName: "pages/lecture" */))
@@ -58,6 +59,10 @@ export const routerOptions = {
       path: "/featureA4",
       component: _1b5c9dc1,
       name: "featureA4"
+    }, {
+      path: "/featureA5",
+      component: _1b6ab542,
+      name: "featureA5"
     }, {
       path: "/foodmenu",
       component: _3654d0b5,

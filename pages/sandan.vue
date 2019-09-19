@@ -181,7 +181,7 @@
   }
 
   .selected {
-    background-color: #3b8070;
+    background-color: #C2C7CA;
   }
 
   .buttons {

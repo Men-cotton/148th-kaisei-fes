@@ -47,9 +47,14 @@
                     <img src="../assets/images/booth/kakigoori.jpg" class="menu-location-photo" alt="booth-tennis-court-picture">
                     <div class="menu-location-text">テニスコート奥にて販売</div>
                 </div>
+
                 <div class="menu-menu">
                     <div class="menu-menu-item">ドリンク</div>
                     <div class="menu-menu-sum">100  yen</div>
+                </div>
+
+                <div class="menu-description">
+                    Ocean・
                 </div>
                 <div class="menu-menu">
                     <div class="menu-menu-item">かき氷</div>
