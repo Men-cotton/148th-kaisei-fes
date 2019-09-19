@@ -61,7 +61,7 @@
                     <div class="menu-menu-sum">300  yen</div>
                 </div>
                 <div class="menu-description">
-                    ミルクティー・マンゴー
+                    ミルクティー・マンゴーティー
                 </div>
                 <div class="menu-menu">
                     <div class="menu-menu-item">ケーキ</div>

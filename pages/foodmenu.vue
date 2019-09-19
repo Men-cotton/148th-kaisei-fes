@@ -15,8 +15,8 @@
     <nuxt-link to="cafe"><div class="buttons">喫茶 "令和"</div></nuxt-link>
     <div class="menu-desc">　落ち着いた空間を。開成祭で本格的な喫茶店を楽しめます。Mr. & Ms.開成候補がウェイターとして働いています。<br>運営：文化祭準備委員会喫茶係</div>
 
-    <nuxt-link to="cafe"><div class="buttons">古本喫茶</div></nuxt-link>
-    <div class="menu-desc">古本と古本と喫茶がコラボしました。本を選びながらオリジナルドリンクをお楽しみいただけます。古本市にてお待ちしています。<br><strong>Menu</strong><br>全部 150円<br>アイスコーヒー<br>アイスティー<br>プルプルオレンジ<br><br>運営：文化祭準備委員会喫茶係・古本係</div>
+    <div class="buttons">古本喫茶</div>
+    <div class="menu-desc">古本と古本と喫茶がコラボしました。本を選びながらオリジナルドリンクをお楽しみいただけます。古本市にてお待ちしています。<br><strong>Menu</strong><br>全部 150円<br>アイスコーヒー<br>アイスティー<br>オレンジジュース<br><br>運営：文化祭準備委員会喫茶係・古本係</div>
 
     <div class="buttons">東洋食品サービス</div>
     <div class="menu-desc">　毎日営業している学校の食堂が、出店販売を行います。販売されているものは全てパック包装のため、休憩所に持ち運んで食事することができます。<br>

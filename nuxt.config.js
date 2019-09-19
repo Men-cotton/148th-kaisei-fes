@@ -59,11 +59,13 @@ module.exports = {
         'information',
         'foodmenu',
         'booth',
+        'cafe',
         'today',
         'featureA1',
         'featureA2',
         'featureA3',
         'featureA4',
+        'featureA5',
         'realtime',
 
     ],
