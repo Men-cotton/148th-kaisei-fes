@@ -12,10 +12,11 @@
             <div class="box-upper box-upper-long"></div>
         </div>
 
-        <div id="poet">
-            <img id="beautiful-pic" src="" alt="すごく美しい写真">
-            <p id="poet-p">しあわせは「おいしい」からはじまる。</p>
-        </div>
+<!--        <div id="poet">-->
+<!--            <img id="beautiful-pic" src="~/assets/images/booth/tijimi.jpg" alt="すごく美しい写真">-->
+<!--            <p id="poet-p">しあわせは「おいしい」からはじまる。</p>-->
+<!--        </div>-->
+<!--        写真があまりにもダサすぎたので削除しました。コメントを読んでいる一般の人、美しいってなんでしょうね。。。-->
 
         <div id="menu">
             <div id="menu-title">
@@ -43,7 +44,7 @@
             </div>
             <div class="menu-item">
                 <div class="menu-location">
-                    <img src="../assets/images/booth-3-2.png" class="menu-location-photo" alt="booth-tennis-court-picture">
+                    <img src="../assets/images/booth/kakigoori.jpg" class="menu-location-photo" alt="booth-tennis-court-picture">
                     <div class="menu-location-text">テニスコート奥にて販売</div>
                 </div>
                 <div class="menu-menu">
@@ -145,6 +146,15 @@
         position: relative;
         left:50%;
         transform: translateX(-50%);
+    }
+
+    #poet{
+        position: relative;
+        top:50px;
+        left :50%;
+        transform: translateX(-50%);
+        width: 95%;
+        max-width: 500px;
     }
 
     #poet-p{
