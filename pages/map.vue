@@ -46,16 +46,7 @@
                 const urlP = location.search;
                 let Param = new URLSearchParams(urlP);
                 if (Param.has("p")) {
-                    switch (Param.get("p")) {
-                        case "Auditorium":
-                            this.map_src = "B1.html";
-                            break;
-                        case "Tennis-court":
-                            this.map_src = "B2.html";
-                            break;
-                        default:
-                            this.map_src = "All.html";
-                    }
+                    this.map_src = Param.get("p") + ".html";
                 } else {
                     this.map_src = "All.html";
                 }
