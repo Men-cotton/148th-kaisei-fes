@@ -29,7 +29,7 @@
     <div class="p-alone"><img src="../assets/sectionmark_alone.svg"><p>講演会について</p></div>
     <div class="text">
       本年度はホンダエアクラフトカンパニー社長兼CEO　本田技研工業(株)常務執行役員　藤野道格氏にお越しいただき、講演会を開催いたします。
-      詳しくは　<nuxt-link to="lecture">講演会の詳細ページ</nuxt-link>　をご覧ください。
+      詳しくは　<nuxt-link to="/lecture">講演会の詳細ページ</nuxt-link>　をご覧ください。
       <br>【注意事項】
       <br>・チケット配布はA会場二階のチケット配布所にて行っています。
       <br>・無料で、席は指定席制です。
