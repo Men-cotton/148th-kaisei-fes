@@ -4,19 +4,18 @@
         <div id="vain-square"></div>
         <div id="title">
             <div class="box-lower box-lower-short"></div>
-            <div class="box-upper box-upper-short"></div>;
+            <div class="box-upper box-upper-short"></div>
 
-            <p id="title-title">模擬店</p>
+            <p id="title-title">喫茶 令和</p>
 
             <div class="box-lower box-lower-long"></div>
             <div class="box-upper box-upper-long"></div>
         </div>
 
-<!--        <div id="poet">-->
-<!--            <img id="beautiful-pic" src="~/assets/images/booth/tijimi.jpg" alt="すごく美しい写真">-->
-<!--            <p id="poet-p">しあわせは「おいしい」からはじまる。</p>-->
-<!--        </div>-->
-<!--        写真があまりにもダサすぎたので削除しました。コメントを読んでいる一般の人、美しいってなんでしょうね。。。-->
+        <div id="poet">
+            <img id="beautiful-pic" src="../assets/waffle.jpg" alt="すごく美しい写真">
+            <p id="poet-p">落ち着いた幸せ空間。</p>
+        </div>
 
         <div id="menu">
             <div id="menu-title">
@@ -26,44 +25,63 @@
             </div>
             <div class="menu-item">
                 <div class="menu-location">
-                    <img src="../assets/images/booth/kaiseiyaki3-2.jpg" class="menu-location-photo" alt="booth-b-picture">
-                    <div class="menu-location-text">B会場１階にて販売</div>
+                    <img src="../assets/hotsandwich.jpg" class="menu-location-photo" alt="booth-b-picture">
+                    <div class="menu-location-text">ホットサンド</div>
+                    <img src="../assets/waffle.jpg" class="menu-location-photo" alt="booth-b-picture">
+                    <div class="menu-location-text">ワッフル</div>
+                    <img src="../assets/chrros.jpg" class="menu-location-photo" alt="booth-b-picture">
+                    <div class="menu-location-text">チュロス</div>
                 </div>
                 <div class="menu-menu">
-                    <div class="menu-menu-item">開成焼き</div>
-                    <div class="menu-menu-sum">100  yen</div>
+                    <div class="menu-menu-item">ホットサンド</div>
+                    <div class="menu-menu-sum">300  yen</div>
                 </div>
                 <div class="menu-description">
-                    あんこ・チョコ・カスタード・栗
+                    ピザ・ピーナッツバター・カレー
+                </div>
+
+                <div class="menu-menu">
+                    <div class="menu-menu-item">ワッフル</div>
+                    <div class="menu-menu-sum">300  yen</div>
+                </div>
+                <div class="menu-description">
+                抹茶・ベリーベリー
                 </div>
                 <div class="menu-menu">
-                    <div class="menu-menu-item">チーズ海鮮チヂミ</div>
-                    <div class="menu-menu-sum">200  yen</div>
+                    <div class="menu-menu-item">チュロス</div>
+                    <div class="menu-menu-sum">150  yen</div>
+                </div>
+                <div class="menu-description">
+                    ごま＆きな粉・シナモンシュガー
                 </div>
                 <button class="buttons menu-item-button">マップを見る</button>
             </div>
             <div class="menu-item">
                 <div class="menu-location">
-                    <img src="../assets/images/booth/kakigoori.jpg" class="menu-location-photo" alt="booth-tennis-court-picture">
-                    <div class="menu-location-text">テニスコート奥にて販売</div>
+                    <img src="../assets/chrros.jpg" class="menu-location-photo" alt="booth-tennis-court-picture">
+                    <div class="menu-location-text">喫茶令和、A会場２階にて営業中！</div>
                 </div>
                 <div class="menu-menu">
-                    <div class="menu-menu-item">ドリンク</div>
-                    <div class="menu-menu-sum">100  yen</div>
-                </div>
-                <div class="menu-menu">
-                    <div class="menu-menu-item">かき氷</div>
-                    <div class="menu-menu-sum">100 yen</div>
+                    <div class="menu-menu-item">ケーキ</div>
+                    <div class="menu-menu-sum">300  yen</div>
                 </div>
                 <div class="menu-description">
-                    どんな味があるかは店舗にて
-                    お確かめください！
+                くまのチョコ・フルーツショート・チーズ
+            </div>
+
+                <div class="menu-menu">
+                    <div class="menu-menu-item">ドリンク</div>
+                    <div class="menu-menu-sum">150 yen</div>
+                </div>
+                <div class="menu-description">
+                    コーヒー(Ice/hot)・アイスティー・コーラ・りんごジュース・オレンジジュース・ジンジャーエール
                 </div>
                 <button class="buttons  menu-item-button">マップを見る</button>
             </div>
             <img src="../assets/menu-long-deco.svg" alt="deco" class="menu-deco-long">
 
         </div>
+        <!--
         <div id="notice">
 
             <img src="../assets/notice-line-vertical-long.svg" alt="線" class="notice-deco-left notice-deco-top">
@@ -74,7 +92,7 @@
                     <h2 class="notice-item-title">《開成焼き・チヂミ購入案内》</h2>
                     <p class="notice-item-paragraph">
                         　開成焼き・チヂミの購入には、食券が必要です。お買い求めの方は、まずテニスコートの部室棟2階に設置された券売機までお進みください。食券に記載された時間帯に商品の引き換えを中庭にて行わせていただきますので、その際には委員の誘導にしたがってください。
-                        なお、生産状況等によっては食券の購入を制限させていただく場合がございますので予めご了承ください。</p>
+                        　なお、生産状況等によっては食券の購入を制限させていただく場合がございますので予めご了承ください。</p>
                     <div class="notice-line-vertical-right"></div>
                     <div class="notice-line-vertical-left"></div>
                 </div>
@@ -99,6 +117,7 @@
             <div class="box-lower footer-box-lower"></div>
             <div class="box-upper footer-box-upper"></div>
         </div>
+        -->
         <Footer/>
     </div>
 </template>
@@ -146,15 +165,6 @@
         position: relative;
         left:50%;
         transform: translateX(-50%);
-    }
-
-    #poet{
-        position: relative;
-        top:50px;
-        left :50%;
-        transform: translateX(-50%);
-        width: 95%;
-        max-width: 500px;
     }
 
     #poet-p{
@@ -491,7 +501,7 @@
     #title {
         width: 100%;
         height: 65px;
-        background-color: #495057;
+        background-color: #0096AE;
 
         display: flex;
         position: relative;
@@ -522,7 +532,7 @@
     }
 
     .box-upper {
-        background: #912A55;
+        background: #CE371A;
         height: 10px;
     }
 
@@ -542,14 +552,14 @@
 
     .box-upper-long {
         position: absolute;
-        width: 200px;
+        width: 150px;
         right: 0;
         top: 25px;
     }
 
     .box-lower-long {
         position: absolute;
-        width: 180px;
+        width: 130px;
         right: 0;
         top: 30px;
     }

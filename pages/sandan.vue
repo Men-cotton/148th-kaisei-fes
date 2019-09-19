@@ -42,12 +42,13 @@
            v-bind:class="[{selected: (search_category & 1<<2) > 0},'eiga buttons']"> 映画
       </div>
       <div v-on:click="search_category^=(1<<3)"
-           v-bind:class="[{selected: (search_category & 1<<3) > 0},'perform buttons']"> パフォーマンス
+           v-bind:class="[{selected: (search_category & 1<<3) > 0},'perform buttons']"> 公演
       </div>
       <div v-on:click="search_category^=(1<<4)"
            v-bind:class="[{selected: (search_category & 1<<4) > 0},'eats buttons']"> 飲食・販売
       </div>
     </div>
+    <div class="usage"></div>
 
     <v-app>
       <v-content class="card-setting">
