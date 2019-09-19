@@ -14,7 +14,7 @@
 
         <div id="poet">
             <img id="beautiful-pic" src="../assets/waffle.jpg" alt="すごく美しい写真">
-            <p id="poet-p">落ち着いた幸せ空間。</p>
+            <p id="poet-p">落ち着いた幸せ空間。A会場２階で運営中！</p>
         </div>
 
         <div id="menu">
@@ -31,6 +31,8 @@
                     <div class="menu-location-text">ワッフル</div>
                     <img src="../assets/chrros.jpg" class="menu-location-photo" alt="booth-b-picture">
                     <div class="menu-location-text">チュロス</div>
+                    <img src="../assets/tapioca.jpg" class="menu-location-photo" alt="booth-b-picture">
+                    <div class="menu-location-text">タピオカ</div>
                 </div>
                 <div class="menu-menu">
                     <div class="menu-menu-item">ホットサンド</div>
@@ -54,20 +56,20 @@
                 <div class="menu-description">
                     ごま＆きな粉・シナモンシュガー
                 </div>
-                <button class="buttons menu-item-button">マップを見る</button>
-            </div>
-            <div class="menu-item">
-                <div class="menu-location">
-                    <img src="../assets/chrros.jpg" class="menu-location-photo" alt="booth-tennis-court-picture">
-                    <div class="menu-location-text">喫茶令和、A会場２階にて営業中！</div>
+                <div class="menu-menu">
+                    <div class="menu-menu-item">タピオカ</div>
+                    <div class="menu-menu-sum">300  yen</div>
+                </div>
+                <div class="menu-description">
+                    ミルクティー・マンゴー
                 </div>
                 <div class="menu-menu">
                     <div class="menu-menu-item">ケーキ</div>
                     <div class="menu-menu-sum">300  yen</div>
                 </div>
                 <div class="menu-description">
-                くまのチョコ・フルーツショート・チーズ
-            </div>
+                    くまのチョコ・フルーツショート・チーズ
+                </div>
 
                 <div class="menu-menu">
                     <div class="menu-menu-item">ドリンク</div>
@@ -76,11 +78,21 @@
                 <div class="menu-description">
                     コーヒー(Ice/hot)・アイスティー・コーラ・りんごジュース・オレンジジュース・ジンジャーエール
                 </div>
+
+
+
+                <button class="buttons menu-item-button">マップを見る</button>
+            </div>
+            <div class="menu-item">
+                <div class="menu-location">
+                    <img src="../assets/chrros.jpg" class="menu-location-photo" alt="booth-tennis-court-picture">
+                    <div class="menu-location-text">喫茶令和、A会場２階にて営業中！</div>
+                </div>
                 <button class="buttons  menu-item-button">マップを見る</button>
             </div>
             <img src="../assets/menu-long-deco.svg" alt="deco" class="menu-deco-long">
 
-        </div>
+            </div>
         <!--
         <div id="notice">
 
