@@ -1,5 +1,6 @@
 <template>
   <div class="container-foodmenu">
+
     <Header/>
     <div class="title">
       <div class="long"><img src="../assets/sectionmark_along.svg"><div class="long-line"><p>開成祭</p></div></div>
@@ -39,9 +40,10 @@
 
 </template>
 
+
 <script>
     import Header from '~/components/Myheader.vue'
-    import * as firebase from "firebase/app";
+    import firebase from "firebase";
     import "firebase/storage";
 
     // Your web app's Firebase configuration
@@ -55,7 +57,9 @@
    appId: "1:378184994132:web:b30698159ff14affbd8cc1"
  };
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) {
+      firebase.initializeApp({});
+    }
     var db = firebase.firestore();
 
     //db.collection("fes").doc("crowded").A101=true;
@@ -169,8 +173,7 @@
 </script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js" />
-  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js" />
+
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
        https://firebase.google.com/docs/web/setup#config-web-app -->
