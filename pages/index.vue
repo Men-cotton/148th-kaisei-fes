@@ -5,6 +5,15 @@
         <img src="~/assets/logo.svg" alt="logo" class="logo">
         <div class="date">創立148周年記念開成祭<br><br>開催日時<br>2019.09.21(土)09:00-17:00<br>2019.09.22(日)09:00-16:30</div>
     </section>
+    <section class="ontheday">
+      <div class="day-desc">
+        <p>開成祭へようこそ！</p>
+        <p>↓混雑している参団、現在のステージ企画進行状況、などを随時更新しております。</p>
+        <div class="buttons">開成祭リアルタイム</div>
+        <p>↓当日実施されている大企画に関する情報が掲載されています。</p>
+        <div class="buttons">当日のご注意</div>
+      </div>
+    </section>
     <section class="menu">
       <div class="flex-box">
         <nuxt-link to="information">
@@ -104,6 +113,23 @@ import Footer from '~/components/Myfooter.vue';
     letter-spacing: 0.2em;
     align-self:center;
   }
+
+  .ontheday{
+    color: white;
+    margin: 0 20px;
+  }
+  .day-desc{
+    padding: 20px 10px;
+    margin: 10px 0;
+    background: rgba(226, 226, 226, 0.3);
+    border: rgba(226, 226, 226, 1) double 3px;
+  }
+  .day-desc >p{
+    padding: 5px 0;
+  }
+
+
+
   .flex-box{
     display:flex;
     flex-wrap:wrap;
