@@ -9,9 +9,9 @@
       <div class="day-desc">
         <p>開成祭へようこそ！</p>
         <p>↓混雑している参団、現在のステージ企画進行状況、などを随時更新しております。</p>
-        <div class="buttons">開成祭リアルタイム</div>
+        <nuxt-link to="/realtime"><div class="buttons">開成祭リアルタイム</div></nuxt-link>
         <p>↓当日実施されている大企画に関する情報が掲載されています。</p>
-        <div class="buttons">当日のご注意</div>
+        <nuxt-link to="/today"><div class="buttons">当日のご注意</div></nuxt-link>
       </div>
     </section>
     <section class="menu">
@@ -22,10 +22,10 @@
 <!--        <nuxt-link to="map">
           <img :src="img2" class="box-img">
         </nuxt-link>  -->
-        <nuxt-link to="timetable">
+        <nuxt-link to="/timetable">
           <img :src="img4" class="box-img">
         </nuxt-link>
-        <nuxt-link to="sandan">
+        <nuxt-link to="/sandan">
           <img :src="img3" class="box-img">
         </nuxt-link>
         <nuxt-link to="foodmenu">

@@ -17,7 +17,6 @@ const _4e73d994 = () => interopDefault(import('../pages/lecture.vue' /* webpackC
 const _05ee9c14 = () => interopDefault(import('../pages/map.vue' /* webpackChunkName: "pages/map" */))
 const _457d7c40 = () => interopDefault(import('../pages/pre-index.vue' /* webpackChunkName: "pages/pre-index" */))
 const _9ff8973a = () => interopDefault(import('../pages/realtime.vue' /* webpackChunkName: "pages/realtime" */))
-const _508a815f = () => interopDefault(import('../pages/realtime2.vue' /* webpackChunkName: "pages/realtime2" */))
 const _407c27a9 = () => interopDefault(import('../pages/sandan.vue' /* webpackChunkName: "pages/sandan" */))
 const _22e01559 = () => interopDefault(import('../pages/timetable.vue' /* webpackChunkName: "pages/timetable" */))
 const _45a3d90e = () => interopDefault(import('../pages/today.vue' /* webpackChunkName: "pages/today" */))
@@ -88,10 +87,6 @@ export const routerOptions = {
       path: "/realtime",
       component: _9ff8973a,
       name: "realtime"
-    }, {
-      path: "/realtime2",
-      component: _508a815f,
-      name: "realtime2"
     }, {
       path: "/sandan",
       component: _407c27a9,

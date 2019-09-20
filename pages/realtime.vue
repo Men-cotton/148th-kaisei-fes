@@ -16,16 +16,16 @@
       <p>小講堂</p>
       <table>
         <tr>
-          <th>場所</th> <th>遅延状況</th> <th>現在実演中の団体</th>
+          <th>場所</th> <th>遅延状況</th> <th>現在の団体</th>
         </tr>
         <tr>
-         <td>小講堂</td> <td>15分遅れ</td> <td>大道芸、自由自在。</td>
+         <td>小講堂</td> <td id="auditorium_delay"></td> <td  id="auditorium_group"></td>
         </tr>
         <tr>
-          <td>食堂</td> <td></td> <td></td>
+          <td>食堂</td> <td id="hall_delay"></td> <td id="hall_group"></td>
         </tr>
         <tr>
-         <td>中学視聴覚室</td> <td></td> <td></td>
+         <td>中学視聴覚室</td > <td id="audiovisual_delay"></td> <td id="audiovisual_group"></td>
         </tr>
       </table>
     </div>
@@ -36,10 +36,14 @@
       <p><strong>空いている参団</strong></p>
       <div id="empty"></div>
     </div>
+    <div class="p-alone"><img src="../assets/sectionmark_alone.svg"><p id="lottery">チケット抽選結果</p></div>
+
+      <div class="p-alone"><img src="../assets/sectionmark_alone.svg"><p id="note">備考</p></div>
   </div>
 
 </template>
 
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"/>
 
 <script>
     import Header from '~/components/Myheader.vue'
@@ -58,7 +62,7 @@
  };
     // Initialize Firebase
     if (!firebase.apps.length) {
-      firebase.initializeApp({});
+		  firebase.initializeApp(firebaseConfig);
     }
     var db = firebase.firestore();
 
@@ -155,6 +159,49 @@
     }).catch(function (error) {
       console.log("Error getting document:", error);
     });
+
+    var docothers = db.collection("others").doc("others");
+
+    docothers.get().then(function (doc) {
+      document.getElementById("lottery").value = doc.data().lottery;
+      document.getElementById("note").value = doc.data().note;
+    }).catch(function (error) {
+      console.log("Error getting document:", error);
+    });
+
+  db.collection("stage").doc("auditorium").get().then(function (doc) {
+    if (doc.exists) {
+      document.getElementById("auditorium_delay").value = doc.data().delay;
+      document.getElementById("auditorium_group").value = doc.data().group;
+    } else {
+      console.log("No such document!");
+    }
+  }).catch(function (error) {
+    console.log("Error getting document:", error);
+  });
+
+
+  db.collection("stage").doc("hall").get().then(function (doc) {
+    if (doc.exists) {
+      document.getElementById("hall_delay").value = doc.data().delay;
+      document.getElementById("hall_group").value = doc.data().group;
+    } else {
+      console.log("No such document!");
+    }
+  }).catch(function (error) {
+    console.log("Error getting document:", error);
+  });
+
+  db.collection("stage").doc("audiovisual").get().then(function (doc) {
+    if (doc.exists) {
+      document.getElementById("audiovisual_delay").value = doc.data().delay;
+      document.getElementById("audiovisual_group").value = doc.data().group;
+    } else {
+      console.log("No such document!");
+    }
+  }).catch(function (error) {
+    console.log("Error getting document:", error);
+  });
 
     export default {
       data() {

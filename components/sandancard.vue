@@ -7,7 +7,7 @@
       <div class="description">{{ project.Description }}</div>
     </div>
     <div v-show=tap class="grid-container2">
-      <div class="buttons map"><p>マップを見る</p></div>
+      <nuxt-link v-bind:to="{name:'projects-id',params:{id:project.id}}"><div class="buttons map"><p>マップを見る</p></div></nuxt-link>
       <div v-on:click="moreinfo=!moreinfo" class="buttons details"><p>詳しく</p></div>
     </div>
     <div v-show=moreinfo class="describe-more">

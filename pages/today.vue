@@ -5,7 +5,7 @@
       <div class="long"><img src="../assets/sectionmark_alongb.svg"><div class="long-line"><p>当日について</p></div></div>
     </div>
 
-    <div class="usage">
+    <div class="tusage">
       <p>当日開催される大規模企画に関する、重要な事柄をまとめました。</p>
 
         <p style="text-align: center">
@@ -23,7 +23,7 @@
     <div class="p-alone"><img src="../assets/sectionmark_aloneb.svg"><p>開成祭開門前の待機列について</p></div>
     <div class="text">
       開成祭が始まる9時以前は、校内に立ち入ることはできません。<br>
-      待機列は下図の☆印から、歩道橋側に向かって伸びていきます。最後尾は係員の指示を聞いてください。
+      待機列は大通りと西門が面する通りの交差点から、歩道橋側に向かって伸びていきます。最後尾は係員の指示を聞いてください。
     </div>
 
     <div class="p-alone"><img src="../assets/sectionmark_aloneb.svg"><p>講演会について</p></div>
@@ -91,9 +91,6 @@
       <br>・開成祭では、お客様による投票で最も楽しんでいただけた参団を決める「参団グランプリ」を行っています。印象に残った、面白かったという参団にご投票ください。
       <br>・パンフレットに投票用のシールが挟まっています。A会場1階の休憩所前、又は中学視聴覚室前にある投票場所に貼ってください。</div>
 
-    <div class="p-alone"><img src="../assets/sectionmark_aloneb.svg"><p></p></div>
-    <div class="text"></div>
-
 
   </div>
 </template>
@@ -120,7 +117,7 @@
     background-color: #EFEDE1;
     color: #21282F;
   }
-  .usage{
+  .tusage{
     margin: 10px 0;
   }
 
@@ -164,7 +161,7 @@
     left: 7px;
   }
   .text{
-    color: #21282F;
+    color: black;
     padding-bottom: 10px;
   }
 

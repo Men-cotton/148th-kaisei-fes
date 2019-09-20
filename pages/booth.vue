@@ -40,7 +40,7 @@
                     <div class="menu-menu-item">チーズ海鮮チヂミ</div>
                     <div class="menu-menu-sum">200  yen</div>
                 </div>
-                <button class="buttons menu-item-button">マップを見る</button>
+                <nuxt-link to="map?p=b1"><button class="buttons menu-item-button">マップを見る</button></nuxt-link>
             </div>
             <div class="menu-item">
                 <div class="menu-location">
@@ -64,7 +64,7 @@
                     どんな味があるかは店舗にて
                     お確かめください！
                 </div>
-                <button class="buttons  menu-item-button">マップを見る</button>
+                <nuxt-link to="map?p=b2"><button class="buttons  menu-item-button">マップを見る</button></nuxt-link>
             </div>
             <img src="../assets/menu-long-deco.svg" alt="deco" class="menu-deco-long">
 

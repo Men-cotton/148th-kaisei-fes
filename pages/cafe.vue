@@ -81,14 +81,14 @@
 
 
 
-                <button class="buttons menu-item-button">マップを見る</button>
+                <nuxt-link to="map?p=a2"><button class="buttons menu-item-button">マップを見る</button></nuxt-link>
             </div>
             <div class="menu-item">
                 <div class="menu-location">
                     <img src="../assets/chrros.jpg" class="menu-location-photo" alt="booth-tennis-court-picture">
                     <div class="menu-location-text">喫茶令和、A会場２階にて営業中！</div>
                 </div>
-                <button class="buttons  menu-item-button">マップを見る</button>
+                <nuxt-link to="map?p=a2"><button class="buttons  menu-item-button">マップを見る</button></nuxt-link>
             </div>
             <img src="../assets/menu-long-deco.svg" alt="deco" class="menu-deco-long">
 
