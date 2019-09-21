@@ -47,7 +47,7 @@
 
 <script>
     import Header from '~/components/Myheader.vue'
-    import firebase from "firebase";
+    import　* as firebase from "firebase/app";
     import "firebase/storage";
 
     // Your web app's Firebase configuration
@@ -206,15 +206,10 @@
     export default {
       data() {
         return {
-          firebaseConfig: firebaseConfig,
         }
       },
       components: {
         Header
-      },
-        computed: {
-
-
       },
     }
 </script>
