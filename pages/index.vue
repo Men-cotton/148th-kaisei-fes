@@ -5,6 +5,7 @@
         <img src="~/assets/logo.svg" alt="logo" class="logo">
         <div class="date">創立148周年記念開成祭<br><br>開催日時<br>2019.09.21(土)09:00-17:00<br>2019.09.22(日)09:00-16:30</div>
     </section>
+    <!---
     <section class="ontheday">
       <div class="day-desc">
         <p>開成祭へようこそ！</p>
@@ -12,6 +13,12 @@
         <nuxt-link to="/realtime"><div class="buttons">開成祭リアルタイム</div></nuxt-link>
         <p>↓当日実施されている大企画に関する情報が掲載されています。</p>
         <nuxt-link to="/today"><div class="buttons">当日のご注意</div></nuxt-link>
+      </div>
+    </section>--->
+    <section class="ontheday">
+      <div class="day-desc">
+        <p>参団グランプリ結果</p>
+        <p></p>
       </div>
     </section>
     <section class="menu">
