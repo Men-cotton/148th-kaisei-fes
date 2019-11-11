@@ -17,8 +17,29 @@
     </section>--->
     <section class="ontheday">
       <div class="day-desc">
-        <p>参団グランプリ結果</p>
-        <p></p>
+        <p style="font-size: 24px;text-align: center; font-weight: bold">参団グランプリ結果</p>
+        <p style="font-size: 22px; font-weight:bold">部活参団部門</p>
+        <p style="font-size: 18px">第一位 物理部　651票</p>
+        <p style="font-size: 16px">第二位 折り紙研究部　559票　第三位 彼女は手品好き♡　556票</p>
+        <p style="font-size: 16px">第四位 プラネタリウム・天文気象部　522票　第五位 クイズ研究部　451票</p>
+        <p style="font-size: 16px">第六位 鉄研の車窓から2019　394票　第七位 進撃の生物部　313票　<br>第八位 開成鉱石・化石館　236票</p>
+
+        <p style="font-size: 22px ;font-weight:bold">HR参団部門</p>
+        <p style="font-size: 18px">第一位 スペースウォーズ　509票</p>
+        <p style="font-size: 16px">第二位 野比家からの大脱出！　370票　第三位 勝率10％　315票　第四位 迷Q　305票
+        </p>
+
+        <p style="font-size: 22px ;font-weight:bold">有志参団部門</p>
+        <p style="font-size: 18px">第一位 金の匙 Returns　544票</p>
+        <p style="font-size: 16px">第二位 開成生フルボッコだドンⅡ　372票　第三位 GO GO VR!　366票</p>
+        <p style="font-size: 16px">第四位 弱くても勝てます 6th　304票　第五位Never to Return　209票　第六位 ポケモンリーグカイセイ　190票</p>
+
+        <p style="font-size: 22px ;font-weight:bold">実演参団部門</p>
+        <p style="font-size: 18px">第一位 開成ピアノの会　271票</p>
+        <p style="font-size: 16px">第二位 折り紙研究部　266票　第三位 彼女は手品好き♡　262票</p>
+        <p style="font-size: 16px">第四位 開成管弦楽団　175票　第五位 音楽部　163票　第六位 大道芸、自由自在。 145票</p>
+        <p>　ご来場いただいた皆様、参団グランプリの投票にご協力いただきありがとうございました。<br>　148th文化祭準備委員会参団係</p>
+
       </div>
     </section>
     <section class="menu">
@@ -26,21 +47,22 @@
         <nuxt-link to="information">
           <img :src="img1" class="box-img">
         </nuxt-link>
-<!--        <nuxt-link to="map">
+        <nuxt-link to="map">
           <img :src="img2" class="box-img">
-        </nuxt-link>  -->
+        </nuxt-link>
         <nuxt-link to="/timetable">
           <img :src="img4" class="box-img">
         </nuxt-link>
         <nuxt-link to="/sandan">
           <img :src="img3" class="box-img">
         </nuxt-link>
-        <nuxt-link to="foodmenu">
-          <img :src="img6" class="box-img">
-        </nuxt-link>
+
 
         <nuxt-link to="feature">
           <img :src="img5" class="box-img">
+        </nuxt-link>
+        <nuxt-link to="foodmenu">
+          <img :src="img6" class="box-img">
         </nuxt-link>
       </div>
     </section>
